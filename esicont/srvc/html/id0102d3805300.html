@@ -1,0 +1,608 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0140 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P0140 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0140 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060515"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P0140
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+Rear HO2S circuit no activity detected
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058699"> </a><div>
+• The PCM monitors the input voltage from the rear HO2S when the engine is running. If the input voltage from the rear HO2S never <b>exceeds 0.55 V</b> for <b>30.4 s or more</b>, the PCM determines that the rear HO2S circuit is not activated.
+</div>
+
+<a name="wp1058708"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058718"> </a><div>
+• This is a continuous monitor (HO2S).
+</div>
+
+<a name="wp1058728"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058738"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058748"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058758"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• Rear HO2S deterioration
+</div>
+
+<a name="wp1058790"> </a><div>
+• Rear HO2S heater malfunction
+</div>
+
+<a name="wp1058800"> </a><div>
+• Leakage exhaust system
+</div>
+
+<a name="wp1058810"> </a><div>
+• Open circuit in wiring harness between rear HO2S terminal A and PCM terminal 2AH
+</div>
+
+<a name="wp1058820"> </a><div>
+• Short to ground in wiring harness between rear HO2S terminal A and PCM terminal 2AH
+</div>
+
+<a name="wp1058830"> </a><div>
+• Insufficient compression
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058648"> </a><p>
+<img alt="" height="376" loading="lazy" src="images/DDA102ZW4010.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058858"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058972"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058974"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058978"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058866"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058868"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059080"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058924"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058927"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059007"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059010"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059014"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059017"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059124"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059138"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059020"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059023"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059158"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059033"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059036"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059040"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059043"> </a><b>
+VERIFY RELATED PENDING AND STORED DTC
+</b>
+<dl>
+<a name="wp1059205"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl><dl>
+<a name="wp1060437"> </a><dd>
+• If fuel monitor DTC, DTC P0132 is retrieved, ignore it until P0140 is fixed.
+</dd>
+</dl>
+<a name="wp1059223"> </a><div>
+• Turn the ignition switch off, then the ON position (Engine off).
+</div>
+
+<a name="wp1059237"> </a><div>
+• Verify pending and stored DTCs using WDS or equivalent.
+</div>
+
+<a name="wp1059247"> </a><div>
+• Is other DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059046"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059049"> </a><div>
+Go to appropriate DTC troubleshooting procedures.
+</div>
+
+<a name="wp1059267"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059186"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059189"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059289"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059292"> </a><b>
+VERIFY CURRENT INPUT SIGNAL STATUS
+</b>
+
+<a name="wp1059335"> </a><div>
+• Warm up engine.
+</div>
+
+<a name="wp1059349"> </a><div>
+• Access O2S12 PID using WDS or equivalent.
+</div>
+
+<a name="wp1059359"> </a><div>
+• Verify PID while racing engine at least <b>10 times</b> (in NEUTRAL (MTX) or PARK (ATX)).
+</div>
+
+<a name="wp1059378"> </a><div>
+• Is PID normal?
+</div>
+
+<a name="wp1059388"> </a><p>
+-	<b>More than 0.55 V</b> at least once during engine racing
+</p>
+</td>
+    <td>
+<a name="wp1059295"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059298"> </a><div>
+Go to step 7.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059310"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059313"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059427"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059430"> </a><b>
+INSPECT INSTALLATION OF REAR HO2S
+</b>
+
+<a name="wp1059485"> </a><div>
+• Inspect if rear HO2S is loosely installed.
+</div>
+
+<a name="wp1059499"> </a><div>
+• Is sensor installed securely?
+</div>
+</td>
+    <td>
+<a name="wp1059433"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059436"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059451"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059454"> </a><div>
+Install sensor securely, then go to Step 9.
+</div>
+
+<a name="wp1059529"> </a><div>
+(See <a href="id0140008050c0.html#wp1025486">REAR HEATED OXYGEN SENSOR (HO2S) REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059541"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059544"> </a><b>
+INSPECT GAS LEAKAGE FROM EXHAUST SYSTEM
+</b>
+
+<a name="wp1059607"> </a><div>
+• Visually inspect if any gas leakage is found between exhaust pipe and rear HO2S.
+</div>
+
+<a name="wp1059621"> </a><div>
+• Is there gas leakage?
+</div>
+</td>
+    <td>
+<a name="wp1059547"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059550"> </a><div>
+Repair or replace any malfunctioning exhaust part, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059567"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059570"> </a><div>
+• Inspect the following wiring harnesses for open circuit or short to ground in wiring harness.
+</div>
+<dl>
+<a name="wp1059659"> </a><dd>
+-	Rear HO2S terminal A (wiring harness-side) to PCM terminal 2AH (wiring harness-side)
+</dd>
+<dl>
+<a name="wp1059675"> </a><dd>
+• Repair or replace wiring harness if necessary.
+</dd>
+</dl></dl>
+<a name="wp1059689"> </a><div>
+• If all items above are normal, replace the malfunctioning sensor.
+</div>
+
+<a name="wp1059699"> </a><div>
+Then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059703"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059706"> </a><b>
+INSPECT SEALING OF ENGINE COOLANT PASSAGE
+</b>
+
+<a name="wp1059769"> </a><div>
+• Perform the ENGINE COOLANT LEAKAGE INSPECTION.
+</div>
+
+<a name="wp1059783"> </a><div>
+(See<a href="id0112008005a5.html#wp1025486">ENGINE COOLANT LEAKAGE INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059797"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059709"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059712"> </a><div>
+Repair or replace the malfunctioning part according to inspection results, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059729"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059732"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059825"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059828"> </a><b>
+INSPECT ENGINE COMPRESSION
+</b>
+
+<a name="wp1059899"> </a><div>
+• Inspect engine compression.
+</div>
+
+<a name="wp1059913"> </a><div>
+(See <a href="id0110008003c0.html#wp1025486">COMPRESSION INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059927"> </a><div>
+• Is it normal?
+</div>
+</td>
+    <td>
+<a name="wp1059831"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059834"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059853"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059856"> </a><div>
+Implement engine overhaul for repairs, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059955"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059958"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0140 COMPLETED
+</b>
+
+<a name="wp1060037"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1060051"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1060061"> </a><div>
+• Perform the "KOER self-test".
+</div>
+
+<a name="wp1060076"> </a><div>
+(See <a href="id0102d3801200.html#wp1025486">KOEO/KOER SELF TEST [ZY]</a>.)
+</div>
+
+<a name="wp1060090"> </a><div>
+• Is the DTC P0140 present?
+</div>
+</td>
+    <td>
+<a name="wp1059961"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059964"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060110"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059985"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059988"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060132"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060135"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060230"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060248"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060262"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060138"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060141"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1060282"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060166"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060169"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060438"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3805100.html"><small>Previous</small>DTC P0138 [ZY]</a><a class="nx" href="id0102d3806000.html"><small>Next</small>DTC P0222 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

@@ -1,0 +1,2137 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KOEO/KOER self-test [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--engine.html">Engine</a></li><li><a href="../../../nav/technical-guide--engine--on-board-diagnostic-engine-control-system-zy.html">On-board diagnostic [Engine control system (ZY)]</a></li><li aria-current="page">KOEO/KOER self-test [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>KOEO/KOER self-test [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058567"> </a><p></p><p></p>
+
+<a name="wp1063661"> </a><div>
+• The self-test function consists of the KOEO (Key On, Engine Off) self-test, performed when the ignition switch is turned to the ON position and the engine is stopped, and the KOER (Key On, Engine Running) self-test, performed when idling. If an abnormality is detected when either self-test is executed, a DTC is displayed on the WDS or equivalent. Using the self-test function, the present malfunction or a successful repair is readily confirmed. Refer to the self-test function table for the corresponding DTCs.
+</div>
+
+<a name="wp1058588"> </a><h2><b>
+KOEO (Key ON, Engine Off) Self-test
+</b></h2>
+
+<a name="wp1058599"> </a><div>
+• The KOEO self-test is a powertrain control system self-diagnosis, performed when the ignition switch is turned to the ON position and the engine is stopped. A KOEO self-test begins when the connected WDS or equivalent sends an execute command to the PCM.
+</div>
+
+<a name="wp1058616"> </a><div>
+• As the KOEO self-test is performed, the PCM performs the inspection for set DTCs and if a malfunction is detected, the DTC is displayed on the WDS or equivalent.
+</div>
+
+<a name="wp1058627"> </a><h2><b>
+KOER (Key ON, Engine Running) Self-test
+</b></h2>
+
+<a name="wp1058638"> </a><div>
+• The KOER self-test is a powertrain control system self-diagnosis, performed when the ignition switch is turned to the ON position and the engine is idling. A KOER self-test begins when the connected WDS or equivalent sends an execute command to the PCM.
+</div>
+
+<a name="wp1058655"> </a><div>
+• As the KOER self-test is performed, the PCM performs the inspection for set DTCs and if a malfunction is detected the DTC is displayed on the WDS or equivalent.
+</div>
+
+<a name="wp1058666"> </a><div>
+	×: Applicable
+</div>
+
+<a name="wp1058677"> </a><div>
+-: Not applicable</div><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1058788"> </a><p></p><div align="center"><b>
+DTC No.
+</b></div><p></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058790"> </a><p></p><div align="center"><b>
+Condition
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058792"> </a><p></p><div align="center"><b>
+Test condition
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1058875"> </a><p></p><div align="center"><b>
+KOEO
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058878"> </a><p></p><div align="center"><b>
+KOER
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058682"> </a><div>
+P0011
+</div>
+</td>
+    <td>
+<a name="wp1058684"> </a><div>
+CMP-timing over-advanced
+</div>
+</td>
+    <td>
+<a name="wp1058740"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058743"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058817"> </a><div>
+P0012
+</div>
+</td>
+    <td>
+<a name="wp1058820"> </a><div>
+CMP-timing over-retarded
+</div>
+</td>
+    <td>
+<a name="wp1058823"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058826"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058830"> </a><div>
+P0030
+</div>
+</td>
+    <td>
+<a name="wp1058833"> </a><div>
+Front HO2S heater control circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1058836"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058839"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058843"> </a><div>
+P0031
+</div>
+</td>
+    <td>
+<a name="wp1058846"> </a><div>
+Front HO2S heater control circuit high
+</div>
+</td>
+    <td>
+<a name="wp1058849"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058852"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058856"> </a><div>
+P0032
+</div>
+</td>
+    <td>
+<a name="wp1058859"> </a><div>
+Front HO2S heater control circuit low
+</div>
+</td>
+    <td>
+<a name="wp1058862"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058865"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059011"> </a><div>
+P0037
+</div>
+</td>
+    <td>
+<a name="wp1059014"> </a><div>
+Rear HO2S heater control circuit high
+</div>
+</td>
+    <td>
+<a name="wp1059017"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059020"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059044"> </a><div>
+P0038
+</div>
+</td>
+    <td>
+<a name="wp1059047"> </a><div>
+Rear HO2S heater control circuit low
+</div>
+</td>
+    <td>
+<a name="wp1059050"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059053"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059077"> </a><div>
+P0101<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059080"> </a><div>
+MAF sensor circuit range/performance problem
+</div>
+</td>
+    <td>
+<a name="wp1059083"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059086"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059119"> </a><div>
+P0102
+</div>
+</td>
+    <td>
+<a name="wp1059122"> </a><div>
+MAF sensor circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059125"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059128"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059153"> </a><div>
+P0103
+</div>
+</td>
+    <td>
+<a name="wp1059156"> </a><div>
+MAF sensor circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059159"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059162"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059187"> </a><div>
+P0107
+</div>
+</td>
+    <td>
+<a name="wp1059190"> </a><div>
+MAP sensor circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059193"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059196"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059221"> </a><div>
+P0108
+</div>
+</td>
+    <td>
+<a name="wp1059224"> </a><div>
+MAP sensor circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059227"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059230"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059255"> </a><div>
+P0111<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059258"> </a><div>
+IAT sensor circuit range/performance problem
+</div>
+</td>
+    <td>
+<a name="wp1059261"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059264"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059298"> </a><div>
+P0112
+</div>
+</td>
+    <td>
+<a name="wp1059301"> </a><div>
+IAT sensor circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059304"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059307"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059333"> </a><div>
+P0113
+</div>
+</td>
+    <td>
+<a name="wp1059336"> </a><div>
+IAT sensor circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059339"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059342"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059368"> </a><div>
+P0117
+</div>
+</td>
+    <td>
+<a name="wp1059371"> </a><div>
+ECT sensor circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059374"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059377"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059403"> </a><div>
+P0118
+</div>
+</td>
+    <td>
+<a name="wp1059406"> </a><div>
+ECT sensor circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059409"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059412"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059438"> </a><div>
+P0122
+</div>
+</td>
+    <td>
+<a name="wp1059441"> </a><div>
+TP sensor No.1 circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059444"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059447"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059473"> </a><div>
+P0123
+</div>
+</td>
+    <td>
+<a name="wp1059476"> </a><div>
+TP sensor No.1 circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059479"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059482"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059508"> </a><div>
+P0125<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059511"> </a><div>
+Insufficient coolant temperature for closed loop fuel control
+</div>
+</td>
+    <td>
+<a name="wp1059514"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059550"> </a><div>
+P0130
+</div>
+</td>
+    <td>
+<a name="wp1059553"> </a><div>
+Front HO2S circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1059556"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059559"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059586"> </a><div>
+P0131
+</div>
+</td>
+    <td>
+<a name="wp1059589"> </a><div>
+Front HO2S circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059592"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059595"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059622"> </a><div>
+P0132
+</div>
+</td>
+    <td>
+<a name="wp1059625"> </a><div>
+Front HO2S circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059628"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059631"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059658"> </a><div>
+P0133<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059661"> </a><div>
+Front HO2S circuit slow response
+</div>
+</td>
+    <td>
+<a name="wp1059664"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059667"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059701"> </a><div>
+P0134
+</div>
+</td>
+    <td>
+<a name="wp1059704"> </a><div>
+Front HO2S circuit no activity detected
+</div>
+</td>
+    <td>
+<a name="wp1059707"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059710"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059738"> </a><div>
+P0138
+</div>
+</td>
+    <td>
+<a name="wp1059741"> </a><div>
+Rear HO2S circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059744"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059747"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059775"> </a><div>
+P0140
+</div>
+</td>
+    <td>
+<a name="wp1059778"> </a><div>
+Rear HO2S circuit no activity detected
+</div>
+</td>
+    <td>
+<a name="wp1059781"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059784"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059812"> </a><div>
+P0222
+</div>
+</td>
+    <td>
+<a name="wp1059815"> </a><div>
+TP sensor No.2 circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1059818"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059821"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059849"> </a><div>
+P0223
+</div>
+</td>
+    <td>
+<a name="wp1059852"> </a><div>
+TP sensor No.2 circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059855"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059858"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059886"> </a><div>
+P0300<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059889"> </a><div>
+Random misfire detected
+</div>
+</td>
+    <td>
+<a name="wp1059892"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059895"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059930"> </a><div>
+P0301<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059933"> </a><div>
+Cylinder No.1 misfire detected
+</div>
+</td>
+    <td>
+<a name="wp1059936"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059939"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059975"> </a><div>
+P0302<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059978"> </a><div>
+Cylinder No.2 misfire detected
+</div>
+</td>
+    <td>
+<a name="wp1059981"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059984"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060021"> </a><div>
+P0303<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060024"> </a><div>
+Cylinder No.3 misfire detected
+</div>
+</td>
+    <td>
+<a name="wp1060027"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060030"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060068"> </a><div>
+P0304<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060071"> </a><div>
+Cylinder No.4 misfire detected
+</div>
+</td>
+    <td>
+<a name="wp1060074"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060077"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060116"> </a><div>
+P0327
+</div>
+</td>
+    <td>
+<a name="wp1060119"> </a><div>
+KS circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1060122"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1060125"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060158"> </a><div>
+P0328
+</div>
+</td>
+    <td>
+<a name="wp1060161"> </a><div>
+KS circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1060164"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1060167"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060200"> </a><div>
+P0335
+</div>
+</td>
+    <td>
+<a name="wp1060203"> </a><div>
+CKP sensor circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1060206"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060209"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060242"> </a><div>
+P0340
+</div>
+</td>
+    <td>
+<a name="wp1060245"> </a><div>
+CMP sensor circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1060248"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060251"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060284"> </a><div>
+P0351<sup>*2</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060287"> </a><div>
+Ignition coil No.1 control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060290"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060293"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060333"> </a><div>
+P0352<sup>*2</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060336"> </a><div>
+Ignition coil No.2 control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060339"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060342"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060383"> </a><div>
+P0353<sup>*2</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060386"> </a><div>
+Ignition coil No.3 control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060389"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060392"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060434"> </a><div>
+P0354<sup>*2</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060437"> </a><div>
+Ignition coil No.4 control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060440"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060443"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060486"> </a><div>
+P0401<sup>*2</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060489"> </a><div>
+EGR flow insufficient detected
+</div>
+</td>
+    <td>
+<a name="wp1060492"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060495"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060539"> </a><div>
+P0403
+</div>
+</td>
+    <td>
+<a name="wp1060542"> </a><div>
+EGR control circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1060545"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1060548"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060586"> </a><div>
+P0421<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060589"> </a><div>
+Warm up Catalyst system efficiency below threshold
+</div>
+</td>
+    <td>
+<a name="wp1060592"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060595"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060640"> </a><div>
+P0443
+</div>
+</td>
+    <td>
+<a name="wp1060643"> </a><div>
+Purge solenoid valve circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1060646"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1060649"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060688"> </a><div>
+P0480
+</div>
+</td>
+    <td>
+<a name="wp1060691"> </a><div>
+Cooling fan relay No.1 control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060694"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1060697"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060736"> </a><div>
+P0481
+</div>
+</td>
+    <td>
+<a name="wp1060739"> </a><div>
+Cooling fan relay No.2 control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060742"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1060745"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060784"> </a><div>
+P0500
+</div>
+</td>
+    <td>
+<a name="wp1060787"> </a><div>
+VSS circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1060790"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060793"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060832"> </a><div>
+P0505
+</div>
+</td>
+    <td>
+<a name="wp1060835"> </a><div>
+Idle air control problem
+</div>
+</td>
+    <td>
+<a name="wp1060838"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060841"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060880"> </a><div>
+P0506<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060883"> </a><div>
+Idle air control system RPM lower than expected
+</div>
+</td>
+    <td>
+<a name="wp1060886"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060889"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060935"> </a><div>
+P0507<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1060938"> </a><div>
+Idle air control system RPM higher than expected
+</div>
+</td>
+    <td>
+<a name="wp1060941"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060944"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060991"> </a><div>
+P0537
+</div>
+</td>
+    <td>
+<a name="wp1060994"> </a><div>
+Evaporator temperature sensor circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1060997"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061000"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061041"> </a><div>
+P0538
+</div>
+</td>
+    <td>
+<a name="wp1061044"> </a><div>
+Evaporator temperature sensor circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1061047"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061050"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061091"> </a><div>
+P0601
+</div>
+</td>
+    <td>
+<a name="wp1061094"> </a><div>
+PCM memory check sum error
+</div>
+</td>
+    <td>
+<a name="wp1061097"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061100"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061141"> </a><div>
+P0602
+</div>
+</td>
+    <td>
+<a name="wp1061144"> </a><div>
+PCM programming error
+</div>
+</td>
+    <td>
+<a name="wp1061147"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061150"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061191"> </a><div>
+P0604
+</div>
+</td>
+    <td>
+<a name="wp1061194"> </a><div>
+PCM random access memory error
+</div>
+</td>
+    <td>
+<a name="wp1061197"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061200"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061241"> </a><div>
+P0606
+</div>
+</td>
+    <td>
+<a name="wp1061244"> </a><div>
+PCM processor
+</div>
+</td>
+    <td>
+<a name="wp1061247"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061250"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061291"> </a><div>
+P0610
+</div>
+</td>
+    <td>
+<a name="wp1061294"> </a><div>
+PCM vehicle configuration error
+</div>
+</td>
+    <td>
+<a name="wp1061297"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061300"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061341"> </a><div>
+P0638
+</div>
+</td>
+    <td>
+<a name="wp1061344"> </a><div>
+Throttle actuator control circuit range/performance problem
+</div>
+</td>
+    <td>
+<a name="wp1061347"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061350"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061393"> </a><div>
+P0660
+</div>
+</td>
+    <td>
+<a name="wp1061396"> </a><div>
+Variable intake air control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1061399"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061402"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061443"> </a><div>
+P0668
+</div>
+</td>
+    <td>
+<a name="wp1061446"> </a><div>
+PCM temperature sensor circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1061449"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061452"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061493"> </a><div>
+P0669
+</div>
+</td>
+    <td>
+<a name="wp1061496"> </a><div>
+PCM temperature sensor circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1061499"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061502"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061543"> </a><div>
+P0703<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1061546"> </a><div>
+Brake switch input circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1061549"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061552"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061600"> </a><div>
+P0704<sup>*1 *3</sup>
+</div>
+</td>
+    <td>
+<a name="wp1061603"> </a><div>
+CPP switch input circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1061606"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061609"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061660"> </a><div>
+P0850<sup>*1</sup><sup> *3</sup>
+</div>
+</td>
+    <td>
+<a name="wp1061663"> </a><div>
+Neutral switch input circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1061666"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061669"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061727"> </a><div>
+P1384
+</div>
+</td>
+    <td>
+<a name="wp1061730"> </a><div>
+Oil Control Valve (OCV) circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1061733"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061736"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061780"> </a><div>
+P1515
+</div>
+</td>
+    <td>
+<a name="wp1061783"> </a><div>
+Current sensor circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1061786"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061789"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061833"> </a><div>
+P2008
+</div>
+</td>
+    <td>
+<a name="wp1061836"> </a><div>
+Variable tumble control circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1061839"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061842"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061886"> </a><div>
+P2016
+</div>
+</td>
+    <td>
+<a name="wp1061889"> </a><div>
+Variable tumble shutter valve switch circuit low
+</div>
+</td>
+    <td>
+<a name="wp1061892"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061895"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061939"> </a><div>
+P2017
+</div>
+</td>
+    <td>
+<a name="wp1061942"> </a><div>
+Variable tumble shutter valve switch circuit high
+</div>
+</td>
+    <td>
+<a name="wp1061945"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1061948"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061992"> </a><div>
+P2088
+</div>
+</td>
+    <td>
+<a name="wp1061995"> </a><div>
+Variable valve timing control circuit low
+</div>
+</td>
+    <td>
+<a name="wp1061998"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062001"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062045"> </a><div>
+P2089
+</div>
+</td>
+    <td>
+<a name="wp1062048"> </a><div>
+Variable valve timing control circuit high
+</div>
+</td>
+    <td>
+<a name="wp1062051"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062054"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062098"> </a><div>
+P2096
+</div>
+</td>
+    <td>
+<a name="wp1062101"> </a><div>
+Target A/F feedback system too lean
+</div>
+</td>
+    <td>
+<a name="wp1062104"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062107"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062153"> </a><div>
+P2097
+</div>
+</td>
+    <td>
+<a name="wp1062156"> </a><div>
+Target A/F feedback system too rich
+</div>
+</td>
+    <td>
+<a name="wp1062159"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062162"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062208"> </a><div>
+P2101
+</div>
+</td>
+    <td>
+<a name="wp1062211"> </a><div>
+Throttle actuator power supply line circuit problem
+</div>
+</td>
+    <td>
+<a name="wp1062214"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062217"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062261"> </a><div>
+P2107
+</div>
+</td>
+    <td>
+<a name="wp1062264"> </a><div>
+Throttle actuator control module processor error
+</div>
+</td>
+    <td>
+<a name="wp1062267"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062270"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062314"> </a><div>
+P2108
+</div>
+</td>
+    <td>
+<a name="wp1062317"> </a><div>
+Throttle actuator control module performance error
+</div>
+</td>
+    <td>
+<a name="wp1062320"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062323"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062367"> </a><div>
+P2109
+</div>
+</td>
+    <td>
+<a name="wp1062370"> </a><div>
+TP sensor minimum stop range/performance problem
+</div>
+</td>
+    <td>
+<a name="wp1062373"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062376"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062422"> </a><div>
+P2112
+</div>
+</td>
+    <td>
+<a name="wp1062425"> </a><div>
+Throttle actuator control system range/performance problem
+</div>
+</td>
+    <td>
+<a name="wp1062428"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062431"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062477"> </a><div>
+P2119
+</div>
+</td>
+    <td>
+<a name="wp1062480"> </a><div>
+Throttle actuator control throttle body range/performance problem
+</div>
+</td>
+    <td>
+<a name="wp1062483"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062486"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062532"> </a><div>
+P2122
+</div>
+</td>
+    <td>
+<a name="wp1062535"> </a><div>
+APP sensor No.1 circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1062538"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062541"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062585"> </a><div>
+P2123
+</div>
+</td>
+    <td>
+<a name="wp1062588"> </a><div>
+APP sensor No.1 circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1062591"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062594"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062638"> </a><div>
+P2127
+</div>
+</td>
+    <td>
+<a name="wp1062641"> </a><div>
+APP sensor No.2 circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1062644"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062647"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062691"> </a><div>
+P2128
+</div>
+</td>
+    <td>
+<a name="wp1062694"> </a><div>
+APP sensor No.2 circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1062697"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062700"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062744"> </a><div>
+P2135
+</div>
+</td>
+    <td>
+<a name="wp1062747"> </a><div>
+TP sensor No.1/No.2 voltage correlation problem
+</div>
+</td>
+    <td>
+<a name="wp1062750"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062753"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062799"> </a><div>
+P2138
+</div>
+</td>
+    <td>
+<a name="wp1062802"> </a><div>
+APP sensor No.1/No.2 voltage correlation problem
+</div>
+</td>
+    <td>
+<a name="wp1062805"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1062808"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062854"> </a><div>
+P2177
+</div>
+</td>
+    <td>
+<a name="wp1062857"> </a><div>
+System too lean off idle
+</div>
+</td>
+    <td>
+<a name="wp1062860"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062863"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062907"> </a><div>
+P2178
+</div>
+</td>
+    <td>
+<a name="wp1062910"> </a><div>
+System too rich off idle
+</div>
+</td>
+    <td>
+<a name="wp1062913"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062916"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062960"> </a><div>
+P2187
+</div>
+</td>
+    <td>
+<a name="wp1062963"> </a><div>
+System too lean at idle
+</div>
+</td>
+    <td>
+<a name="wp1062966"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062969"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063013"> </a><div>
+P2188
+</div>
+</td>
+    <td>
+<a name="wp1063016"> </a><div>
+System too rich at idle
+</div>
+</td>
+    <td>
+<a name="wp1063019"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1063022"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063066"> </a><div>
+P2195
+</div>
+</td>
+    <td>
+<a name="wp1063069"> </a><div>
+Front HO2S signal stuck lean
+</div>
+</td>
+    <td>
+<a name="wp1063072"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1063075"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063119"> </a><div>
+P2196
+</div>
+</td>
+    <td>
+<a name="wp1063122"> </a><div>
+Front HO2S signal stuck rich
+</div>
+</td>
+    <td>
+<a name="wp1063125"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1063128"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063172"> </a><div>
+P2502
+</div>
+</td>
+    <td>
+<a name="wp1063175"> </a><div>
+Charging system voltage problem
+</div>
+</td>
+    <td>
+<a name="wp1063178"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1063181"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063225"> </a><div>
+P2503
+</div>
+</td>
+    <td>
+<a name="wp1063228"> </a><div>
+Charging system voltage low
+</div>
+</td>
+    <td>
+<a name="wp1063231"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1063234"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063278"> </a><div>
+P2504
+</div>
+</td>
+    <td>
+<a name="wp1063281"> </a><div>
+Charging system voltage high
+</div>
+</td>
+    <td>
+<a name="wp1063284"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1063287"> </a><div>
+×
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063331"> </a><div>
+P2507
+</div>
+</td>
+    <td>
+<a name="wp1063334"> </a><div>
+PCM power input signal low
+</div>
+</td>
+    <td>
+<a name="wp1063337"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1063340"> </a><div>
+×
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div>
+</div>
+<dl>
+<a name="wp1063406"> </a><dd>
+<sup>*1</sup>	:
+</dd>
+
+<a name="wp1063425"> </a>
+Australian specs.
+
+
+<a name="wp1063431"> </a><dd>
+<sup>*2</sup>	:
+</dd>
+
+<a name="wp1063446"> </a>
+General (R. H. D.) specs.
+
+
+<a name="wp1063452"> </a><dd>
+<sup>*3</sup>	:
+</dd>
+
+<a name="wp1063467"> </a>
+MTX
+
+</dl>
+<a name="wp1063581"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3100300.html"><small>Previous</small>DTC detection logic and conditions [ZY]</a><a class="nx" href="id0102d3100500.html"><small>Next</small>PID/data monitor and record [ZY]</a></nav><script src="../../../assets/app.js"></script></body></html>

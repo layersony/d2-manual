@@ -1,0 +1,311 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0894 [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">DTC P0894 [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0894 [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1059666"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+DTC P0894
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058628"> </a><p></p><div align="center"><b>
+Forward clutch power transmission malfunction
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058568"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058570"> </a><div>
+• With the engine running, all of the following conditions are met:
+</div>
+<dl>
+<a name="wp1058691"> </a><dd>
+-	ATF temperature <b>20 </b>°<b>C {68 </b>°<b>F} or more</b>
+</dd>
+
+<a name="wp1058719"> </a><dd>
+-	Vehicle speed <b>0 km/h {0 mph}</b> (brake on)
+</dd>
+
+<a name="wp1058763"> </a><dd>
+-	Even when <b>3 s or more</b> have passed since the selector lever was shifted from the N position to the D range, the turbine speed will not decrease to <b>less than 187.5 rpm</b>.
+</dd>
+</dl>
+<a name="wp1058772"> </a><b>
+Diagnostic support note: 
+</b>
+
+<a name="wp1058782"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058792"> </a><div>
+• The MIL does not illuminate if the PCM detects above malfunction conditions during the first drive cycle.
+</div>
+
+<a name="wp1058802"> </a><div>
+• A PENDING CODE is not available.
+</div>
+
+<a name="wp1058812"> </a><div>
+• FREEZE FRAME DATA is not available.
+</div>
+
+<a name="wp1058822"> </a><div>
+• The AT warning light illuminates.
+</div>
+
+<a name="wp1058832"> </a><div>
+• DTCs are stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058643"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• Forward clutch not engaged or slipped
+</div>
+
+<a name="wp1058864"> </a><div>
+• Short to power supply in wiring harness between shift solenoid A terminal B and PCM terminal 1D
+</div>
+
+<a name="wp1058874"> </a><div>
+• Shift solenoid A stuck on
+</div>
+
+<a name="wp1058884"> </a><div>
+• VSS malfunction
+</div>
+
+<a name="wp1058894"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058916"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059030"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059032"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059036"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058924"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058926"> </a><p>
+<b>VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</b>
+</p>
+
+<a name="wp1059142"> </a><div>
+• Has the FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058982"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058985"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059065"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059068"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059072"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059075"> </a><p>
+<b>VERIFY DTCS</b>
+</p>
+
+<a name="wp1059190"> </a><div>
+• Turn the ignition switch to the LOCK position, then to the ON position.
+</div>
+
+<a name="wp1059204"> </a><div>
+• Verify the DTCs in the PCM memory.
+</div>
+
+<a name="wp1059214"> </a><div>
+• Are DTCs P0720, P0752, and P0753 output?
+</div>
+</td>
+    <td>
+<a name="wp1059078"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059081"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059091"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059094"> </a><div>
+Replace the forward clutch, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059098"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059101"> </a><p>
+<b>VERIFY TROUBLESHOOTING OF DTC P0894 COMPLETED</b>
+</p>
+
+<a name="wp1059271"> </a><div>
+• Make sure to reconnect all the disconnected connectors.
+</div>
+
+<a name="wp1059285"> </a><div>
+• Clear the DTC from the memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059295"> </a><div>
+• Warm up the engine.
+</div>
+
+<a name="wp1059305"> </a><div>
+• With the selector lever in the D range and the vehicle stopped (brake on), wait <b>3 s or more</b>.
+</div>
+
+<a name="wp1059324"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059104"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059107"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1059344"> </a><div>
+ (See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059248"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059251"> </a><div>
+No concern is detected. Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059366"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059369"> </a><p>
+<b>VERIFY AFTER REPAIR PROCEDURE</b>
+</p>
+
+<a name="wp1059424"> </a><div>
+• Perform the "After Repair Procedure".
+</div>
+
+<a name="wp1059442"> </a><div>
+ (See <a href="id0502a1800400.html#wp1025486">AFTER REPAIR PROCEDURE [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1059456"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059372"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059375"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059389"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059392"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1059591"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1809400.html"><small>Previous</small>DTC P0773 [FN4A-EL]</a><a class="nx" href="id0502a1805600.html"><small>Next</small>PID/data monitor inspection [FN4A-EL]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--transmission-transaxle.html">Troubleshooting / Transmission/transaxle</a>.</p><script src="../../../assets/app.js"></script></body></html>

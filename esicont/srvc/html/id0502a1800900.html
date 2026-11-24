@@ -1,0 +1,371 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0706 [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">DTC P0706 [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0706 [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1059902"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+DTC P0706
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058628"> </a><p></p><div align="center"><b>
+Transaxle range (TR) switch range/performance
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058568"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058570"> </a><div>
+• When all conditions below are satisfied and <b>100 s or more</b> have passed.
+</div>
+<dl>
+<a name="wp1058702"> </a><dd>
+-	Engine speed <b>530 rpm or more</b>
+</dd>
+
+<a name="wp1058722"> </a><dd>
+-	Vehicle speed <b>20 km/h {12 mph} or more</b>
+</dd>
+
+<a name="wp1058744"> </a><dd>
+-	Voltage at PCM terminal 1AS <b>0.5 V or more</b>
+</dd>
+
+<a name="wp1058760"> </a><dd>
+-	P, R, N, D, S, or L range/position not detected
+</dd>
+</dl>
+<a name="wp1058772"> </a><b>
+Diagnostic support note: 
+</b>
+
+<a name="wp1058782"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058792"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058802"> </a><div>
+• The PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058812"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058822"> </a><div>
+• The AT warning light illuminates.
+</div>
+
+<a name="wp1058832"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058643"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• TR switch malfunction
+</div>
+
+<a name="wp1058864"> </a><div>
+• TR switch misadjustment
+</div>
+
+<a name="wp1058874"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058894"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059008"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059010"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059014"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058902"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058904"> </a><p>
+<b>VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</b>
+</p>
+
+<a name="wp1059120"> </a><div>
+• Has the FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058960"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058963"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059043"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059046"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059050"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059053"> </a><p>
+<b>VERIFY RELATED REPAIR INFORMATION AVAILABILITY</b>
+</p>
+
+<a name="wp1059168"> </a><div>
+• Verify related Service Bulletins and/or on-line repair information availability.
+</div>
+
+<a name="wp1059185"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059056"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059059"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059205"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059069"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059072"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059076"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059079"> </a><p>
+<b>INSPECT TR SWITCH</b>
+</p>
+
+<a name="wp1059256"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059270"> </a><div>
+• Disconnect the TR switch connector.
+</div>
+
+<a name="wp1059280"> </a><div>
+• Inspect for resistance between TR switch terminals B and C (part-side).
+</div>
+
+<a name="wp1059291"> </a><div>
+• Is the resistance normal?
+</div>
+
+<a name="wp1059301"> </a><div>
+ (See <a href="id0517a1800900.html#wp1025486">TRANSAXLE RANGE (TR) SWITCH INSPECTION [FN4A-EL]</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059082"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059085"> </a><div>
+Adjust the TR switch, then go to the next step.
+</div>
+
+<a name="wp1059325"> </a><div>
+ (See <a href="id0517a1803700.html#wp1025486">TRANSAXLE RANGE (TR) SWITCH ADJUSTMENT [FN4A-EL]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059233"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059236"> </a><div>
+Replace the TR switch, then go to the next step.
+</div>
+
+<a name="wp1059349"> </a><div>
+ (See <a href="id0517a1804000.html#wp1025486">TRANSAXLE RANGE (TR) SWITCH REMOVAL/INSTALLATION [FN4A-EL]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059361"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059364"> </a><p>
+<b>VERIFY TROUBLESHOOTING OF DTC P0706 COMPLETED</b>
+</p>
+
+<a name="wp1059427"> </a><div>
+• Make sure to reconnect all the disconnected connectors.
+</div>
+
+<a name="wp1059441"> </a><div>
+• Clear the DTC from the memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059451"> </a><div>
+• Drive the vehicle in each range (D and R) for <b>100 s or more</b> under the following conditions:
+</div>
+<dl>
+<a name="wp1059470"> </a><dd>
+-	Engine speed (RPM PID): <b>530 rpm or more</b>
+</dd>
+
+<a name="wp1059490"> </a><dd>
+-	Vehicle speed (VSS PID): <b>20 km/h {12 mph} or more</b>
+</dd>
+</dl>
+<a name="wp1059512"> </a><div>
+• Is the PENDING CODE present?
+</div>
+</td>
+    <td>
+<a name="wp1059367"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059370"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1059532"> </a><div>
+ (See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059386"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059389"> </a><div>
+No concern is detected. Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059554"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059557"> </a><p>
+<b>VERIFY AFTER REPAIR PROCEDURE</b>
+</p>
+
+<a name="wp1059644"> </a><div>
+• Perform the "After Repair Procedure".
+</div>
+
+<a name="wp1059662"> </a><div>
+ (See <a href="id0502a1800400.html#wp1025486">AFTER REPAIR PROCEDURE [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1059676"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059560"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059563"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059585"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059588"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1059826"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1800500.html"><small>Previous</small>DTC table [FN4A-EL]</a><a class="nx" href="id0502a1801000.html"><small>Next</small>DTC P0707 [FN4A-EL]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--transmission-transaxle.html">Troubleshooting / Transmission/transaxle</a>.</p><script src="../../../assets/app.js"></script></body></html>

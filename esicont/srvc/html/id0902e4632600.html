@@ -1,0 +1,232 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Security light: DTC 15 (WDS: DTC B1601) · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--body-accessories.html">Body &amp; accessories</a></li><li><a href="../../../nav/workshop-manual--body-accessories--on-board-diagnostic-immobilizer-system.html">On-board diagnostic [Immobilizer system]</a></li><li aria-current="page">Security light: DTC 15 (WDS: DTC B1601)</li></ol></nav><main class="wrap"><article class="doc"><h1>Security light: DTC 15 (WDS: DTC B1601)</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058560"> </a><p></p><p></p>
+
+<a name="wp1059409"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058621"> </a><p></p><div align="center"><b>
+DTC 15 (B1601)
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058623"> </a><p></p><div align="center"><b>
+PCM received incorrect ID number from key (transponder).
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058563"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058565"> </a><div>
+• No keys have been registered after installation of new PCM
+</div>
+
+<a name="wp1058686"> </a><div>
+• Unregistered key detected
+</div>
+
+<a name="wp1058696"> </a><div>
+• Attempt made to register a ninth key
+</div>
+<dl>
+<a name="wp1058706"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl><dl>
+<a name="wp1059333"> </a><dd>
+• A maximum of only eight keys can be registered for a single vehicle.
+</dd>
+</dl>
+<a name="wp1058724"> </a><div>
+• Defective PCM
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058734"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058848"> </a><p></p><div align="center"><b>
+Step
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058850"> </a><p></p><div align="center"><b>
+Inspection
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058854"> </a><p></p><div align="center"><b>
+Action
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058742"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058744"> </a><b>
+VERIFY REGISTERED KEY IN PCM
+</b>
+
+<a name="wp1058956"> </a><div>
+• Check the following PID/DATA monitor using WDS: 
+</div>
+<dl>
+<a name="wp1058972"> </a><dd>
+-	 NUMKEYS
+</dd>
+</dl>
+<a name="wp1058986"> </a><div>
+• Does NUMKEYS display more than 0?
+</div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058803"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058883"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1058886"> </a><div>
+Go to Step 3.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058890"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058893"> </a><b>
+VERIFY REGISTERED KEY IN PCM
+</b>
+
+<a name="wp1059026"> </a><div>
+• Check the following PID/DATA monitor using WDS: 
+</div>
+<dl>
+<a name="wp1059042"> </a><dd>
+-	 NUMKEYS
+</dd>
+</dl>
+<a name="wp1059056"> </a><div>
+• Does NUMKEYS display more than 8?
+</div>
+</td>
+    <td>
+<a name="wp1058896"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058899"> </a><div>
+• Erase key ID number using WDS and register key ID number.
+</div>
+
+<a name="wp1059084"> </a><div>
+ (See <a href="id091400805000.html#wp1025486">IMMOBILIZER SYSTEM COMPONENT REPLACEMENT/KEY ADDITION AND CLEARING</a>.)
+</div>
+
+<a name="wp1059098"> </a><div>
+• Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058909"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1058912"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058916"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058919"> </a><b>
+INSPECT PCM
+</b>
+
+<a name="wp1059147"> </a><div>
+• Erase key ID number using WDS and register key ID number.
+</div>
+
+<a name="wp1059161"> </a><div>
+ (See <a href="id091400805000.html#wp1025486">IMMOBILIZER SYSTEM COMPONENT REPLACEMENT/KEY ADDITION AND CLEARING</a>.)
+</div>
+
+<a name="wp1059175"> </a><div>
+• Using registered key, turn the ignition switch to the ON position.
+</div>
+
+<a name="wp1059185"> </a><div>
+• Does security light or WDS indicate DTC 15 (B1601) again?
+</div>
+</td>
+    <td>
+<a name="wp1058922"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058925"> </a><div>
+Replace PCM and reprogram immobilizer system.
+</div>
+
+<a name="wp1059205"> </a><div>
+ (See <a href="id091400805000.html#wp1025486">IMMOBILIZER SYSTEM COMPONENT REPLACEMENT/KEY ADDITION AND CLEARING</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059122"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059125"> </a><div>
+Troubleshooting is completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1059334"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0902e4632500.html"><small>Previous</small>Security light: DTC 14 (WDS: DTC B1602)</a><a class="nx" href="id0902e4632700.html"><small>Next</small>Security light: DTC 21 (WDS: DTC B1213)</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--body-accessories.html">Troubleshooting / Body &amp; accessories</a>.</p><script src="../../../assets/app.js"></script></body></html>

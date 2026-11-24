@@ -1,0 +1,635 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0507 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P0507 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0507 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060944"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P0507
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+Idle air control system RPM higher than expected
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058568"> </a><div>
+• The PCM compares the actual idle speed with the target idle speed when the engine is running. If the actual idle speed is higher than targeted by <b>200 rpm</b>, the PCM determines that the idle air control system RPM is higher than expected.
+</div>
+
+<a name="wp1058698"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058708"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058718"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058728"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058738"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058748"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+•  Improper connection of vacuum hoses
+</div>
+
+<a name="wp1058780"> </a><div>
+• Drive-by-wire control system malfunction
+</div>
+
+<a name="wp1058792"> </a><div>
+• IAT sensor malfunction
+</div>
+
+<a name="wp1058802"> </a><div>
+• ECT sensor malfunction
+</div>
+
+<a name="wp1058812"> </a><div>
+• APP sensor malfunction
+</div>
+
+<a name="wp1058822"> </a><div>
+• CKP sensor malfunction
+</div>
+
+<a name="wp1058832"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058846"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058960"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058962"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058966"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058854"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058856"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059068"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058912"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058915"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058995"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1058998"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059002"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059005"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059112"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059126"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059008"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059011"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059146"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059021"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059024"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059028"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059031"> </a><b>
+VERIFY RELATED PENDING CODE OR STORED DTC
+</b>
+
+<a name="wp1059193"> </a><div>
+• Turn the ignition switch off, then to the ON position (Engine off).
+</div>
+
+<a name="wp1059207"> </a><div>
+• Verify the related PENDING CODE or stored DTCs.
+</div>
+
+<a name="wp1059217"> </a><div>
+• Are other DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059034"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059037"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1059237"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059174"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059177"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059259"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059262"> </a><b>
+INSPECT VACUUM HOSE FOR POOR CONNECTION
+</b>
+
+<a name="wp1059305"> </a><div>
+• Are the vacuum hoses connecting correctly?
+</div>
+
+<a name="wp1059319"> </a><div>
+(See <a href="id0113008041c8.html#wp1025486">VACUUM HOSE ROUTING DIAGRAM [ZY]</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059265"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059268"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059280"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059283"> </a><div>
+Connect the vacuum hose correctly, then go to Step 10.
+</div>
+
+<a name="wp1059353"> </a><div>
+(See <a href="id0113008041c8.html#wp1025486">VACUUM HOSE ROUTING DIAGRAM [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059365"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059368"> </a><b>
+INSPECT DRIVE-BY-WIRE CONTROL SYSTEM OPERATION
+</b>
+
+<a name="wp1059429"> </a><div>
+• Perform the "Drive-by-wire Control System Inspection".
+</div>
+
+<a name="wp1059449"> </a><div>
+(See <a href="id0103c0803700.html#wp1058781">Drive-by-wire Control System Inspection</a>.)
+</div>
+
+<a name="wp1059463"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059371"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059374"> </a><div>
+Repair or replace the malfunctioning part according to the inspection results.
+</div>
+
+<a name="wp1059483"> </a><div>
+Then go to Step 10.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059390"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059393"> </a><div>
+Go to the next step. 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059497"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059500"> </a><b>
+INSPECT IAT SENSOR
+</b>
+
+<a name="wp1059567"> </a><div>
+• Inspect the IAT sensor.
+</div>
+
+<a name="wp1059581"> </a><div>
+(See <a href="id0140008022c0.html#wp1025486">INTAKE AIR TEMPERATURE (IAT) SENSOR INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059595"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059503"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059506"> </a><div>
+Replace the MAF/IAT sensor, then go to Step 10.
+</div>
+
+<a name="wp1059625"> </a><div>
+(See <a href="id0140008055c0.html#wp1025486">MASS AIR FLOW (MAF)/INTAKE AIR TEMPERATURE (IAT) SENSOR REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059524"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059527"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059647"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059650"> </a><b>
+INSPECT ECT SENSOR
+</b>
+
+<a name="wp1059741"> </a><div>
+• Inspect the ECT sensor.
+</div>
+
+<a name="wp1059755"> </a><div>
+(See <a href="id0140008020c0.html#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059769"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059653"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059656"> </a><div>
+Replace the ECT sensor, then go to Step 10.
+</div>
+
+<a name="wp1059797"> </a><div>
+(See <a href="id0140008019c0.html#wp1025486">ENGINE COOLANT TEMPERATURE (ECT) SENSOR REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059680"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059683"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059819"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059822"> </a><b>
+INSPECT APP SENSOR
+</b>
+
+<a name="wp1059937"> </a><div>
+• Inspect the APP sensor.
+</div>
+
+<a name="wp1059951"> </a><div>
+(See <a href="id0140008032c0.html#wp1025486">ACCELERATOR PEDAL POSITION (APP) SENSOR INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059965"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059825"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059828"> </a><div>
+Replace the APP sensor, then go to Step 10.
+</div>
+
+<a name="wp1059993"> </a><div>
+(See <a href="id0113008014c8.html#wp1025486">ACCELERATOR PEDAL REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059858"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059861"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060015"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060018"> </a><b>
+INSPECT CKP SENSOR
+</b>
+
+<a name="wp1060157"> </a><div>
+• Inspect the CKP sensor.
+</div>
+
+<a name="wp1060171"> </a><div>
+(See <a href="id0140008005c0.html#wp1025486">CRANKSHAFT POSITION (CKP) SENSOR INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1060185"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1060021"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060024"> </a><div>
+Replace the CKP sensor, then go to the next step.
+</div>
+
+<a name="wp1060213"> </a><div>
+(See <a href="id0140008006c0.html#wp1025486">CRANKSHAFT POSITION (CKP) SENSOR REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060060"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060063"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060235"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060238"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0507 COMPLETED
+</b>
+
+<a name="wp1060401"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1060415"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1060425"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1060435"> </a><div>
+• Is the PENDING CODE same as DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1060241"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060244"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060455"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060286"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060289"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060477"> </a><div>
+11
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060480"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060651"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060669"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060683"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060483"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060486"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1060703"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060530"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060533"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060867"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3808600.html"><small>Previous</small>DTC P0506 [ZY]</a><a class="nx" href="id0102d3870200.html"><small>Next</small>DTC P0537 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

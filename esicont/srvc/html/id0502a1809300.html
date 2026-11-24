@@ -1,0 +1,631 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0772 [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">DTC P0772 [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0772 [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1060952"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+DTC P0772
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058628"> </a><p></p><div align="center"><b>
+Shift solenoid E stuck on
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058568"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058570"> </a><div>
+• When any of DTC P0731, P0733, and P0734 are not output, and all of the following conditions are satisfied under each of the following throttle conditions.
+</div>
+<dl>
+<a name="wp1058691"> </a><dd>
+-	ATF temperature <b>20 </b>°<b>C {68 </b>°<b>F} or more</b>
+</dd>
+
+<a name="wp1058719"> </a><dd>
+-	Driving in 4GR at D or M range
+</dd>
+
+<a name="wp1058729"> </a><dd>
+-	Engine running
+</dd>
+
+<a name="wp1058739"> </a><dd>
+-	Turbine speed <b>within 225-4,987 rpm</b>
+</dd>
+
+<a name="wp1058757"> </a><dd>
+-	Vehicle speed <b>70 km/h {43 mph} or less</b>
+</dd>
+
+<a name="wp1058779"> </a><dd>
+-	Torque converter clutch (TCC) not operating
+</dd>
+
+<a name="wp1058789"> </a><dd>
+-	Difference between engine speed and turbine speed <b>50 rpm or less</b>
+</dd>
+
+<a name="wp1058805"> </a><dd>
+-	None of the following DTCs are present: P0706, P0707, P0708, P0712, P0713, P0715, P0720, P0751, P0752, P0753, P0756, P0757, P0758, P0761, P0762, P0763, P0766, P0767, P0768, P0771, P0772, P0773
+</dd>
+</dl>
+<a name="wp1058815"> </a><div>
+• Throttle conditions
+</div>
+<dl>
+<a name="wp1058851"> </a><dd>
+-	Throttle opening angle (TP PID) is <b>10% or more </b>and <b>5 s or more</b> have passed
+</dd>
+
+<a name="wp1058883"> </a><dd>
+-	Throttle opening angle (TP PID) is <b>within 3-10%</b> and <b>3 s or more</b> have passed
+</dd>
+
+<a name="wp1058892"> </a><dd>
+-	Throttle opening angle is at closed throttle position and <b>5 s or more</b> have passed
+</dd>
+</dl>
+<a name="wp1058911"> </a><b>
+Diagnostic support note: 
+</b>
+
+<a name="wp1058921"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058931"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058941"> </a><div>
+• The PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058951"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058961"> </a><div>
+• The AT warning light illuminates.
+</div>
+
+<a name="wp1058971"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058643"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• ATF level low
+</div>
+
+<a name="wp1059003"> </a><div>
+• Deteriorated ATF
+</div>
+
+<a name="wp1059013"> </a><div>
+• Shift solenoid E stuck
+</div>
+
+<a name="wp1059023"> </a><div>
+• Control valve stuck
+</div>
+
+<a name="wp1059033"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1059067"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059181"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059183"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059187"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059075"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059077"> </a><p>
+<b>VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</b>
+</p>
+
+<a name="wp1059293"> </a><div>
+• Has the FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1059133"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059136"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059216"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059219"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059223"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059226"> </a><p>
+<b>VERIFY RELATED REPAIR INFORMATION AVAILABILITY</b>
+</p>
+
+<a name="wp1059341"> </a><div>
+• Verify related Service Bulletins and/or on-line repair information availability.
+</div>
+
+<a name="wp1059358"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059229"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059232"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059378"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059242"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059245"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059249"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059252"> </a><p>
+<b>INSPECT ATF CONDITION</b>
+</p>
+
+<a name="wp1059429"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059443"> </a><div>
+• Inspect the ATF condition.
+</div>
+<dl>
+<a name="wp1059453"> </a><dd>
+-	Clear red: Normal
+</dd>
+
+<a name="wp1059467"> </a><dd>
+-	Milky: Water mixed in fluid
+</dd>
+
+<a name="wp1059477"> </a><dd>
+-	Reddish brown: Deteriorated ATF
+</dd>
+</dl>
+<a name="wp1059487"> </a><div>
+• Is it normal?
+</div>
+
+<a name="wp1059497"> </a><div>
+ (See <a href="id0517a1800500.html#wp1059996">Automatic Transaxle Fluid (ATF) Condition Inspection</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059255"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059258"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059406"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059409"> </a><div>
+If the ATF color is milky or reddish brown, replace ATF, then go to Step 5.
+</div>
+
+<a name="wp1059531"> </a><div>
+ (See <a href="id0517a1800600.html#wp1025486">AUTOMATIC TRANSAXLE FLUID (ATF) REPLACEMENT [FN4A-EL]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059543"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059546"> </a><p>
+<b>INSPECT ATF LEVEL</b>
+</p>
+
+<a name="wp1059601"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059615"> </a><div>
+• Warm up the ATX.
+</div>
+
+<a name="wp1059625"> </a><div>
+• Is the ATF level within the specification?
+</div>
+
+<a name="wp1059635"> </a><div>
+ (See <a href="id0517a1800500.html#wp1058938">Automatic Transaxle Fluid (ATF) Level Inspection</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059549"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059552"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059566"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059569"> </a><div>
+Add ATF to the specified level, then go to Step 7.
+</div>
+
+<a name="wp1059669"> </a><div>
+ (See <a href="id0517a1800500.html#wp1058938">Automatic Transaxle Fluid (ATF) Level Inspection</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059681"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059684"> </a><p>
+<b>INSPECT LINE PRESSURE</b>
+</p>
+
+<a name="wp1059755"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059769"> </a><div>
+• Measure the line pressure.
+</div>
+
+<a name="wp1059779"> </a><p>
+<b>Specification</b>
+</p>
+
+<a name="wp1059789"> </a><p>
+<b>Idle: 330-470 kPa {3.4-4.7 kgf/cm</b><b><sup>2</sup></b><b>, 48-68 psi}</b>
+</p>
+
+<a name="wp1059819"> </a><p>
+<b>Stall: </b><b>990-1,160 kPa {10.1-11.8 kgf/cm</b><b><sup>2</sup></b><b>, 144-168 psi}</b>
+</p>
+
+<a name="wp1059855"> </a><div>
+• Are the line pressures within the specifications?
+</div>
+
+<a name="wp1059865"> </a><div>
+ (See <a href="id0517a1802100.html#wp1058675">Line Pressure Test</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059687"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059690"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059708"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059711"> </a><div>
+• All ranges: Replace the oil pump or control valve body, then go to Step 7.
+</div>
+
+<a name="wp1059907"> </a><div>
+• Any ranges: Replace the automatic transaxle, then go to Step 7.
+</div>
+
+<a name="wp1059917"> </a><div>
+(See <a href="id0517a1802400.html#wp1025486">AUTOMATIC TRANSAXLE REMOVAL/INSTALLATION [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1059931"> </a><div>
+(See ATX Workshop Manual FN4A-EL.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059936"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059939"> </a><p>
+<b>INSPECT OPERATION OF EACH VALVE AND EACH SPRING</b>
+</p>
+
+<a name="wp1060042"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1060056"> </a><div>
+• Remove the control valve body.
+</div>
+
+<a name="wp1060066"> </a><div>
+• Disassemble the control valve body.
+</div>
+
+<a name="wp1060076"> </a><div>
+• Is each valve operation normal and is the return spring normal?
+</div>
+
+<a name="wp1060086"> </a><div>
+ (See <a href="id0517a1806300.html#wp1025486">CONTROL VALVE BODY REMOVAL [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060100"> </a><div>
+ (See <a href="id0517a1806200.html#wp1025486">CONTROL VALVE BODY INSTALLATION [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060114"> </a><div>
+ (See ATX Workshop Manual FN4A-EL.)
+</div>
+</td>
+    <td>
+<a name="wp1059942"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059945"> </a><div>
+Replace the automatic transaxle, then go to the next step.
+</div>
+
+<a name="wp1060131"> </a><div>
+(See <a href="id0517a1802400.html#wp1025486">AUTOMATIC TRANSAXLE REMOVAL/INSTALLATION [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060145"> </a><div>
+(See ATX Workshop Manual FN4A-EL.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059971"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059974"> </a><div>
+Repair or replace the shift valve and return spring, then go to the next step.
+</div>
+
+<a name="wp1060162"> </a><div>
+ (See <a href="id0517a1806300.html#wp1025486">CONTROL VALVE BODY REMOVAL [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060176"> </a><div>
+ (See <a href="id0517a1806200.html#wp1025486">CONTROL VALVE BODY INSTALLATION [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060190"> </a><div>
+ (See ATX Workshop Manual FN4A-EL.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060195"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060198"> </a><p>
+<b>VERIFY TROUBLESHOOTING OF DTC P0772 COMPLETED</b>
+</p>
+
+<a name="wp1060341"> </a><div>
+• Make sure to reconnect all the disconnected connectors.
+</div>
+
+<a name="wp1060355"> </a><div>
+• Clear the DTC from the memory using the WDS or equivalent.
+</div>
+
+<a name="wp1060365"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1060375"> </a><div>
+• Warm up the ATX.
+</div>
+
+<a name="wp1060385"> </a><div>
+• Drive the vehicle under the following conditions and make sure that gears shift smoothly from 1GR to 4GR.
+</div>
+<dl>
+<a name="wp1060395"> </a><dd>
+-	ATF temperature: <b>20 </b>°<b>C {68 </b>°<b>F} or more</b>
+</dd>
+
+<a name="wp1060423"> </a><dd>
+-	Drive in the D range
+</dd>
+
+<a name="wp1060433"> </a><dd>
+-	Vehicle speed (VSS PID): <b>70 km/h {43 mph} or less</b> (4GR only)
+</dd>
+</dl>
+<a name="wp1060458"> </a><div>
+• Is the PENDING CODE present?
+</div>
+</td>
+    <td>
+<a name="wp1060201"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060204"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060478"> </a><div>
+ (See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060240"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060243"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060500"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060503"> </a><p>
+<b>VERIFY AFTER REPAIR PROCEDURE</b>
+</p>
+
+<a name="wp1060666"> </a><div>
+• Perform the "After Repair Procedure".
+</div>
+
+<a name="wp1060684"> </a><div>
+ (See <a href="id0502a1800400.html#wp1025486">AFTER REPAIR PROCEDURE [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060698"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060506"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060509"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060550"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060553"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060874"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1809200.html"><small>Previous</small>DTC P0771 [FN4A-EL]</a><a class="nx" href="id0502a1809400.html"><small>Next</small>DTC P0773 [FN4A-EL]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--transmission-transaxle.html">Troubleshooting / Transmission/transaxle</a>.</p><script src="../../../assets/app.js"></script></body></html>

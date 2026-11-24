@@ -1,0 +1,1177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fuel injection control operation [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--engine.html">Engine</a></li><li><a href="../../../nav/technical-guide--engine--control-system.html">Control system</a></li><li aria-current="page">Fuel injection control operation [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>Fuel injection control operation [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1061760"> </a><h2><b>
+Injection Timing
+</b></h2>
+
+<a name="wp1058573"> </a><div>
+• There is synchronized fuel injection, which performs fuel injection by the setting of the crankshaft position, and non-synchronized fuel injection which performs fuel injection when the condition for fuel injection is met regardless of the crankshaft position.
+</div>
+
+<a name="wp1058588"> </a><h3><b>
+Synchronized fuel injection
+</b></h3>
+<dl>
+<a name="wp1058598"> </a><dd>
+• The crankshaft rotation is synchronized by each intake and exhaust stroke of the cylinders, and fuel injection is performed by the fuel injection timing and the injection amount corresponding to the input signals of the following sensors.
+</dd>
+
+<a name="wp1058612"> </a><dd>
+-	ECT sensor
+</dd>
+
+<a name="wp1058626"> </a><dd>
+-	IAT sensor
+</dd>
+
+<a name="wp1058636"> </a><dd>
+-	CKP sensor
+</dd>
+
+<a name="wp1058646"> </a><dd>
+-	MAF sensor
+</dd>
+</dl>
+<a name="wp1058656"> </a><h3><b>
+Non-synchronized fuel injection
+</b></h3>
+<dl>
+<a name="wp1058667"> </a><dd>
+• The crankshaft rotation is not synchronized and fuel injection is performed by the injection timing and injection amount as triggered by the input signals of the following sensors.
+</dd>
+
+<a name="wp1058681"> </a><dd>
+-	ECT sensor
+</dd>
+
+<a name="wp1058695"> </a><dd>
+-	IAT sensor
+</dd>
+
+<a name="wp1058705"> </a><dd>
+-	TP sensor
+</dd>
+
+<a name="wp1058715"> </a><dd>
+-	MAF sensor
+</dd>
+</dl>
+<a name="wp1058725"> </a><h3><b>
+Relation between synchronized and non-synchronized fuel injection
+</b></h3>
+<dl>
+<a name="wp1058736"> </a><dd>
+• If synchronized and non-synchronized fuel injection happen to occur together, fuel is injected by adding the fuel injection timing of both.
+</dd>
+</dl>
+<a name="wp1058751"> </a><h2><b>
+Injection time
+</b></h2>
+
+<a name="wp1058761"> </a><div>
+• The PCM calculates the fuel injection amount according to the engine operation conditions as the fuel injection time and energizes the fuel injectors.
+</div>
+
+<a name="wp1058775"> </a><h3><b>
+Fuel injector energization time and operation conditions
+</b></h3>
+<dl>
+<a name="wp1058785"> </a><dd>
+• The fuel injectors cause an operation delay with the start of energization from the PCM. The PCM calculates the fuel injection time by adding the non-injection time (ineffective injection time) to the actual injection time (effective injection time), and energizes the fuel injectors for this time.<br clear="all"/>
+<img alt="" height="290" loading="lazy" src="images/DDA140ZT4878.png" width="334"/><br clear="all"/>
+
+
+
+
+</dd>
+
+<a name="wp1058817"> </a><dd>
+• The fuel injection time is based on the following formula:
+</dd>
+
+<a name="wp1058827"> </a><dd>
+
+</dd>
+</dl>
+<a name="wp1058832"> </a><p>
+<b>Fuel injection time = effective injection time + ineffective injection time</b>
+</p>
+<dl>
+<a name="wp1058846"> </a><dd>
+
+</dd>
+</dl>
+<a name="wp1058851"> </a><b>
+Ineffective injection time
+</b>
+<dl>
+<a name="wp1058861"> </a><dd>
+-	The fuel injectors cause a delay in operation due to a delay in the build-up of operation current from coil inductance with the start of energization, and by the mass of the needle valve and plunger, and spring resistance. This delay is the ineffective injection time.
+</dd>
+
+<a name="wp1058872"> </a><dd>
+-	The non-injection time is affected by the change in battery voltage. Accordingly, the PCM sets the non-injection time according to the battery voltage.
+</dd>
+</dl>
+<a name="wp1058884"> </a><b>
+Effective injection time
+</b>
+<dl>
+<a name="wp1058894"> </a><dd>
+-	The fuel injector opening valve time which is the actual fuel injection time is called the effective injection amount.
+</dd>
+</dl>
+<a name="wp1058904"> </a><h2><b>
+Determination of effective injection time
+</b></h2>
+
+<a name="wp1058914"> </a><div>
+• The PCM divides the engine operation conditions into control zones according to engine speed and engine load and determines the effective injection time at each control zone to perform optimum air/fuel ratio control in all engine driving ranges.</div><p><img alt="" height="248" loading="lazy" src="images/C3U0140S0152.png" width="644"/></p><div>
+
+
+
+</div>
+
+<a name="wp1058957"> </a><h3><b>
+Start zone
+</b></h3>
+
+<a name="wp1058967"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1058977"> </a><dd>
+• Improved engine startability
+</dd>
+</dl>
+<a name="wp1058987"> </a><b>
+Control condition
+</b>
+<dl>
+<a name="wp1058997"> </a><dd>
+• When engine speed is 500 rpm or less.
+</dd>
+</dl>
+<a name="wp1059007"> </a><b>
+Determination of fuel injection time
+</b>
+<dl>
+<a name="wp1059017"> </a><dd>
+• Determined according to engine coolant temperature and engine speed.
+</dd>
+</dl>
+<a name="wp1059027"> </a><h3><b>
+Feedback Zone
+</b></h3>
+
+<a name="wp1059037"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1059047"> </a><dd>
+• Improved fuel economy
+</dd>
+
+<a name="wp1059057"> </a><dd>
+• Improved exhaust gas purification
+</dd>
+</dl>
+<a name="wp1059067"> </a><b>
+Control condition
+</b>
+<dl>
+<a name="wp1059077"> </a><dd>
+• During engine operation other than high load volume increase zone and engine start zone.
+</dd>
+</dl>
+<a name="wp1059087"> </a><b>
+Determination of fuel injection time
+</b>
+<dl>
+<a name="wp1059097"> </a><dd>
+• During normal driving, the injection time is determined by the front and rear HO2S and sets to the theoretical air/fuel ratio.
+</dd>
+</dl>
+<a name="wp1059109"> </a><h3><b>
+High load volume increase zone
+</b></h3>
+
+<a name="wp1059119"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1059129"> </a><dd>
+• Improved driveability
+</dd>
+</dl>
+<a name="wp1059139"> </a><b>
+Control condition
+</b>
+<dl>
+<a name="wp1059149"> </a><dd>
+• Either the engine speed, charging efficiency or throttle valve opening angle is a fixed value or more.
+</dd>
+</dl>
+<a name="wp1059159"> </a><b>
+Determination of fuel injection time
+</b>
+<dl>
+<a name="wp1059169"> </a><dd>
+• Corrections are added to the basic injection amount and the high load coefficient is calculated according to the engine speed, mass intake airflow amount and the throttle valve opening angle.
+</dd>
+</dl>
+<a name="wp1059179"> </a><h3><b>
+Excessive speed fuel cut zone
+</b></h3>
+
+<a name="wp1059189"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1059199"> </a><dd>
+• Engine protection
+</dd>
+</dl>
+<a name="wp1059209"> </a><b>
+Control conditions
+</b>
+<dl>
+<a name="wp1059219"> </a><dd>
+• Engine speed is approx. 6,500 rpm or more
+</dd>
+
+<a name="wp1059229"> </a><dd>
+• When the following conditions continue for 2 min or more:
+</dd>
+
+<a name="wp1059239"> </a><dd>
+-	Vehicle is stopped.
+</dd>
+
+<a name="wp1059253"> </a><dd>
+-	Engine speed is 4,000 rpm or more.
+</dd>
+
+<a name="wp1059263"> </a><dd>
+-	Engine coolant temperature is 110°C {230°F} or more.
+</dd>
+<dl>
+<a name="wp1059281"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl></dl><dl>
+<a name="wp1061598"> </a><dd>
+• The PCM determines that the driver continues to unintentionally depress the accelerator pedal.
+</dd>
+</dl>
+<a name="wp1059299"> </a><b>
+Determination of fuel injection time
+</b>
+<dl>
+<a name="wp1059309"> </a><dd>
+• Fuel injection time is set to 0 (fuel cut).
+</dd>
+</dl>
+<a name="wp1059319"> </a><h3><b>
+Deceleration Fuel Cut Zone
+</b></h3>
+
+<a name="wp1059329"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1059339"> </a><dd>
+• Improved fuel economy
+</dd>
+
+<a name="wp1059349"> </a><dd>
+• Prevents overheating of the catalytic converter
+</dd>
+</dl>
+<a name="wp1059359"> </a><b>
+Control condition
+</b>
+<dl>
+<a name="wp1059369"> </a><dd>
+• When the engine conditions are as follows (5 s or more after shifting the selector lever to other than P, N, or R, and 10 s or more after engine start):
+</dd>
+
+<a name="wp1059379"> </a><dd>
+-	Fully-closed throttle valve during deceleration (charging at fixed value or more)
+</dd>
+
+<a name="wp1059394"> </a><dd>
+-	During driving under high load at engine speed of 1,000 rpm or more (mass airflow sensor normal)
+</dd>
+</dl>
+<a name="wp1059404"> </a><b>
+Determination of fuel injection time method
+</b>
+<dl>
+<a name="wp1059414"> </a><dd>
+• Fuel injection time is set to 0 (fuel cut).
+</dd>
+</dl>
+<a name="wp1059424"> </a><h3><b>
+Calculation method table for fuel injection time
+</b></h3>
+
+<a name="wp1059434"> </a><div>
+	(*: Fuel injection time base, x: Correction for fuel injection time)</div><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th colspan="3" rowspan="2">
+<a name="wp1059646"> </a><p></p><div align="center"><b>
+Contents
+</b></div><p></p>
+
+<a name="wp1059935"> </a><p></p><div align="center"><b>
+(Fuel injection time, calculation method, or determination method)
+</b></div><p></p>
+</th>
+    <th colspan="5" rowspan="1">
+<a name="wp1059652"> </a><p></p><div align="center"><b>
+Control zone
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059908"> </a><p></p><div align="center"><b>
+<img alt="" height="43" loading="lazy" src="images/B3E0140T5703.png" width="29"/>
+
+
+
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059911"> </a><p></p><div align="center"><b>
+<img alt="" height="66" loading="lazy" src="images/B3E0140T5714.png" width="29"/>
+
+
+
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059914"> </a><p></p><div align="center"><b>
+<img alt="" height="143" loading="lazy" src="images/B3E0140T5725.png" width="29"/>
+
+
+
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059917"> </a><p></p><div align="center"><b>
+<img alt="" height="140" loading="lazy" src="images/B3E0140T5736.png" width="29"/>
+
+
+
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059920"> </a><p></p><div align="center"><b>
+<img alt="" height="120" loading="lazy" src="images/B3E0140T5747.png" width="29"/>
+
+
+
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060025"> </a><p></p><div align="center"><b>
+Injection time at start
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060031"> </a><p></p><div align="center"><b>
+Set value according to engine coolant temperature (low engine coolant temperature→long injection time)
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060034"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060037"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060040"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060043"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060046"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060089"> </a><p></p><div align="center"><b>
+Basic injection time
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060095"> </a><p></p><div align="center"><b>
+Basic injection time = charging efficiency x fuel flow coefficient
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060098"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060101"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060104"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060107"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060110"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060156"> </a><p></p><div align="center"><b>
+Fuel cut
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060162"> </a><p></p><div align="center"><b>
+Fuel injection time = 0
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060165"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060168"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060171"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060174"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060177"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060223"> </a><p></p><div align="center"><b>
+Ineffective injection time
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060229"> </a><p></p><div align="center"><b>
+Set time according to injector performance
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060232"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060235"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060238"> </a><p></p><div align="center"><b>
+*
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060241"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060244"> </a><p></p><div align="center"><b>
+ 
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059444"> </a><div>
+Volume increase correction after engine start
+</div>
+</td>
+    <td>
+<a name="wp1059502"> </a><div>
+Purpose: Maintains stability of engine speed just after engine start
+</div>
+
+<a name="wp1060301"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060311"> </a><div>
+• Specified time according to engine coolant temperature directly after engine start
+</div>
+
+<a name="wp1060325"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060335"> </a><div>
+• Low engine coolant temperature→large correction
+</div>
+
+<a name="wp1060349"> </a><div>
+• Low intake air temperature→large correction
+</div>
+</td>
+    <td>
+<a name="wp1059505"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059508"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059511"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059514"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059699"> </a><div>
+Front HO2S 
+</div>
+
+<a name="wp1060385"> </a><div>
+Feedback correction
+</div>
+</td>
+    <td>
+<a name="wp1059705"> </a><div>
+Purpose: Controls air/fuel ratio to theoretical air/fuel ratio
+</div>
+
+<a name="wp1060400"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060410"> </a><div>
+• When engine coolant temperature is at set value or more.
+</div>
+
+<a name="wp1060424"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060434"> </a><div>
+• Front HO2S electromotive force is approx. 0.45 V or more→volume decrease correction
+</div>
+
+<a name="wp1060448"> </a><div>
+• Front HO2S electromotive force is approx. 0.45 V or less→volume increase correction
+</div>
+</td>
+    <td>
+<a name="wp1059708"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059711"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059714"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059717"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059720"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059724"> </a><div>
+Rear HO2S 
+</div>
+
+<a name="wp1060484"> </a><div>
+Feedback correction
+</div>
+</td>
+    <td>
+<a name="wp1059730"> </a><div>
+Purpose: Corrects feedback amount according to deterioration of front HO2S and catalytic converter
+</div>
+
+<a name="wp1060495"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060505"> </a><div>
+• When engine coolant temperature is at set value or more.
+</div>
+
+<a name="wp1060519"> </a><div>
+• Engine speed is 500-4,000 rpm.
+</div>
+
+<a name="wp1060531"> </a><div>
+• Charging efficiency is 9-90%.
+</div>
+
+<a name="wp1060545"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060555"> </a><div>
+• According to rear HO2S electromotive force→correction
+</div>
+</td>
+    <td>
+<a name="wp1059733"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059736"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059739"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059742"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059745"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059749"> </a><div>
+D-range correction 
+</div>
+
+<a name="wp1060596"> </a><div>
+(ATX)
+</div>
+</td>
+    <td>
+<a name="wp1059755"> </a><div>
+Purpose: Ensures engine speed stability during D-range shifting
+</div>
+
+<a name="wp1060608"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060618"> </a><div>
+• Throttle valve fully-closed and shifted into D range
+</div>
+
+<a name="wp1060633"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060643"> </a><div>
+• Low engine coolant temperature→large correction
+</div>
+</td>
+    <td>
+<a name="wp1059758"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059761"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059764"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059767"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059770"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059774"> </a><div>
+High load volume increase correction
+</div>
+</td>
+    <td>
+<a name="wp1059780"> </a><div>
+Purpose: Improved engine output, decrease of exhaust gas temperature
+</div>
+
+<a name="wp1060688"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060698"> </a><div>
+• According to engine speed when the throttle valve opening angle is the fixed value or more, otherwise, according to engine speed and charging efficiency.
+</div>
+
+<a name="wp1060712"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060722"> </a><div>
+• High engine speed, high charging efficiency→large correction
+</div>
+</td>
+    <td>
+<a name="wp1059783"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059786"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059789"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059792"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059795"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059799"> </a><div>
+Warm-up volume increase correction
+</div>
+</td>
+    <td>
+<a name="wp1059805"> </a><div>
+Purpose: When engine coolant temperature is low, maintains combustion stability
+</div>
+
+<a name="wp1060768"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060778"> </a><div>
+• While at set engine coolant temperature
+</div>
+
+<a name="wp1060792"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060802"> </a><div>
+• High charging efficiency, low engine coolant temperature→large correction
+</div>
+</td>
+    <td>
+<a name="wp1059808"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059811"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059814"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059817"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059820"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059824"> </a><div>
+Acceleration/deceleration volume increase correction
+</div>
+</td>
+    <td>
+<a name="wp1059830"> </a><div>
+Purpose: Corrects fuel injection retard during acceleration/deceleration to ensure drive stability
+</div>
+
+<a name="wp1060852"> </a><p>
+<b>Correction conditions</b>
+</p>
+
+<a name="wp1060862"> </a><div>
+• Acceleration/deceleration (change in amount of charging efficiency) is at set value or more.
+</div>
+
+<a name="wp1060878"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060888"> </a><div>
+• Low engine coolant temperature→large correction
+</div>
+
+<a name="wp1060902"> </a><div>
+• Large acceleration/deceleration amount→large correction
+</div>
+</td>
+    <td>
+<a name="wp1059833"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059836"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059839"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059842"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059845"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059849"> </a><div>
+Deceleration volume increase correction
+</div>
+</td>
+    <td>
+<a name="wp1059855"> </a><div>
+Purpose: Ensures stability of engine speed during recovery from fuel cut
+</div>
+
+<a name="wp1060946"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1060956"> </a><div>
+• Recovery from deceleration fuel cut
+</div>
+
+<a name="wp1060970"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1060980"> </a><div>
+• High engine speed→small correction
+</div>
+</td>
+    <td>
+<a name="wp1059858"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059861"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059864"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059867"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059870"> </a><div>
+ 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059874"> </a><div>
+Learning correction
+</div>
+</td>
+    <td>
+<a name="wp1059880"> </a><div>
+Purpose: Corrects deviation in air/fuel ratio from changes due to aged deterioration of mechanical devices
+</div>
+
+<a name="wp1061027"> </a><p>
+<b>Correction condition</b>
+</p>
+
+<a name="wp1061037"> </a><div>
+• Under any condition except purge control
+</div>
+
+<a name="wp1061051"> </a><p>
+<b>Correction amount</b>
+</p>
+
+<a name="wp1061061"> </a><div>
+• Learning value based on average of feedback correction value
+</div>
+</td>
+    <td>
+<a name="wp1059883"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059886"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059889"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059892"> </a><div>
+ 
+</div>
+</td>
+    <td>
+<a name="wp1059895"> </a><div>
+ 
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div>
+</div>
+
+<a name="wp1061097"> </a><h2><b>
+Fuel Cut
+</b></h2>
+
+<a name="wp1061107"> </a><div>
+• Includes fuel cut under the following conditions except fuel cut at excessive engine speed according to engine operation and deceleration fuel cut.
+</div>
+
+<a name="wp1061121"> </a><h3><b>
+Vehicle Speed Limiter Fuel Cut
+</b></h3>
+
+<a name="wp1061131"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1061141"> </a><dd>
+• To maintain the vehicle speed at 170 km/h {105 mph} or less
+</dd>
+
+<a name="wp1061157"> </a><dd>
+• To reduce the shock when the vehicle speed reaches 170 km/h {105 mph}
+</dd>
+
+<a name="wp1061172"> </a><dd>
+• To prevent a rise in the catalytic converter temperature at high speeds
+</dd>
+</dl>
+<a name="wp1061182"> </a><b>
+Control Conditions
+</b>
+<dl>
+<a name="wp1061192"> </a><dd>
+• When the actual vehicle speed exceeds 170 km/h {105 mph}
+</dd>
+</dl>
+<a name="wp1061207"> </a><h3><b>
+Excessive speed fuel cut
+</b></h3>
+
+<a name="wp1061217"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1061227"> </a><dd>
+• To prevent excessive speed
+</dd>
+</dl>
+<a name="wp1061237"> </a><b>
+Execution condition
+</b>
+<dl>
+<a name="wp1061247"> </a><dd>
+• Engine speed 4,000 rpm or more and vehicle speed 170 km/h {105 mph}
+</dd>
+</dl>
+<a name="wp1061262"> </a><h3><b>
+Shift fuel cut (ATX)
+</b></h3>
+
+<a name="wp1061272"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1061282"> </a><dd>
+• To reduces shift shock during shifting
+</dd>
+</dl>
+<a name="wp1061292"> </a><b>
+Execution condition
+</b>
+<dl>
+<a name="wp1061302"> </a><dd>
+• During shifting (fuel cut of No.1 and No.4 cylinder)
+</dd>
+</dl>
+<a name="wp1061312"> </a><h3><b>
+Sensor damage fuel cut
+</b></h3>
+
+<a name="wp1061322"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1061332"> </a><dd>
+• To prevent engine damage from abnormal ignition due to a malfunction input of a cylinder identification or the engine speed signal.
+</dd>
+</dl>
+<a name="wp1061342"> </a><b>
+Execution condition
+</b>
+<dl>
+<a name="wp1061352"> </a><dd>
+• DTC stored for the following devices:
+</dd>
+
+<a name="wp1061362"> </a><dd>
+-	CKP sensor
+</dd>
+
+<a name="wp1061376"> </a><dd>
+-	CMP sensor
+</dd>
+</dl>
+<a name="wp1061386"> </a><h3><b>
+Dechoke Control
+</b></h3>
+
+<a name="wp1061396"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1061406"> </a><dd>
+• To improve engine starting startability when spark plugs are flooded.
+</dd>
+</dl>
+<a name="wp1061416"> </a><b>
+Execution condition
+</b>
+<dl>
+<a name="wp1061426"> </a><dd>
+• When cranking close to fully-open throttle valve
+</dd>
+</dl>
+<a name="wp1061437"> </a><h3><b>
+Fuel Cut During Immobilizer System Activation
+</b></h3>
+
+<a name="wp1061447"> </a><b>
+Purpose
+</b>
+<dl>
+<a name="wp1061457"> </a><dd>
+• To prevent vehicle theft
+</dd>
+</dl>
+<a name="wp1061467"> </a><b>
+Execution conditions
+</b>
+<dl>
+<a name="wp1061477"> </a><dd>
+• When an engine stop request signal is received from the immobilizer system, the PCM force-stops the fuel injectors. Therefore the engine stops.
+</dd>
+</dl>
+<a name="wp1061599"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0140001018c0.html"><small>Previous</small>Fuel injection control block diagram [ZY]</a><a class="nx" href="id0140001020c0.html"><small>Next</small>Fuel pump control outline [ZY]</a></nav><script src="../../../assets/app.js"></script></body></html>

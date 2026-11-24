@@ -1,0 +1,708 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0720 [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">DTC P0720 [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0720 [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1060690"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+DTC P0720
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058628"> </a><p></p><div align="center"><b>
+Vehicle speed sensor (VSS) circuit malfunction
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058568"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058570"> </a><div>
+• Vehicle speed signal is not input after the following conditions are met and <b>4.5 s or more</b> have passed.
+</div>
+<dl>
+<a name="wp1058700"> </a><dd>
+-	D, S, or L range switch ON
+</dd>
+
+<a name="wp1058714"> </a><dd>
+-	Engine coolant temperature <b>60 </b>°<b>C {140 </b>°<b>F} or more</b>
+</dd>
+
+<a name="wp1058738"> </a><dd>
+-	Turbine speed <b>1,500 rpm or more</b>
+</dd>
+</dl>
+<a name="wp1058754"> </a><b>
+Diagnostic support note: 
+</b>
+
+<a name="wp1058764"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058774"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058784"> </a><div>
+• The PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058794"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058804"> </a><div>
+• The AT warning light illuminates.
+</div>
+
+<a name="wp1058814"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058643"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• VSS malfunction
+</div>
+
+<a name="wp1058846"> </a><div>
+• Open circuit in wiring harness between VSS terminal B and PCM terminal 1AX
+</div>
+
+<a name="wp1058856"> </a><div>
+• Short to ground in wiring harness between VSS terminal B and PCM terminal 1AX
+</div>
+
+<a name="wp1058866"> </a><div>
+• Open circuit in wiring harness between VSS terminal A and main relay terminal C
+</div>
+
+<a name="wp1058876"> </a><div>
+• Short to ground in wiring harness between VSS terminal A and main relay terminal C
+</div>
+
+<a name="wp1058886"> </a><div>
+• Open circuit in wiring harness between VSS terminal C and body ground
+</div>
+
+<a name="wp1058896"> </a><div>
+• Damaged connectors between VSS and PCM
+</div>
+
+<a name="wp1058906"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058650"> </a><p>
+<img alt="" height="421" loading="lazy" src="images/DDA502ZW4006.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058936"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059050"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059052"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059056"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058944"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058946"> </a><p>
+<b>VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</b>
+</p>
+
+<a name="wp1059162"> </a><div>
+• Has the FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1059002"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059005"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059085"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059088"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059092"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059095"> </a><p>
+<b>VERIFY RELATED SERVICE INFORMATION AVAILABILITY</b>
+</p>
+
+<a name="wp1059210"> </a><div>
+• Verify related Service Bulletins and/or on-line repair information availability.
+</div>
+
+<a name="wp1059227"> </a><div>
+• Is any related repair Information available?
+</div>
+</td>
+    <td>
+<a name="wp1059098"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059101"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059247"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059111"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059114"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059118"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059121"> </a><p>
+<b>INSPECT VSS CONNECTOR FOR POOR CONNECTION</b>
+</p>
+
+<a name="wp1059298"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059312"> </a><div>
+• Disconnect the VSS connector.
+</div>
+
+<a name="wp1059322"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059335"> </a><div>
+• Is the connection normal?
+</div>
+</td>
+    <td>
+<a name="wp1059124"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059127"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059275"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059278"> </a><div>
+Repair or replace the pin or connector, then go to Step 11.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059363"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059366"> </a><p>
+<b>INSPECT VSS POWER CIRCUIT FOR OPEN CIRCUIT</b>
+</p>
+
+<a name="wp1059405"> </a><div>
+• Verify that the VSS connector is disconnected.
+</div>
+
+<a name="wp1059419"> </a><div>
+• Turn the ignition switch to the ON position (engine off).
+</div>
+
+<a name="wp1059429"> </a><div>
+• Inspect the voltage between VSS terminal A (wiring harness-side) and ground.
+</div>
+
+<a name="wp1059440"> </a><div>
+• Is the voltage <b>B+</b>?
+</div>
+</td>
+    <td>
+<a name="wp1059369"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059372"> </a><div>
+Go to Step 6.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059382"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059385"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059478"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059481"> </a><p>
+<b>INSPECT VSS POWER CIRCUIT FOR SHORT TO GROUND</b>
+</p>
+
+<a name="wp1059528"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059542"> </a><div>
+• Inspect for continuity between VSS terminal A (wiring harness-side) and ground.
+</div>
+
+<a name="wp1059553"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059484"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059487"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059499"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059502"> </a><div>
+Repair or replace the wiring harness, then go to Step 11.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059581"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059584"> </a><p>
+<b>INSPECT VSS GROUND CIRCUIT FOR OPEN CIRCUIT</b>
+</p>
+
+<a name="wp1059631"> </a><div>
+• Verify that the VSS connector is disconnected.
+</div>
+
+<a name="wp1059645"> </a><div>
+• Inspect for continuity between VSS (wiring harness-side) terminal C and ground.
+</div>
+
+<a name="wp1059656"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059587"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059590"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059602"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059605"> </a><div>
+Repair or replace the wiring harness, then go to Step 11.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059684"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059687"> </a><p>
+<b>INSPECT PCM CONNECTOR FOR POOR CONNECTION</b>
+</p>
+
+<a name="wp1059734"> </a><div>
+• Disconnect the PCM connector.
+</div>
+
+<a name="wp1059748"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059761"> </a><div>
+• Is the connection normal?
+</div>
+</td>
+    <td>
+<a name="wp1059690"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059693"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059705"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059708"> </a><div>
+Repair or replace the pin or connector, then go to Step 11.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059789"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059792"> </a><p>
+<b>INSPECT VEHICLE SPEED SIGNAL CIRCUIT FOR OPEN CIRCUIT</b>
+</p>
+
+<a name="wp1059839"> </a><div>
+• Disconnect the PCM connector and VSS connector.
+</div>
+
+<a name="wp1059853"> </a><div>
+• Inspect for continuity between VSS terminal B and PCM terminal 1AX.
+</div>
+
+<a name="wp1059863"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059795"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059798"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059810"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059813"> </a><div>
+Repair or replace the wiring harness, then go to Step 11.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059891"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059894"> </a><p>
+<b>INSPECT VEHICLE SPEED SIGNAL CIRCUIT FOR SHORT TO GROUND</b>
+</p>
+
+<a name="wp1059941"> </a><div>
+• Verity that the VSS connector and PCM connector are disconnected.
+</div>
+
+<a name="wp1059955"> </a><div>
+• Inspect for continuity between PCM terminal 1AX and body ground.
+</div>
+
+<a name="wp1059965"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059897"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059900"> </a><div>
+Repair or replace the wiring harness, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059912"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059915"> </a><div>
+Replace the VSS, then go to the next step.
+</div>
+
+<a name="wp1059995"> </a><div>
+ (See <a href="id0517a1806100.html#wp1025486">VEHICLE SPEED SENSOR (VSS) REMOVAL/INSTALLATION [FN4A-EL]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060007"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060010"> </a><p>
+<b>INSPECT VEHICLE SPEED SENSOR</b>
+</p>
+
+<a name="wp1060065"> </a><div>
+• Inspect the VSS.
+</div>
+
+<a name="wp1060079"> </a><div>
+ (See <a href="id0517a1801400.html#wp1025486">VEHICLE SPEED SENSOR (VSS) INSPECTION [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060093"> </a><div>
+• Is VSS normal?
+</div>
+</td>
+    <td>
+<a name="wp1060013"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060016"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060030"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060033"> </a><div>
+Repair or replace the VSS, then go to Step 11.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060121"> </a><div>
+11
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060124"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0720 COMPLETED
+</b>
+
+<a name="wp1060183"> </a><div>
+• Make sure to reconnect all the disconnected connectors.
+</div>
+
+<a name="wp1060197"> </a><div>
+• Clear the DTC from the memory using the WDS or equivalent.
+</div>
+
+<a name="wp1060207"> </a><div>
+• Warm up engine.
+</div>
+
+<a name="wp1060217"> </a><div>
+• Drive the vehicle under the following conditions for <b>4.5 s or more</b> while monitoring PIDs.
+</div>
+<dl>
+<a name="wp1060236"> </a><dd>
+-	Engine coolant temp (ECT PID): <b>60 </b>°<b>C {140 </b>°<b>F} or more</b>
+</dd>
+
+<a name="wp1060264"> </a><dd>
+-	Drive in D or M range
+</dd>
+
+<a name="wp1060274"> </a><dd>
+-	Frequency of input/turbine speed sensor: <b>800 Hz or more</b>
+</dd>
+</dl>
+<a name="wp1060292"> </a><div>
+• Is the PENDING CODE present?
+</div>
+</td>
+    <td>
+<a name="wp1060127"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060130"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060312"> </a><div>
+ (See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060146"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060149"> </a><div>
+No concern is detected. Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060334"> </a><div>
+12
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060337"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060420"> </a><div>
+• Perform the "After Repair Procedure".
+</div>
+
+<a name="wp1060438"> </a><div>
+ (See <a href="id0502a1800400.html#wp1025486">AFTER REPAIR PROCEDURE [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060452"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060340"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060343"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060365"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060368"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060614"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1806100.html"><small>Previous</small>DTC P0715 [FN4A-EL]</a><a class="nx" href="id0502a1801900.html"><small>Next</small>DTC P0731 [FN4A-EL]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--transmission-transaxle.html">Troubleshooting / Transmission/transaxle</a>.</p><script src="../../../assets/app.js"></script></body></html>

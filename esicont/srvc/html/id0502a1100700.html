@@ -1,0 +1,497 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Parameter identification (PID) data monitoring function [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/technical-guide--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">Parameter identification (PID) data monitoring function [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>Parameter identification (PID) data monitoring function [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1059769"> </a><div>
+• The PID mode allows access to certain data values, analog and digital input and output, calculations and system state information.
+</div>
+
+<a name="wp1058579"> </a><h2><b>
+Monitor Item Table
+</b></h2>
+
+<a name="wp1058589"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058722"> </a><p></p><div align="center"><b>
+Item
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058724"> </a><p></p><div align="center"><b>
+Definition
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058726"> </a><p></p><div align="center"><b>
+Unit/Condition
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058730"> </a><p></p><div align="center"><b>
+PCM terminal
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058592"> </a><div>
+DWN SW
+</div>
+</td>
+    <td>
+<a name="wp1058594"> </a><div>
+Down switch
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058650"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058656"> </a><div>
+1J
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058757"> </a><div>
+GEAR
+</div>
+</td>
+    <td>
+<a name="wp1058760"> </a><div>
+Gear commanded by module
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058763"> </a><div>
+1/2/3/4
+</div>
+</td>
+    <td>
+<a name="wp1058769"> </a><div>
+N/A
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058773"> </a><div>
+HTM_CNT
+</div>
+</td>
+    <td>
+<a name="wp1058776"> </a><div>
+Indicates number of high oil temperature mode (ATF temperature at 130 °C {266 °F} or more) operations
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058779"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058785"> </a><div>
+N/A
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058789"> </a><div>
+HTM_DIS
+</div>
+</td>
+    <td>
+<a name="wp1058792"> </a><div>
+Indicates travel distance after operation of high oil temperature mode (ATF temperature at 130 °C {266 °F} or more)
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058795"> </a><div>
+km
+</div>
+</td>
+    <td>
+<a name="wp1058801"> </a><div>
+N/A
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058805"> </a><div>
+LINEDES
+</div>
+</td>
+    <td>
+<a name="wp1058808"> </a><div>
+Target line pressure
+</div>
+</td>
+    <td>
+<a name="wp1058811"> </a><div>
+kPa
+</div>
+</td>
+    <td>
+<a name="wp1058814"> </a><div>
+inHg
+</div>
+</td>
+    <td>
+<a name="wp1058817"> </a><div>
+N/A
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058821"> </a><div>
+LPS
+</div>
+</td>
+    <td>
+<a name="wp1058824"> </a><div>
+Pressure control solenoid control signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058827"> </a><div>
+A
+</div>
+</td>
+    <td>
+<a name="wp1058833"> </a><div>
+1P, 1T
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059020"> </a><div>
+MNL SW
+</div>
+</td>
+    <td>
+<a name="wp1059023"> </a><div>
+M range switch
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059026"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059032"> </a><div>
+1N
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059058"> </a><div>
+OSS
+</div>
+</td>
+    <td>
+<a name="wp1059061"> </a><div>
+Output shaft speed
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059064"> </a><div>
+RPM
+</div>
+</td>
+    <td>
+<a name="wp1059070"> </a><div>
+1AX
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059094"> </a><div>
+SSA/SS1
+</div>
+</td>
+    <td>
+<a name="wp1059097"> </a><div>
+Shift solenoid A control signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059100"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059106"> </a><div>
+1D
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059132"> </a><div>
+SSB/SS2
+</div>
+</td>
+    <td>
+<a name="wp1059135"> </a><div>
+Shift solenoid B control signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059138"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059144"> </a><div>
+1H
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059170"> </a><div>
+SSC/SS3
+</div>
+</td>
+    <td>
+<a name="wp1059173"> </a><div>
+Shift solenoid C control signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059176"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059182"> </a><div>
+1L
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059208"> </a><div>
+SSD/SS4
+</div>
+</td>
+    <td>
+<a name="wp1059211"> </a><div>
+Shift solenoid D control signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059214"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059220"> </a><div>
+1K
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059248"> </a><div>
+SSE_SS5
+</div>
+</td>
+    <td>
+<a name="wp1059251"> </a><div>
+Shift solenoid E control signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059254"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059260"> </a><div>
+1O
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059288"> </a><div>
+TCS
+</div>
+</td>
+    <td>
+<a name="wp1059291"> </a><div>
+HOLD switch
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059294"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059300"> </a><div>
+1N
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059326"> </a><div>
+TFT
+</div>
+</td>
+    <td>
+<a name="wp1059329"> </a><div>
+ATF temperature
+</div>
+</td>
+    <td>
+<a name="wp1059332"> </a><div>
+°C
+</div>
+</td>
+    <td>
+<a name="wp1059335"> </a><div>
+°F
+</div>
+</td>
+    <td>
+<a name="wp1059338"> </a><div>
+1AH
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059369"> </a><div>
+TFTV
+</div>
+</td>
+    <td>
+<a name="wp1059372"> </a><div>
+ATF temperature signal voltage
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059375"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1059381"> </a><div>
+1AH
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059405"> </a><div>
+THOP
+</div>
+</td>
+    <td>
+<a name="wp1059408"> </a><div>
+Throttle position signal in PCM
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059411"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059417"> </a><div>
+2AT, 2AX
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059441"> </a><div>
+TR
+</div>
+</td>
+    <td>
+<a name="wp1059444"> </a><div>
+Transaxle range
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059447"> </a><div>
+P/R/N/D
+</div>
+</td>
+    <td>
+<a name="wp1059453"> </a><div>
+1AS
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059483"> </a><div>
+TR_SENS
+</div>
+</td>
+    <td>
+<a name="wp1059486"> </a><div>
+TR switch signal voltage
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059489"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1059495"> </a><div>
+1AS
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059521"> </a><div>
+TSS
+</div>
+</td>
+    <td>
+<a name="wp1059524"> </a><div>
+Input/turbine speed
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059527"> </a><div>
+RPM
+</div>
+</td>
+    <td>
+<a name="wp1059533"> </a><div>
+1R, 1V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059559"> </a><div>
+UP SW
+</div>
+</td>
+    <td>
+<a name="wp1059562"> </a><div>
+Up switch
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059565"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059571"> </a><div>
+1M
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1059692"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1100600.html"><small>Previous</small>Fail-safe function [FN4A-EL]</a><a class="nx" href="id0502a1100800.html"><small>Next</small>Simulation function [FN4A-EL]</a></nav><script src="../../../assets/app.js"></script></body></html>

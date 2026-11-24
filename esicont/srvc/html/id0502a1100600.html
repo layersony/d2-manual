@@ -1,0 +1,869 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fail-safe function [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/technical-guide--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">Fail-safe function [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>Fail-safe function [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058567"> </a><p></p><p></p>
+
+<a name="wp1063045"> </a><div>
+• In the fail-safe function, minimum vehicle drivability is obtained by changing the signals that are determined to be malfunctions by the malfunction detection function to the preset values, and limiting PCM control.
+</div>
+
+<a name="wp1058582"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058715"> </a><p></p><div align="center"><b>
+DTC No.
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058717"> </a><p></p><div align="center"><b>
+On-board diagnostic function
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058719"> </a><p></p><div align="center"><b>
+Detection condition
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058721"> </a><p></p><div align="center"><b>
+Fail-safe
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058723"> </a><p></p><div align="center"><b>
+TCC
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058585"> </a><div>
+P0706
+</div>
+</td>
+    <td>
+<a name="wp1058587"> </a><div>
+Transaxle range (TR) switch circuit range/performance
+</div>
+</td>
+    <td>
+<a name="wp1058912"> </a><div>
+• No TR signal (P, R, N, D, S or L range/position) input to PCM terminal 1AS when the engine speed is <b>530 rpm or more</b>, vehicle speed is <b>20 km/h {12 mph} or more</b> and voltage at PCM terminal 1AS is <b>0.5 V or more</b>.
+</div>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• Inhibits gear shifting and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1058649"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058750"> </a><div>
+P0707
+</div>
+</td>
+    <td>
+<a name="wp1058753"> </a><div>
+Transaxle range (TR) switch circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1058982"> </a><div>
+• Input voltage from the TR switch to PCM terminal 1AS is <b>0.5 V or less</b> when the engine speed is <b>530 rpm or more</b> and vehicle speed is <b>20 km/h {12 mph} or more</b>.
+</div>
+</td>
+    <td>
+<a name="wp1058759"> </a><div>
+• Inhibits gear shifting and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1058762"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058766"> </a><div>
+P0708
+</div>
+</td>
+    <td>
+<a name="wp1058769"> </a><div>
+Transaxle range (TR) switch circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1059058"> </a><div>
+• Input voltage from the TR switch to PCM terminal 1AS is <b>4.79 V or more</b> when the engine speed is <b>530 rpm or more</b> and vehicle speed is <b>20 km/h {12 mph} or more</b>.
+</div>
+</td>
+    <td>
+<a name="wp1058775"> </a><div>
+• Inhibits gear shifting and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1058778"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058782"> </a><div>
+P0711
+</div>
+</td>
+    <td>
+<a name="wp1058785"> </a><div>
+Transaxle fluid temperature (TFT) sensor circuit range/performance (Stuck)
+</div>
+</td>
+    <td>
+<a name="wp1059181"> </a><div>
+• Input voltage from the TFT sensor to PCM terminal 1AH and 1AG is maintained at <b>0.03 V or less</b> when <b>180 s</b> have passed after the engine is started and the vehicle is driven for <b>90 s or more</b> at vehicle speed <b>between 25-59 km/h {15-36 mph}</b>, and then <b>60 km/h {37 mph} or more</b> for <b>60 s or more</b>.
+</div>
+</td>
+    <td>
+<a name="wp1058791"> </a><div>
+N/A
+</div>
+</td>
+    <td>
+<a name="wp1058794"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058798"> </a><div>
+P0712
+</div>
+</td>
+    <td>
+<a name="wp1058801"> </a><div>
+Transaxle fluid temperature (TFT) sensor circuit malfunction (short to ground)
+</div>
+</td>
+    <td>
+<a name="wp1059235"> </a><div>
+• Input voltage from the TFT sensor to PCM terminal 1AH and 1AG is maintained at <b>0.06 V or less</b> when the vehicle speed is <b>20 km/h {12 mph} or more</b>.
+</div>
+</td>
+    <td>
+<a name="wp1058807"> </a><div>
+• Sets temperature to cold condition and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1058810"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058814"> </a><div>
+P0713
+</div>
+</td>
+    <td>
+<a name="wp1058817"> </a><div>
+Transaxle fluid temperature (TFT) sensor circuit malfunction (open circuit)
+</div>
+</td>
+    <td>
+<a name="wp1059301"> </a><div>
+• Input voltage from the TFT sensor to PCM terminal 1AH and 1AG is maintained at <b>4.67 V or more</b> when vehicle speed is <b>20 km/h {12 mph} or more</b>.
+</div>
+</td>
+    <td>
+<a name="wp1058823"> </a><div>
+• Sets temperature to cold condition
+</div>
+</td>
+    <td>
+<a name="wp1058826"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059332"> </a><div>
+P0715
+</div>
+</td>
+    <td>
+<a name="wp1059335"> </a><div>
+Input/turbine speed sensor circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1059338"> </a><div>
+• No input/turbine speed sensor signal to PCM terminals 1R and 1V when the vehicle speed is <b>41 km/h {25 mph} or more</b> and selector lever position is at D, S, L or M range.
+</div>
+</td>
+    <td>
+<a name="wp1059341"> </a><div>
+• Inhibits 4GR
+</div>
+</td>
+    <td>
+<a name="wp1059344"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059433"> </a><div>
+P0720
+</div>
+</td>
+    <td>
+<a name="wp1059436"> </a><div>
+Vehicle speed sensor (VSS) circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1059521"> </a><div>
+• No VSS signal is input to PCM terminal 1AX when and engine coolant temperature is <b>60 </b>°<b>C {140 </b>°<b>F} or more</b>, input/turbine speed sensor signal is <b>1,500 rpm or more</b> and selector lever position is at D, S, L or M range.
+</div>
+</td>
+    <td>
+<a name="wp1059442"> </a><div>
+• Vehicle speed signal calculated from input/turbine speed sensor
+</div>
+</td>
+    <td>
+<a name="wp1059445"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059548"> </a><div>
+P0731
+</div>
+</td>
+    <td>
+<a name="wp1059551"> </a><div>
+Gear 1 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059554"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>2.185 or less</b> while in 1GR.
+</div>
+</td>
+    <td>
+<a name="wp1059557"> </a><div>
+• Inhibits 1GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1059560"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059644"> </a><div>
+P0732
+</div>
+</td>
+    <td>
+<a name="wp1059647"> </a><div>
+Gear 2 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059727"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>1.277 or less</b> or <b>2.185 or more</b> while in 2GR.
+</div>
+</td>
+    <td>
+<a name="wp1059653"> </a><div>
+• Inhibits 2GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1059656"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059752"> </a><div>
+P0733
+</div>
+</td>
+    <td>
+<a name="wp1059755"> </a><div>
+Gear 3 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059838"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>0.848 or less</b> or <b>2.185 or more</b> while in 3GR.
+</div>
+
+<a name="wp1059847"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>within 1.404-1.704</b> while in 3GR (TCC no operating).
+</div>
+</td>
+    <td>
+<a name="wp1059761"> </a><div>
+N/A
+</div>
+</td>
+    <td>
+<a name="wp1059764"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059878"> </a><div>
+P0734
+</div>
+</td>
+    <td>
+<a name="wp1059881"> </a><div>
+Gear 4 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059969"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>0.57 or less</b> or <b>1.277 or more</b> while in 4GR.
+</div>
+
+<a name="wp1059978"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>within 0.91-1.09</b> while in 4GR (TCC no operating).
+</div>
+</td>
+    <td>
+<a name="wp1059887"> </a><div>
+• Inhibits 4GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1059890"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060015"> </a><div>
+P0741
+</div>
+</td>
+    <td>
+<a name="wp1060018"> </a><div>
+Torque converter clutch (TCC) (stuck off) 
+</div>
+</td>
+    <td>
+<a name="wp1060021"> </a><div>
+• Difference between the engine speed and turbine speed is <b>more than 100 rpm</b> while TCC is operating.
+</div>
+</td>
+    <td>
+<a name="wp1060024"> </a><div>
+• Inhibits TCC and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060027"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060126"> </a><div>
+P0742
+</div>
+</td>
+    <td>
+<a name="wp1060129"> </a><div>
+Torque converter clutch (TCC) (stuck on)
+</div>
+</td>
+    <td>
+<a name="wp1060132"> </a><div>
+• Difference between the engine speed and turbine speed is <b>50 rpm or less</b> while TCC is not operating.
+</div>
+</td>
+    <td>
+<a name="wp1060135"> </a><div>
+• Inhibits TCC and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060138"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060239"> </a><div>
+P0745
+</div>
+</td>
+    <td>
+<a name="wp1060242"> </a><div>
+Pressure control solenoid malfunction
+</div>
+</td>
+    <td>
+<a name="wp1060339"> </a><div>
+• Voltage is stuck at <b>0 V </b>or <b>B+</b> at pressure control solenoid control terminal 1P of the PCM when the solenoid valve operates according to PCM calculation.
+</div>
+</td>
+    <td>
+<a name="wp1060248"> </a><div>
+N/A
+</div>
+</td>
+    <td>
+<a name="wp1060251"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060359"> </a><div>
+P0751
+</div>
+</td>
+    <td>
+<a name="wp1060362"> </a><div>
+Shift solenoid A stuck off
+</div>
+</td>
+    <td>
+<a name="wp1060365"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>within 0.91-1.09</b> in 4GR and DTCs not output
+</div>
+</td>
+    <td>
+<a name="wp1060368"> </a><div>
+• Inhibits 4GR and TCC and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060371"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060479"> </a><div>
+P0752
+</div>
+</td>
+    <td>
+<a name="wp1060482"> </a><div>
+Shift solenoid A stuck on
+</div>
+</td>
+    <td>
+<a name="wp1060485"> </a><div>
+• Input/turbine speed sensor signal is <b>187.5 rpm or more</b> in D range
+</div>
+</td>
+    <td>
+<a name="wp1060488"> </a><div>
+• Inhibits 1GR, 2GR, and 3GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060491"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060601"> </a><div>
+P0753
+</div>
+</td>
+    <td>
+<a name="wp1060604"> </a><div>
+Shift solenoid A malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1060708"> </a><div>
+• Voltage is stuck at <b>0 V </b>or <b>B+</b> at shift solenoid A control terminal 1D of the PCM when the solenoid valve operates according to PCM calculation.
+</div>
+</td>
+    <td>
+<a name="wp1060610"> </a><div>
+• Inhibits 4GR and TCC and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060613"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060734"> </a><div>
+P0756
+</div>
+</td>
+    <td>
+<a name="wp1060737"> </a><div>
+Shift solenoid B stuck off
+</div>
+</td>
+    <td>
+<a name="wp1060740"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>2.185 or less</b> in 1GR and DTCs not output.
+</div>
+</td>
+    <td>
+<a name="wp1060743"> </a><div>
+• Inhibits 1GR and 4GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060746"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060859"> </a><div>
+P0757
+</div>
+</td>
+    <td>
+<a name="wp1060862"> </a><div>
+Shift solenoid B stuck on
+</div>
+</td>
+    <td>
+<a name="wp1060971"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>1.277 or less</b> or <b>2.185 or more</b> in D range 2GR.
+</div>
+
+<a name="wp1061000"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>0.57 or less</b> or <b>1.277 or more</b> in D range 4GR.
+</div>
+</td>
+    <td>
+<a name="wp1060868"> </a><div>
+• Inhibits 2GR and 4GR and maximized line pressure
+</div>
+</td>
+    <td>
+<a name="wp1060871"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061025"> </a><div>
+P0758
+</div>
+</td>
+    <td>
+<a name="wp1061028"> </a><div>
+Shift solenoid B malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1061143"> </a><div>
+• Voltage is stuck at <b>0 V </b>or <b>B+</b> at shift solenoid B control terminal 1H of the PCM when the solenoid valve operates according to PCM calculation.
+</div>
+</td>
+    <td>
+<a name="wp1061034"> </a><div>
+• Inhibits 1GR and 4GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061037"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061169"> </a><div>
+P0761
+</div>
+</td>
+    <td>
+<a name="wp1061172"> </a><div>
+Shift solenoid C stuck off
+</div>
+</td>
+    <td>
+<a name="wp1061175"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>2.185 or less</b> in D range 1GR.
+</div>
+
+<a name="wp1061309"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>1.277 or less</b> or <b>2.185 or more</b> in D range 2GR.
+</div>
+</td>
+    <td>
+<a name="wp1061178"> </a><div>
+• Inhibits 1GR and 2GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061181"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061334"> </a><div>
+P0762
+</div>
+</td>
+    <td>
+<a name="wp1061337"> </a><div>
+Shift solenoid C stuck on
+</div>
+</td>
+    <td>
+<a name="wp1061340"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>within 1.404-1.704</b> in D range 3GR.
+</div>
+</td>
+    <td>
+<a name="wp1061343"> </a><div>
+• Inhibits 3GR and 4GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061346"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061477"> </a><div>
+P0763
+</div>
+</td>
+    <td>
+<a name="wp1061480"> </a><div>
+Shift solenoid C malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1061605"> </a><div>
+• Voltage is stuck at <b>0 V </b>or <b>B+</b> at shift solenoid C control terminal 1L of the PCM when the solenoid valve operates according to PCM calculation.
+</div>
+</td>
+    <td>
+<a name="wp1061486"> </a><div>
+• Inhibits 1GR and 2GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061489"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061631"> </a><div>
+P0766
+</div>
+</td>
+    <td>
+<a name="wp1061634"> </a><div>
+Shift solenoid D stuck off
+</div>
+</td>
+    <td>
+<a name="wp1061762"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>0.57 or less </b>or <b>1.277 or more</b> in D range 4GR.
+</div>
+</td>
+    <td>
+<a name="wp1061640"> </a><div>
+• Inhibits 4GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061643"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061787"> </a><div>
+P0767
+</div>
+</td>
+    <td>
+<a name="wp1061790"> </a><div>
+Shift solenoid D stuck on
+</div>
+</td>
+    <td>
+<a name="wp1061921"> </a><div>
+• Revolution ratio of the forward clutch drum to differential gear case revolution is <b>0.848 or less</b> or <b>2.185 or more</b> in D range 3GR.
+</div>
+</td>
+    <td>
+<a name="wp1061796"> </a><div>
+• Inhibits 2GR, 4GR, and TCC and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061799"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061946"> </a><div>
+P0768
+</div>
+</td>
+    <td>
+<a name="wp1061949"> </a><div>
+Shift solenoid D malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1062083"> </a><div>
+• Voltage is stuck at <b>0 V </b>or <b>B+</b> at shift solenoid D valve control terminal 1K of the PCM when the solenoid valve operates according to PCM calculation.
+</div>
+</td>
+    <td>
+<a name="wp1061955"> </a><div>
+• Inhibits 4GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1061958"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062109"> </a><div>
+P0771
+</div>
+</td>
+    <td>
+<a name="wp1062112"> </a><div>
+Shift solenoid E stuck off
+</div>
+</td>
+    <td>
+<a name="wp1062115"> </a><div>
+• Difference between engine speed and turbine speed is <b>more than 100 rpm</b> while driving in 4GR is at D range during TCC operation.
+</div>
+</td>
+    <td>
+<a name="wp1062118"> </a><div>
+• Inhibits TCC and maximized line pressure
+</div>
+</td>
+    <td>
+<a name="wp1062121"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062264"> </a><div>
+P0772
+</div>
+</td>
+    <td>
+<a name="wp1062267"> </a><div>
+Shift solenoid E stuck on
+</div>
+</td>
+    <td>
+<a name="wp1062270"> </a><div>
+• Difference between the engine speed and turbine speed is <b>50 rpm or less</b> while driving in 4GR at D range while TCC is not operating.
+</div>
+</td>
+    <td>
+<a name="wp1062273"> </a><div>
+• Inhibits 1GR and maximizes line pressure
+</div>
+</td>
+    <td>
+<a name="wp1062276"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062421"> </a><div>
+P0773
+</div>
+</td>
+    <td>
+<a name="wp1062424"> </a><div>
+Shift solenoid E malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1062565"> </a><div>
+• Voltage is stuck at <b>0 V </b>or <b>B+</b> at shift solenoid E control terminal 1O of the PCM when the solenoid valve operates according to PCM calculation.
+</div>
+</td>
+    <td>
+<a name="wp1062430"> </a><div>
+• Inhibits TCC and maximized line pressure
+</div>
+</td>
+    <td>
+<a name="wp1062433"> </a><div>
+Disabled
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062591"> </a><div>
+P0894
+</div>
+</td>
+    <td>
+<a name="wp1062594"> </a><div>
+Forward clutch torque transmission
+</div>
+</td>
+    <td>
+<a name="wp1062597"> </a><div>
+• Turbine speed does not fall to <b>less than 187 rpm 3 s or more</b> after starting the engine with the vehicle stopped (brake applied) and the selector lever shifted to D range from N position.
+</div>
+</td>
+    <td>
+<a name="wp1062600"> </a><div>
+• Driving restricted to 4GR
+</div>
+</td>
+    <td>
+<a name="wp1062603"> </a><div>
+Enabled
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1062967"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1100500.html"><small>Previous</small>Malfunction indication function [FN4A-EL]</a><a class="nx" href="id0502a1100700.html"><small>Next</small>Parameter identification (PID) data monitoring function [FN4A-EL]</a></nav><script src="../../../assets/app.js"></script></body></html>

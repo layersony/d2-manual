@@ -1,0 +1,410 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>On-board diagnostic system function [Electric power steering (EPS)] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--steering.html">Steering</a></li><li><a href="../../../nav/technical-guide--steering--on-board-diagnostic.html">On-board diagnostic</a></li><li aria-current="page">On-board diagnostic system function [Electric power steering (EPS)]</li></ol></nav><main class="wrap"><article class="doc"><h1>On-board diagnostic system function [Electric power steering (EPS)]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1060994"> </a><h2><b>
+Malfunction Detection Function
+</b></h2>
+
+<a name="wp1058575"> </a><div>
+• The malfunction detection function detects malfunctions in the input/output signal system of the EPS CM when the ignition switch is at the ON position or driving the vehicle.
+</div>
+
+<a name="wp1058591"> </a><div>
+• When the ignition switch is turned to the ON position, the EPS warning light illuminates as shown in the diagram to inspect for open circuits in the light.</div><p><img alt="" height="474" loading="lazy" src="images/DDJ602ZN1H02.png" width="644"/></p><div>
+
+
+
+</div>
+
+<a name="wp1058618"> </a><h2><b>
+Malfunction Display Function
+</b></h2>
+
+<a name="wp1058628"> </a><div>
+• When the malfunction detection function detects a malfunction, the EPS warning light illuminates to advise the driver. Using the external tester communication function, DTCs can be output to the DLC-2 via the CAN communication line. At the same time, malfunction detection results are sent to the memory and fail-safe functions.
+</div>
+
+<a name="wp1058644"> </a><h2><b>
+Memory Function
+</b></h2>
+
+<a name="wp1058654"> </a><div>
+• The memory function stores DTCs for malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition switch has been turned off (LOCK position), even if the malfunctioning signal system has returned to normal.
+</div>
+
+<a name="wp1058670"> </a><div>
+• Since the EPS CM has a built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.
+</div>
+
+<a name="wp1058682"> </a><h2><b>
+Fail-safe Function
+</b></h2>
+
+<a name="wp1058693"> </a><div>
+•  When the malfunction detection function determines a malfunction, the EPS warning light illuminates to advise the driver. At this time, the fail-safe function controls the system as shown in the DTC table.
+</div>
+
+<a name="wp1058708"> </a><h2><b>
+DTC Table
+</b></h2>
+
+<a name="wp1058718"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th colspan="2" rowspan="2">
+<a name="wp1058851"> </a><p></p><div align="center"><b>
+System malfunction location
+</b></div><p></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058855"> </a><p></p><div align="center"><b>
+DTC (WDS or equivalent display)
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058857"> </a><p></p><div align="center"><b>
+Fail-safe function
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1058975"> </a><p></p><div align="center"><b>
+EPS warning light illumination status
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058978"> </a><p></p><div align="center"><b>
+Control status
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058721"> </a><div>
+Battery power supply
+</div>
+</td>
+    <td>
+<a name="wp1058779"> </a><div>
+B1317
+</div>
+</td>
+    <td>
+<a name="wp1058782"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058785"> </a><div>
+Control suspended
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058886"> </a><div>
+Battery power supply
+</div>
+</td>
+    <td>
+<a name="wp1058892"> </a><div>
+B1318
+</div>
+</td>
+    <td>
+<a name="wp1058895"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058898"> </a><div>
+Control suspended
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058902"> </a><div>
+EPS CM (internal malfunction)
+</div>
+</td>
+    <td>
+<a name="wp1058908"> </a><div>
+B1342
+</div>
+</td>
+    <td>
+<a name="wp1058911"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058914"> </a><div>
+Control suspended
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058918"> </a><div>
+EPS CM (memory malfunction)
+</div>
+</td>
+    <td>
+<a name="wp1058924"> </a><div>
+B2143
+</div>
+</td>
+    <td>
+<a name="wp1058927"> </a><div>
+Not Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058930"> </a><div>
+Control continues<sup>*2</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058934"> </a><div>
+Torque sensor
+</div>
+</td>
+    <td>
+<a name="wp1058940"> </a><div>
+B2278
+</div>
+</td>
+    <td>
+<a name="wp1058943"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058946"> </a><div>
+Control suspended
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058950"> </a><div>
+EPS CM configuration
+</div>
+</td>
+    <td>
+<a name="wp1058956"> </a><div>
+B2477
+</div>
+</td>
+    <td>
+<a name="wp1058959"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058962"> </a><div>
+Control suspended<sup> *1</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059145"> </a><div>
+EPS motor
+</div>
+</td>
+    <td>
+<a name="wp1059151"> </a><div>
+C1099
+</div>
+</td>
+    <td>
+<a name="wp1059154"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1059157"> </a><div>
+Control suspended
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059185"> </a><div>
+CAN bus communication error
+</div>
+</td>
+    <td>
+<a name="wp1059191"> </a><div>
+U0073
+</div>
+</td>
+    <td>
+<a name="wp1059194"> </a><div>
+Not Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1059197"> </a><div>
+Control suspended<sup> *2</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059233"> </a><div>
+CAN bus communication error
+</div>
+</td>
+    <td>
+<a name="wp1059239"> </a><div>
+U0100
+</div>
+</td>
+    <td>
+<a name="wp1059242"> </a><div>
+Illuminated<sup> *3</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059245"> </a><div>
+Control suspended<sup> *4</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059291"> </a><div>
+CAN communication error
+</div>
+</td>
+    <td>
+<a name="wp1059294"> </a><div>
+Engine speed signal error
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059297"> </a><div>
+U2023
+</div>
+</td>
+    <td>
+<a name="wp1059300"> </a><div>
+Not Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1059303"> </a><div>
+Control suspended<sup> *5</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059315"> </a><div>
+Vehicle speed signal error
+</div>
+</td>
+    <td>
+<a name="wp1059321"> </a><div>
+Illuminated<sup> *3</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059324"> </a><div>
+Control suspended<sup> *4</sup>
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+<dl>
+<a name="wp1059417"> </a><dd>
+<sup>*1</sup>	:
+</dd>
+
+<a name="wp1059436"> </a>
+The control is continued by the specified control program.
+
+
+<a name="wp1059442"> </a><dd>
+<sup>*2</sup>	:
+</dd>
+
+<a name="wp1059457"> </a>
+The control is continued based on the last received engine speed and vehicle speed signal.
+
+
+<a name="wp1059463"> </a><dd>
+<sup>*3</sup>	:
+</dd>
+
+<a name="wp1059478"> </a>
+Illuminates after switching to fail mode (controlled by assist torque to allow safe driving).
+
+
+<a name="wp1059484"> </a><dd>
+<sup>*4</sup>	:
+</dd>
+
+<a name="wp1059499"> </a>
+Switches to fail mode (controlled by assist torque to allow safe driving) and continues control.
+
+
+<a name="wp1059505"> </a><dd>
+<sup>*5</sup>	:
+</dd>
+
+<a name="wp1059520"> </a>
+The control is continued based on the last received engine speed signal.
+
+</dl>
+<a name="wp1059526"> </a><h2><b>
+Timing Chart Malfunction Contents
+</b></h2>
+
+<a name="wp1059536"> </a><p><b>
+Service cord B1342, B2278, C1099
+</b></p>
+
+<a name="wp1059546"> </a><p>
+</p><p><img alt="" height="267" loading="lazy" src="images/DDJ602ZN1H032.png" width="644"/></p><p>
+
+
+
+</p>
+
+<a name="wp1059577"> </a><p><b>
+DTC B1317, B1318, B1342 (only for boost supply circuit inside EPS CM)
+</b></p>
+
+<a name="wp1059587"> </a><p>
+</p><p><img alt="" height="251" loading="lazy" src="images/DDJ602ZN1H043.png" width="644"/></p><p>
+
+
+
+</p>
+
+<a name="wp1059606"> </a><p><b>
+DTC U0100, U2023 (Only when there is a vehicle speed signal error)
+</b></p>
+
+<a name="wp1059616"> </a><p>
+</p><p><img alt="" height="251" loading="lazy" src="images/DDJ602ZN1H054.png" width="644"/></p><p>
+
+
+
+</p>
+
+<a name="wp1059647"> </a><p><b>
+DTC B2477
+</b></p>
+
+<a name="wp1059657"> </a><p>
+</p><p><img alt="" height="251" loading="lazy" src="images/DDJ602ZN1H065.png" width="644"/></p><p>
+
+
+
+</p>
+
+<a name="wp1060602"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0602001010a1.html"><small>Previous</small>On-board diagnostic system outline [Electric power steering (EPS)]</a><a class="nx" href="id0602001012a1.html"><small>Next</small>On-board diagnostic system PID/data monitor function [Electric power steering (EPS)]</a></nav><script src="../../../assets/app.js"></script></body></html>

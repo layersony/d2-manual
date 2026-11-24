@@ -1,0 +1,608 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0443 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P0443 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0443 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060399"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P0443
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+Purge solenoid valve circuit problem
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058568"> </a><div>
+• The PCM monitors the purge solenoid valve control signal. If the voltage of the purge solenoid valve control signal remains low or high, the PCM determines that there is the purge solenoid valve control circuit problem.
+</div>
+
+<a name="wp1058689"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058699"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058709"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058719"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058729"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058739"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• Purge solenoid valve malfunction
+</div>
+
+<a name="wp1058771"> </a><div>
+• Connector or terminal malfunction
+</div>
+
+<a name="wp1058781"> </a><div>
+• Open circuit in wiring harness between purge solenoid valve terminal A and PCM terminal 2I
+</div>
+
+<a name="wp1058791"> </a><div>
+• Short to ground in wiring harness between purge solenoid valve terminal A and PCM terminal 2I
+</div>
+
+<a name="wp1058801"> </a><div>
+• Open circuit in wiring harness between purge solenoid valve terminal B and PCM terminal 2S
+</div>
+
+<a name="wp1058811"> </a><div>
+• Short to power supply in wiring harness between purge solenoid valve terminal B and PCM terminal 2S
+</div>
+
+<a name="wp1058821"> </a><div>
+• Short to ground in wiring harness between purge solenoid valve terminal B and PCM terminal 2S
+</div>
+
+<a name="wp1058831"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058648"> </a><p>
+<img alt="" height="442" loading="lazy" src="images/DDA102ZW4037.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058853"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058967"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058969"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058973"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058861"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058863"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059075"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058919"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058922"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059002"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059005"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059009"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059012"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059119"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059133"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059015"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059018"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059153"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059028"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059031"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059035"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059038"> </a><b>
+INSPECT PURGE SOLENOID VALVE CONNECTOR FOR POOR CONNECTION
+</b>
+
+<a name="wp1059200"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059214"> </a><div>
+• Disconnect the purge solenoid valve connector.
+</div>
+
+<a name="wp1059224"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059237"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059041"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059044"> </a><div>
+Repair or replace the terminal, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059181"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059184"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059265"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059268"> </a><b>
+INSPECT PURGE SOLENOID VALVE CIRCUIT FOR SHORT TO GROUND
+</b>
+
+<a name="wp1059303"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059317"> </a><div>
+• Inspect for continuity between the following terminals:
+</div>
+<dl>
+<a name="wp1059327"> </a><dd>
+-	Purge solenoid valve terminal A (wiring harness-side) and body ground
+</dd>
+
+<a name="wp1059342"> </a><dd>
+-	Purge solenoid valve terminal B (wiring harness-side) and body ground
+</dd>
+</dl>
+<a name="wp1059353"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059271"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059274"> </a><div>
+Repair or replace wiring harness for short to ground, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059284"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059287"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059381"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059384"> </a><b>
+INSPECT PURGE SOLENOID VALVE CONTROL CIRCUIT FOR SHORT TO POWER SUPPLY
+</b>
+
+<a name="wp1059419"> </a><div>
+• Turn the ignition switch to the ON position (Engine off).
+</div>
+
+<a name="wp1059433"> </a><div>
+• Measure the voltage between purge solenoid valve terminal B (wiring harness-side) and body ground.
+</div>
+
+<a name="wp1059444"> </a><div>
+• Is the voltage <b>B+</b>?
+</div>
+</td>
+    <td>
+<a name="wp1059387"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059390"> </a><div>
+Repair or replace wiring harness for short to power supply, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059400"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059403"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059482"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059485"> </a><b>
+INSPECT PURGE SOLENOID VALVE
+</b>
+
+<a name="wp1059528"> </a><div>
+• Inspect the purge solenoid valve.
+</div>
+
+<a name="wp1059542"> </a><div>
+(See <a href="id0116008009c0.html#wp1025486">PURGE SOLENOID VALVE INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059556"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059488"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059491"> </a><div>
+Replace the purge solenoid valve, then go to Step 9.
+</div>
+
+<a name="wp1059584"> </a><div>
+(See <a href="id0116008043c0.html#wp1025486">PURGE SOLENOID VALVE REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059503"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059506"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059606"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059609"> </a><b>
+INSPECT PCM CONNECTOR FOR POOR CONNECTION
+</b>
+
+<a name="wp1059676"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059690"> </a><div>
+• Disconnect the PCM connector.
+</div>
+
+<a name="wp1059700"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059713"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059612"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059615"> </a><div>
+Repair or replace the terminal, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059633"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059636"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059741"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059744"> </a><b>
+INSPECT PURGE SOLENOID VALVE CIRCUIT FOR OPEN CIRCUIT
+</b>
+
+<a name="wp1059811"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059825"> </a><div>
+• Inspect for continuity between the following terminals:
+</div>
+<dl>
+<a name="wp1059835"> </a><dd>
+-	Purge solenoid valve terminal A (wiring harness-side) and PCM terminal 2I (wiring harness-side)
+</dd>
+
+<a name="wp1059851"> </a><dd>
+-	Purge solenoid valve terminal B (wiring harness-side) and PCM terminal 2S (wiring harness-side)
+</dd>
+</dl>
+<a name="wp1059863"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059747"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059750"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059768"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059771"> </a><div>
+Repair or replace the wiring harness for a possible open circuit, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059891"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059894"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0443 COMPLETED
+</b>
+
+<a name="wp1059961"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1059975"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059985"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059995"> </a><div>
+• Is the PENDING CODE for this DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059897"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059900"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060015"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059918"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059921"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060037"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060040"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060115"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060133"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060147"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060043"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060046"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1060167"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060066"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060069"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060323"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3807300.html"><small>Previous</small>DTC P0421 [ZY]</a><a class="nx" href="id0102d3807400.html"><small>Next</small>DTC P0480 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

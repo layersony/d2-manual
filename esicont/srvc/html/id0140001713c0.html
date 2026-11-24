@@ -1,0 +1,224 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Variable valve timing control operation [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--engine.html">Engine</a></li><li><a href="../../../nav/technical-guide--engine--control-system.html">Control system</a></li><li aria-current="page">Variable valve timing control operation [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>Variable valve timing control operation [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060143"> </a><div>
+• The PCM divides the oil control valve OCV drive range into four modes according to engine operation conditions. The OCV drive current is determined based on the target current calculated in each mode.
+</div>
+
+<a name="wp1058577"> </a><h2><b>
+Cleaning Mode
+</b></h2>
+
+<a name="wp1058587"> </a><h3><b>
+Mode execution condition 
+</b></h3>
+<dl>
+<a name="wp1058597"> </a><dd>
+• When the following condition is met:
+</dd>
+
+<a name="wp1058611"> </a><dd>
+-	IAC feedback execution condition
+</dd>
+</dl>
+<a name="wp1058625"> </a><h3><b>
+Purpose
+</b></h3>
+<dl>
+<a name="wp1058635"> </a><dd>
+• Cleaning mode is to remove foreign material in the OCV hydraulic passages.
+</dd>
+</dl>
+<a name="wp1058649"> </a><h3><b>
+Operation
+</b></h3>
+<dl>
+<a name="wp1058659"> </a><dd>
+• The target current in the cleaning mode is fixed at 100 mA or 1,000 mA. A current of 100 mA and 1,000 mA flows to the OCV alternately at certain intervals. When 100 mA current is supplied, the OCV opens the hydraulic passage for the retard chamber and hydraulic pressure from the oil pump is introduced to the retard chamber. When 1,000 mA current is supplied, the OCV opens the hydraulic passage for the advance chamber and hydraulic pressure is introduced from the oil pump to the advance chamber. After repeating this operation several times, foreign material mixed in the OCV is removed and the cleaning mode is completed.
+</dd>
+</dl>
+<a name="wp1058674"> </a><h2><b>
+Maximum Cam Retard Mode
+</b></h2>
+
+<a name="wp1058684"> </a><h3><b>
+Mode execution condition
+</b></h3>
+<dl>
+<a name="wp1058694"> </a><dd>
+• When any of the following conditions are met:
+</dd>
+
+<a name="wp1058708"> </a><dd>
+-	Cranking
+</dd>
+
+<a name="wp1058722"> </a><dd>
+-	Idling after completion of cleaning mode
+</dd>
+
+<a name="wp1058732"> </a><dd>
+-	DTC stored for the following devices:
+</dd>
+<dl>
+<a name="wp1058742"> </a><dd>
+• ECT sensor
+</dd>
+
+<a name="wp1058756"> </a><dd>
+• CKP sensor
+</dd>
+
+<a name="wp1058766"> </a><dd>
+• CMP sensor
+</dd>
+
+<a name="wp1058776"> </a><dd>
+• TP sensor
+</dd>
+
+<a name="wp1058786"> </a><dd>
+• MAF sensor
+</dd>
+
+<a name="wp1058796"> </a><dd>
+• OCV
+</dd>
+</dl></dl>
+<a name="wp1058806"> </a><h3><b>
+Purpose
+</b></h3>
+<dl>
+<a name="wp1058816"> </a><dd>
+• Maximum cam retard mode stabilizes engine speed by maximally retarding the valve timing when the engine speed is low during idling.
+</dd>
+</dl>
+<a name="wp1058830"> </a><h3><b>
+Operation
+</b></h3>
+<dl>
+<a name="wp1058840"> </a><dd>
+• When the target current in the maximum cam retard mode is fixed at 100 mA. When 100 mA current is supplied, the OCV opens the hydraulic passage for the retard chamber and hydraulic pressure from the oil pump is introduced to the retard chamber. Because of this, the variable valve timing actuator is fixed at the maximum retard position (minimum overlap).
+</dd>
+</dl>
+<a name="wp1058854"> </a><h2><b>
+Feedback Hold Mode
+</b></h2>
+
+<a name="wp1058864"> </a><h3><b>
+Mode execution condition 
+</b></h3>
+<dl>
+<a name="wp1058874"> </a><dd>
+• Target valve timing and actual valve timing are almost the same.
+</dd>
+</dl>
+<a name="wp1058888"> </a><h3><b>
+Purpose
+</b></h3>
+<dl>
+<a name="wp1058898"> </a><dd>
+• The feedback hold mode holds the valve timing by returning the OCV spool valve to the neutral position when target valve timing suitable for the engine operation conditions is obtained.
+</dd>
+</dl>
+<a name="wp1058912"> </a><h3><b>
+Operation
+</b></h3>
+<dl>
+<a name="wp1058922"> </a><dd>
+• Though the target current in the feedback hold mode is basically around 600 mA, feedback operation is performed at all times so that the present OCV drive current approaches the target current. Because the hold current changes due to mechanical variation between engines and deterioration due to aging on OCV internal parts, the PCM continues to learn the changing current (hold current learning value) to maintain the spool valve in the neutral position.<br clear="all"/>
+<img alt="" height="296" loading="lazy" src="images/DDA140ZT4875.png" width="644"/><br clear="all"/>
+
+
+
+
+</dd>
+</dl>
+<a name="wp1058953"> </a><h2><b>
+Feedback Mode
+</b></h2>
+
+<a name="wp1058963"> </a><h3><b>
+Mode execution condition
+</b></h3>
+<dl>
+<a name="wp1058973"> </a><dd>
+• Except during cleaning, maximum cam retard, or feedback hold modes.
+</dd>
+</dl>
+<a name="wp1058987"> </a><h3><b>
+Purpose
+</b></h3>
+<dl>
+<a name="wp1058997"> </a><dd>
+• Feedback mode obtains valve timing suitable for engine operation conditions by performing the feedback operation so that present OCV drive current is set closer to the target current determined by the PCM according to engine operation conditions.
+</dd>
+</dl>
+<a name="wp1059011"> </a><h3><b>
+Operation
+</b></h3>
+<dl>
+<a name="wp1059021"> </a><dd>
+• Based on engine operation conditions, the target current is set between 100 mA (maximum retard) and 1,000 mA (maximum advance), using the neutral point of approx. 600 mA as a reference. Actually, the target current is calculated by subtracting the current necessary for obtaining the target advance/retard amount, using a reference at the hold-current learning value calculated from the neutral position of the spool valve.
+</dd>
+</dl>
+<a name="wp1059038"> </a><h2><b>
+Advance spark speed correction
+</b></h2>
+
+<a name="wp1059048"> </a><div>
+• If there is a large difference between the target valve timing and the actual valve timing, the target current correction is applied so that it is set closer to the target valve timing more quickly to raise the advance spark speed by advancing the spool valve initialization operation.
+</div>
+
+<a name="wp1059062"> </a><div>
+• The variable valve timing actuator advance spark speed increases as the hydraulic passage in the OCV widens and decreases as it narrows.
+</div>
+
+<a name="wp1059072"> </a><h2><b>
+Valve timing determination
+</b></h2>
+
+<a name="wp1059082"> </a><div>
+• The PCM controls current to the OCV to obtain optimum valve timing suitable for the engine operation conditions (target valve timing).
+</div>
+
+<a name="wp1059096"> </a><div>
+• The PCM compares target valve timing with actual valve timing, and feeds back the result to change valve timing smoothly.
+</div>
+
+<a name="wp1059106"> </a><h3><b>
+Target valve timing
+</b></h3>
+<dl>
+<a name="wp1059116"> </a><dd>
+• Determined according to engine speed and charging efficiency.
+</dd>
+</dl>
+<a name="wp1059130"> </a><h3><b>
+Actual valve timing
+</b></h3>
+<dl>
+<a name="wp1059140"> </a><dd>
+• Means present valve timing. Actual valve timing is calculated by adding the maximum cam retard learning value for energization from the value detected by the CMP and CKP sensors.
+</dd>
+</dl>
+<a name="wp1059154"> </a><h3><b>
+Cam maximum retard learning value
+</b></h3>
+<dl>
+<a name="wp1059164"> </a><dd>
+• Though the intake camshaft valve timing (including maximum retard position) is detected based on the difference between the signal from the sensor and signal from the CKP sensor, the difference between the signals deviates due to the sensor installation condition. Because of this, the PCM stores the difference between the signal build-ups at the maximum OCV retard position to prevent deviation in valve timing detection.
+</dd>
+</dl>
+<a name="wp1059179"> </a><p>
+</p><p><img alt="" height="181" loading="lazy" src="images/DDA140ZT48762.png" width="334"/><div class="tw"><table border="0" cellpadding="0" cellspacing="0"></table></div></p><p>
+
+
+
+</p>
+
+<a name="wp1059851"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0140001016c0.html"><small>Previous</small>Variable valve timing control block diagram [ZY]</a><a class="nx" href="id0140001017c0.html"><small>Next</small>Fuel injection control outline [ZY]</a></nav><script src="../../../assets/app.js"></script></body></html>

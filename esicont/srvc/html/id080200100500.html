@@ -1,0 +1,2204 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>On-board diagnostic function · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--restraints.html">Restraints</a></li><li><a href="../../../nav/technical-guide--restraints--on-board-diagnostic.html">On-board diagnostic</a></li><li aria-current="page">On-board diagnostic function</li></ol></nav><main class="wrap"><article class="doc"><h1>On-board diagnostic function</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058562"> </a><p></p><p></p>
+
+<a name="wp1063664"> </a><h2><b>
+Self-Malfunction Diagnostic Function
+</b></h2>
+
+<a name="wp1058573"> </a><div>
+• The self-malfunction diagnosis function determines that there is a malfunction, outputs a signal as a DTC to the DLC-2, and at the same time, flashes the air bag system warning light to advise the driver of a malfunction.
+</div>
+
+<a name="wp1058589"> </a><div>
+• The air bag system warning light illuminates or flashes to indicate a single DTC according to the present malfunction. (If there is more than one present malfunction, only one DTC will be displayed according to the preset priority ranking.)
+</div>
+
+<a name="wp1058599"> </a><div>
+• The air bag system warning light will flash the DTC pattern for five cycles, and then will remain illuminated until the ignition switch is turned to the LOCK position.
+</div>
+
+<a name="wp1058609"> </a><div>
+• If both of the driver-side air bag module connectors are disconnected when the SAS control module configuration is performed, the air bag system warning light will flash. <b>Approx. 15 s</b> after the connectors are properly reconnected, the light will go out.
+</div>
+
+<a name="wp1058629"> </a><div>
+• The self-malfunction diagnostic function consists of two functions: present malfunction diagnostic and past malfunction diagnostic.
+</div>
+
+<a name="wp1058640"> </a><p><b>
+DTC table</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th colspan="3" rowspan="1">
+<a name="wp1058754"> </a><p></p><div align="center"><b>
+DTC
+</b></div><p></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058760"> </a><p></p><div align="center"><b>
+Malfunction location
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1058840"> </a><p></p><div align="center"><b>
+WDS display
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058843"> </a><p></p><div align="center"><b>
+Air bag system warning light
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058648"> </a><div>
+B1231
+</div>
+</td>
+    <td>
+<a name="wp1058650"> </a><div>
+13
+</div>
+</td>
+    <td>
+<a name="wp1058706"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1010.png" width="141"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1058709"> </a><div>
+SAS control module activation (deployment) control freeze
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058783"> </a><div>
+B1317
+</div>
+</td>
+    <td>
+<a name="wp1058786"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058789"> </a><div>
+Continuously illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058792"> </a><div>
+The power supply voltage increases (16.1 V or more).
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058796"> </a><div>
+B1318
+</div>
+</td>
+    <td>
+<a name="wp1058799"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058802"> </a><div>
+Continuously illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058805"> </a><div>
+The power supply voltage decreases (less than 9 V).
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058809"> </a><div>
+B1342
+</div>
+</td>
+    <td>
+<a name="wp1058812"> </a><div>
+12
+</div>
+</td>
+    <td>
+<a name="wp1058815"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1011.png" width="134"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1058818"> </a><div>
+SAS control module
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058825"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058828"> </a><div>
+Continuously illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058831"> </a><div>
+SAS control module (DTC 12 detection circuit malfunction)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058978"> </a><div>
+B1869
+</div>
+</td>
+    <td>
+<a name="wp1058981"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058984"> </a><div>
+Continuously illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058987"> </a><div>
+Air bag system warning light system circuit open
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058994"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058997"> </a><div>
+Does not illuminate
+</div>
+</td>
+    <td>
+<a name="wp1059000"> </a><div>
+Air bag system warning light system circuit short to ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059039"> </a><div>
+B1870
+</div>
+</td>
+    <td>
+<a name="wp1059042"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059045"> </a><div>
+Continuously illuminated
+</div>
+</td>
+    <td>
+<a name="wp1059048"> </a><div>
+Air bag system warning light system circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059072"> </a><div>
+B1877
+</div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059075"> </a><div>
+33
+</div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059078"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1012.png" width="162"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059081"> </a><div>
+Driver-side pre-tensioner seat belt system circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059103"> </a><div>
+B1878
+</div>
+</td>
+    <td>
+<a name="wp1059112"> </a><div>
+Driver-side pre-tensioner seat belt system circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059090"> </a><div>
+B1879
+</div>
+</td>
+    <td>
+<a name="wp1059099"> </a><div>
+Driver-side pre-tensioner seat belt system circuit short to ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059164"> </a><div>
+B1881
+</div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059167"> </a><div>
+34
+</div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1059170"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1013.png" width="175"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059173"> </a><div>
+Passenger-side pre-tensioner seat belt system circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059195"> </a><div>
+B1882
+</div>
+</td>
+    <td>
+<a name="wp1059204"> </a><div>
+Passenger-side pre-tensioner seat belt system circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059182"> </a><div>
+B1883
+</div>
+</td>
+    <td>
+<a name="wp1059191"> </a><div>
+Passenger-side pre-tensioner seat belt system circuit short to ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059256"> </a><div>
+B1885
+</div>
+</td>
+    <td>
+<a name="wp1059259"> </a><div>
+33
+</div>
+</td>
+    <td>
+<a name="wp1059262"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1012.png" width="162"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059265"> </a><div>
+Driver-side pre-tensioner seat belt system circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059298"> </a><div>
+B1886
+</div>
+</td>
+    <td>
+<a name="wp1059301"> </a><div>
+34
+</div>
+</td>
+    <td>
+<a name="wp1059304"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1013.png" width="175"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059307"> </a><div>
+Passenger-side pre-tensioner seat belt system circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059340"> </a><div>
+B1916
+</div>
+</td>
+    <td>
+<a name="wp1059343"> </a><div>
+19
+</div>
+</td>
+    <td>
+<a name="wp1059346"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1014.png" width="208"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059349"> </a><div>
+Driver-side air bag module system circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059391"> </a><div>
+B1925
+</div>
+</td>
+    <td>
+<a name="wp1059394"> </a><div>
+21
+</div>
+</td>
+    <td>
+<a name="wp1059397"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1015.png" width="129"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059400"> </a><div>
+Passenger-side air bag module system circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059432"> </a><div>
+B1932
+</div>
+</td>
+    <td>
+<a name="wp1059435"> </a><div>
+19
+</div>
+</td>
+    <td>
+<a name="wp1059438"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1014.png" width="208"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059441"> </a><div>
+Driver-side air bag module system circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059473"> </a><div>
+B1933
+</div>
+</td>
+    <td>
+<a name="wp1059476"> </a><div>
+21
+</div>
+</td>
+    <td>
+<a name="wp1059479"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1015.png" width="129"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059482"> </a><div>
+Passenger-side air bag module system circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059514"> </a><div>
+B1934
+</div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div>
+19
+</div>
+</td>
+    <td>
+<a name="wp1059520"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1014.png" width="208"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059523"> </a><div>
+Driver-side air bag module system circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059555"> </a><div>
+B1935
+</div>
+</td>
+    <td>
+<a name="wp1059558"> </a><div>
+21
+</div>
+</td>
+    <td>
+<a name="wp1059561"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1015.png" width="129"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059564"> </a><div>
+Passenger-side air bag module system circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059596"> </a><div>
+B1936
+</div>
+</td>
+    <td>
+<a name="wp1059599"> </a><div>
+19
+</div>
+</td>
+    <td>
+<a name="wp1059602"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1014.png" width="208"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059605"> </a><div>
+Driver-side air bag module system circuit short to ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059637"> </a><div>
+B1938
+</div>
+</td>
+    <td>
+<a name="wp1059640"> </a><div>
+21
+</div>
+</td>
+    <td>
+<a name="wp1059643"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1015.png" width="129"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059646"> </a><div>
+Passenger-side air bag module system circuit short to ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059678"> </a><div>
+B1992
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059681"> </a><div>
+22
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059684"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1016.png" width="141"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059687"> </a><div>
+Driver-side side air bag module circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059722"> </a><div>
+B1993
+</div>
+</td>
+    <td>
+<a name="wp1059731"> </a><div>
+Driver-side side air bag module circuit short to body ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059709"> </a><div>
+B1994
+</div>
+</td>
+    <td>
+<a name="wp1059718"> </a><div>
+Driver-side side air bag module circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059696"> </a><div>
+B1995
+</div>
+</td>
+    <td>
+<a name="wp1059705"> </a><div>
+Driver-side side air bag module circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059791"> </a><div>
+B1996
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059794"> </a><div>
+23
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059797"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1017.png" width="152"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1059800"> </a><div>
+Passenger-side side air bag module circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059835"> </a><div>
+B1997
+</div>
+</td>
+    <td>
+<a name="wp1059844"> </a><div>
+Passenger-side side air bag module circuit short to body ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059822"> </a><div>
+B1998
+</div>
+</td>
+    <td>
+<a name="wp1059831"> </a><div>
+Passenger-side side air bag module circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059809"> </a><div>
+B1999
+</div>
+</td>
+    <td>
+<a name="wp1059818"> </a><div>
+Passenger-side side air bag module circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059904"> </a><div>
+B2228
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059907"> </a><div>
+19
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059910"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1014.png" width="208"/>
+
+
+
+</p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059913"> </a><div>
+Driver-side air bag module assembly incorrect
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059948"> </a><div>
+B2230
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059935"> </a><div>
+B2232
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059922"> </a><div>
+B2234
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060009"> </a><div>
+B2229
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060012"> </a><div>
+21
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060015"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1015.png" width="129"/>
+
+
+
+</p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060018"> </a><div>
+Passenger-side air bag module assembly incorrect
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060053"> </a><div>
+B2231
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060040"> </a><div>
+B2233
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060027"> </a><div>
+B2235
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060104"> </a><div>
+B2444
+</div>
+</td>
+    <td>
+<a name="wp1060107"> </a><div>
+43
+</div>
+</td>
+    <td>
+<a name="wp1060110"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1019.png" width="176"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060113"> </a><div>
+Driver-side side air bag sensor internal circuit malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060145"> </a><div>
+B2445
+</div>
+</td>
+    <td>
+<a name="wp1060148"> </a><div>
+44
+</div>
+</td>
+    <td>
+<a name="wp1060151"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1020.png" width="185"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060154"> </a><div>
+Passenger-side side air bag sensor internal circuit malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060186"> </a><div>
+B2477
+</div>
+</td>
+    <td>
+<a name="wp1060189"> </a><div>
+54
+</div>
+</td>
+    <td>
+<a name="wp1060192"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1021.png" width="196"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060195"> </a><div>
+Configuration error
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060226"> </a><div>
+B2773
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060229"> </a><div>
+24
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060232"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1022.png" width="162"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060235"> </a><div>
+Driver-side curtain air bag module circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060270"> </a><div>
+B2774
+</div>
+</td>
+    <td>
+<a name="wp1060279"> </a><div>
+Driver-side curtain air bag module circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060257"> </a><div>
+B2775
+</div>
+</td>
+    <td>
+<a name="wp1060266"> </a><div>
+Driver-side curtain air bag module circuit short to body ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060244"> </a><div>
+B2776
+</div>
+</td>
+    <td>
+<a name="wp1060253"> </a><div>
+Driver-side curtain air bag module circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060339"> </a><div>
+B2777
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060342"> </a><div>
+25
+</div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060345"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1023.png" width="175"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060348"> </a><div>
+Passenger-side curtain air bag module circuit resistance low
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060383"> </a><div>
+B2778
+</div>
+</td>
+    <td>
+<a name="wp1060392"> </a><div>
+Passenger-side curtain air bag module circuit resistance high
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060370"> </a><div>
+B2779
+</div>
+</td>
+    <td>
+<a name="wp1060379"> </a><div>
+Passenger-side curtain air bag module circuit short to body ground
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060357"> </a><div>
+B2780
+</div>
+</td>
+    <td>
+<a name="wp1060366"> </a><div>
+Passenger-side curtain air bag module circuit short to power supply
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060452"> </a><div>
+U2017
+</div>
+</td>
+    <td>
+<a name="wp1060455"> </a><div>
+43
+</div>
+</td>
+    <td>
+<a name="wp1060458"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1019.png" width="176"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060461"> </a><div>
+Driver-side side air bag sensor communication error
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060493"> </a><div>
+U2018
+</div>
+</td>
+    <td>
+<a name="wp1060496"> </a><div>
+44
+</div>
+</td>
+    <td>
+<a name="wp1060499"> </a><p>
+<img alt="" height="45" loading="lazy" src="images/DDJ802ZW1020.png" width="185"/>
+
+
+
+</p>
+</td>
+    <td>
+<a name="wp1060502"> </a><div>
+Passenger-side side air bag sensor communication error
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060536"> </a><h2><b>
+PID/Data Monitoring Function
+</b></h2>
+
+<a name="wp1060548"> </a><div>
+• By using the PID/data monitoring function, the monitored item of the input/output signal, as set on the SAS control module, can be freely selected and read out in real-time. 
+</div>
+
+<a name="wp1060567"> </a><div>
+• A WDS or equivalent is used to read out PID/data monitor information.
+</div>
+
+<a name="wp1060579"> </a><p><b>
+PID/data monitor table</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1060695"> </a><p></p><div align="center"><b>
+PID name (Definition)
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060697"> </a><p></p><div align="center"><b>
+Unit/State
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060699"> </a><p></p><div align="center"><b>
+Detection state
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1060701"> </a><p></p><div align="center"><b>
+SAS control module terminal
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060589"> </a><div>
+CCNT_RCM
+</div>
+
+<a name="wp1060807"> </a><div>
+ (Number of continuous DTCs)
+</div>
+</td>
+    <td>
+<a name="wp1060591"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1060647"> </a><div>
+• DTC is detected: 1-255
+</div>
+
+<a name="wp1060833"> </a><div>
+• DTC is not detected: 0
+</div>
+</td>
+    <td>
+<a name="wp1060650"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060724"> </a><div>
+D_CRSH_S
+</div>
+
+<a name="wp1060857"> </a><div>
+(Driver-side side air bag sensor state)
+</div>
+</td>
+    <td>
+<a name="wp1060727"> </a><div>
+OK/
+</div>
+
+<a name="wp1060870"> </a><div>
+COMM FAIL/
+</div>
+
+<a name="wp1060877"> </a><div>
+INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1060730"> </a><div>
+• Sensor normal: OK
+</div>
+
+<a name="wp1060896"> </a><div>
+• Sensor communication error: COMM FAIL
+</div>
+
+<a name="wp1060906"> </a><div>
+• Sensor internal circuit abnormal: INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1060733"> </a><div>
+1S, 1R
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060737"> </a><div>
+D_PTENSFLT
+</div>
+
+<a name="wp1060928"> </a><div>
+ (Driver-side pre-tensioner seat belt circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1060740"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1060942"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1060950"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1060957"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1060966"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1060743"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1060985"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1060996"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061006"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061019"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1060746"> </a><div>
+1E, 1I
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060750"> </a><div>
+DS_AB_ST
+</div>
+
+<a name="wp1061043"> </a><div>
+(Driver-side side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1060753"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061056"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061064"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061071"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061080"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1060756"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061099"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061110"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061120"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061133"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1060759"> </a><div>
+1M, 1Q
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060763"> </a><div>
+DS_CURT_ST
+</div>
+
+<a name="wp1061157"> </a><div>
+(Driver-side curtain air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1060766"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061170"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061178"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061185"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061194"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1060769"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061213"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061224"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061234"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061247"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1060772"> </a><div>
+1C, 1G
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061260"> </a><div>
+DSB_P_ST
+</div>
+
+<a name="wp1061284"> </a><div>
+ (Driver-side pre-tensioner seat belt circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1061263"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061298"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061306"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061313"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061322"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061266"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061341"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061352"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061362"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061375"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061269"> </a><div>
+1E, 1I
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061388"> </a><div>
+DS1_STAT
+</div>
+
+<a name="wp1061410"> </a><div>
+ (Driver-side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1061391"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061423"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061431"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061438"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061447"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061394"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061466"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061477"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061487"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061500"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061397"> </a><div>
+2J, 2N
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061513"> </a><div>
+OD_D_CRSH
+</div>
+
+<a name="wp1061537"> </a><div>
+(On demand driver-side side air bag sensor state)
+</div>
+</td>
+    <td>
+<a name="wp1061516"> </a><div>
+OK/
+</div>
+
+<a name="wp1061550"> </a><div>
+COMM FAIL/
+</div>
+
+<a name="wp1061557"> </a><div>
+INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1061519"> </a><div>
+• Sensor normal: OK
+</div>
+
+<a name="wp1061576"> </a><div>
+• Sensor communication error: COMM FAIL
+</div>
+
+<a name="wp1061586"> </a><div>
+• Sensor internal circuit abnormal: INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1061522"> </a><div>
+1R, 1S
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061599"> </a><div>
+OD_D_CURT
+</div>
+
+<a name="wp1061623"> </a><div>
+(On demand driver-side curtain air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1061602"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061636"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061644"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061651"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061660"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061605"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061679"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061690"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061700"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061713"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061608"> </a><div>
+1C, 1G
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061726"> </a><div>
+OD_DAB1_ST
+</div>
+
+<a name="wp1061750"> </a><div>
+ (On demand driver-side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1061729"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061763"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061771"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061778"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061787"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061732"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061806"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061817"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061827"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061840"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061735"> </a><div>
+2J, 2N
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061853"> </a><div>
+OD_DSAB_ST
+</div>
+
+<a name="wp1061877"> </a><div>
+(On demand driver-side side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1061856"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1061890"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1061898"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1061905"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1061914"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061859"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1061933"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1061944"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1061954"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1061967"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1061862"> </a><div>
+1M, 1Q
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061980"> </a><div>
+OD_F_CRSH
+</div>
+
+<a name="wp1062004"> </a><div>
+ (On demand crash zone sensor state)
+</div>
+</td>
+    <td>
+<a name="wp1061983"> </a><div>
+OK/
+</div>
+
+<a name="wp1062016"> </a><div>
+COMM FAIL/
+</div>
+
+<a name="wp1062023"> </a><div>
+INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1061986"> </a><div>
+• Sensor normal: OK
+</div>
+
+<a name="wp1062042"> </a><div>
+• Sensor communication error: COMM FAIL
+</div>
+
+<a name="wp1062052"> </a><div>
+• Sensor internal circuit abnormal: INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1061989"> </a><div>
+1J, 1K
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062065"> </a><div>
+OD_P_CRSH
+</div>
+
+<a name="wp1062089"> </a><div>
+(On demand passenger-side side air bag sensor state)
+</div>
+</td>
+    <td>
+<a name="wp1062068"> </a><div>
+OK/
+</div>
+
+<a name="wp1062102"> </a><div>
+COMM FAIL/
+</div>
+
+<a name="wp1062109"> </a><div>
+INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1062071"> </a><div>
+• Sensor normal: OK
+</div>
+
+<a name="wp1062128"> </a><div>
+• Sensor communication error: COMM FAIL
+</div>
+
+<a name="wp1062138"> </a><div>
+• Sensor internal circuit abnormal: INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1062074"> </a><div>
+1N, 1O
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062151"> </a><div>
+OD_P_CURT
+</div>
+
+<a name="wp1062175"> </a><div>
+(On demand passenger-side curtain air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1062154"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1062188"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1062196"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1062203"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1062212"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062157"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1062231"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1062242"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1062252"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1062265"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062160"> </a><div>
+1D, 1H
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062278"> </a><div>
+OD_PAB1_ST
+</div>
+
+<a name="wp1062302"> </a><div>
+ (On demand passenger-side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1062281"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1062315"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1062323"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1062330"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1062339"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062284"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1062358"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1062369"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1062379"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1062392"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062287"> </a><div>
+2R, 2V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062405"> </a><div>
+OD_PSAB_ST
+</div>
+
+<a name="wp1062429"> </a><div>
+(On demand passenger-side side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1062408"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1062442"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1062450"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1062457"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1062466"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062411"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1062485"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1062496"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1062506"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1062519"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062414"> </a><div>
+1P, 1T
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062532"> </a><div>
+P_CRSH_S
+</div>
+
+<a name="wp1062556"> </a><div>
+(Passenger-side side air bag sensor state)
+</div>
+</td>
+    <td>
+<a name="wp1062535"> </a><div>
+OK/
+</div>
+
+<a name="wp1062569"> </a><div>
+COMM FAIL/
+</div>
+
+<a name="wp1062576"> </a><div>
+INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1062538"> </a><div>
+• Sensor normal: OK
+</div>
+
+<a name="wp1062595"> </a><div>
+• Sensor communication error: COMM FAIL
+</div>
+
+<a name="wp1062605"> </a><div>
+• Sensor internal circuit abnormal: INT FAIL
+</div>
+</td>
+    <td>
+<a name="wp1062541"> </a><div>
+1N, 1O
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062618"> </a><div>
+P_PTESFLT
+</div>
+
+<a name="wp1062640"> </a><div>
+ (Passenger-side pre-tensioner seat belt circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1062621"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1062654"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1062662"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1062669"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1062678"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062624"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1062697"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1062708"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1062718"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1062731"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062627"> </a><div>
+1A, 1B
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062744"> </a><div>
+PS_AB_ST
+</div>
+
+<a name="wp1062768"> </a><div>
+(Passenger-side side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1062747"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1062781"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1062789"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1062796"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1062805"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062750"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1062824"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1062835"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1062845"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1062858"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062753"> </a><div>
+1P, 1T
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062871"> </a><div>
+PS_CURT_ST
+</div>
+
+<a name="wp1062895"> </a><div>
+(Passenger-side curtain air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1062874"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1062908"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1062916"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1062923"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1062932"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062877"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1062951"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1062962"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1062972"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1062985"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1062880"> </a><div>
+1D, 1H
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062998"> </a><div>
+PSB_P_ST
+</div>
+
+<a name="wp1063022"> </a><div>
+ (Passenger-side pre-tensioner seat belt circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1063001"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1063036"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1063044"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1063051"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1063060"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1063004"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1063079"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1063090"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1063100"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1063113"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1063007"> </a><div>
+1A, 1B
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063126"> </a><div>
+PS1_STAT
+</div>
+
+<a name="wp1063148"> </a><div>
+ (Passenger-side air bag module circuit state)
+</div>
+</td>
+    <td>
+<a name="wp1063129"> </a><div>
+SHRT GND/
+</div>
+
+<a name="wp1063161"> </a><div>
+SHRT B+/
+</div>
+
+<a name="wp1063169"> </a><div>
+OPEN/
+</div>
+
+<a name="wp1063176"> </a><div>
+SQ_LOWRES/
+</div>
+
+<a name="wp1063185"> </a><div>
+NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1063132"> </a><div>
+• Related wiring harness short to ground: SHRT GND
+</div>
+
+<a name="wp1063204"> </a><div>
+• Related wiring harness short to power supply: SHRT B+
+</div>
+
+<a name="wp1063215"> </a><div>
+• Related wiring harness circuit open: OPEN
+</div>
+
+<a name="wp1063225"> </a><div>
+• Pre-tensioner seat belt circuit resistance low: SQ_LOWRES
+</div>
+
+<a name="wp1063238"> </a><div>
+• Related wiring harness normal: NORMAL
+</div>
+</td>
+    <td>
+<a name="wp1063135"> </a><div>
+2R, 2V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063251"> </a><div>
+VBATT
+</div>
+
+<a name="wp1063271"> </a><div>
+ (Battery voltage)
+</div>
+</td>
+    <td>
+<a name="wp1063254"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1063257"> </a><div>
+Under any condition: B+
+</div>
+</td>
+    <td>
+<a name="wp1063260"> </a><div>
+2U
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1063408"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id080200100100.html"><small>Previous</small>On-board diagnostic function outline</a></nav><script src="../../../assets/app.js"></script></body></html>

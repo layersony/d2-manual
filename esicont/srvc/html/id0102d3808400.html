@@ -1,0 +1,696 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0500 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P0500 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0500 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060948"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P0500
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+VSS circuit problem
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058568"> </a><b>
+With ABS, Without ABS (MTX)
+</b>
+
+<a name="wp1058710"> </a><div>
+• The PCM monitors the vehicle speed signal when the following conditions are met. If the vehicle speed signal is <b>less than 3.76 km/h {2.33 mph}</b> for <b>14 s or more,</b> the PCM determines that there is a VSS circuit malfunction. 
+</div>
+<dl>
+<a name="wp1058719"> </a><dd>
+-	Load condition
+</dd>
+
+<a name="wp1058733"> </a><dd>
+-	Charging efficiency: <b>40.0% or more</b>
+</dd>
+
+<a name="wp1058751"> </a><dd>
+-	Engine speed: <b>2,500 rpm or more</b>
+</dd>
+
+<a name="wp1058767"> </a><dd>
+-	Brake switch is off
+</dd>
+</dl>
+<a name="wp1058777"> </a><b>
+Without ABS (ATX)
+</b>
+
+<a name="wp1058787"> </a><div>
+• If the AT control part detects a speed sensor malfunction.
+</div>
+
+<a name="wp1058797"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058807"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058817"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058827"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058837"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058847"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• PCM malfunction
+</div>
+
+<a name="wp1058879"> </a><div>
+• No configuration data in the PCM
+</div>
+
+<a name="wp1058889"> </a><div>
+• The PCM configuration error
+</div>
+
+<a name="wp1058899"> </a><div>
+• Connector or terminal malfunction
+</div>
+
+<a name="wp1058909"> </a><b>
+With ABS
+</b>
+
+<a name="wp1058919"> </a><div>
+• ABS HU/CM malfunction 
+</div>
+
+<a name="wp1058931"> </a><div>
+• Wheel-speed sensor malfunction 
+</div>
+
+<a name="wp1058943"> </a><div>
+• Short to power circuit or short to ground or open circuit in wiring between ABS HU/CM terminal H and PCM terminal 1AE
+</div>
+
+<a name="wp1058955"> </a><div>
+• Short to power circuit or short to ground or open circuit in wiring between ABS HU/CM terminal L and PCM terminal 1AI
+</div>
+
+<a name="wp1058967"> </a><b>
+Without ABS
+</b>
+
+<a name="wp1058977"> </a><div>
+• VSS malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058648"> </a><p>
+<img alt="" height="393" loading="lazy" src="images/DDA102ZW4300.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1059009"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059123"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059125"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059129"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059017"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059019"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059231"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1059075"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059078"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059158"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059161"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059165"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059168"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059275"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059289"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059171"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059174"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059309"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059184"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059187"> </a><div>
+Perform the "PCM CONFIGURATION", then go to the next step.
+</div>
+
+<a name="wp1059337"> </a><div>
+(See <a href="id0140008026c0.html#wp1025486">PCM CONFIGURATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059191"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059194"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0500 COMPLETED
+</b>
+
+<a name="wp1059380"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1059394"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059404"> </a><div>
+• Repeat twice the following steps.
+</div>
+<dl>
+<a name="wp1059414"> </a><dd>
+1.	Start the engine and drive.
+</dd>
+
+<a name="wp1059428"> </a><dd>
+2.	Turn the ignition switch off.
+</dd>
+</dl>
+<a name="wp1059438"> </a><div>
+• Start the engine and drive again.
+</div>
+
+<a name="wp1059448"> </a><div>
+• Is the same DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059197"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059200"> </a><b>
+With ABS
+</b>
+
+<a name="wp1059472"> </a><div>
+Go to the next step.
+</div>
+
+<a name="wp1059482"> </a><b>
+Without ABS
+</b>
+
+<a name="wp1059492"> </a><div>
+Go to Step 5.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059355"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059358"> </a><div>
+Go to Step 10.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059510"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059513"> </a><b>
+VERIFY STORED DTC IN ABS HU/CM
+</b>
+
+<a name="wp1059558"> </a><div>
+• Turn the ignition switch to the ON position (Engine off).
+</div>
+
+<a name="wp1059572"> </a><div>
+• Verify stored DTCs in ABS HU/CM.
+</div>
+
+<a name="wp1059584"> </a><div>
+(See <a href="id040200875600.html#wp1025486">ABS ON-BOARD DIAGNOSIS</a>.)
+</div>
+
+<a name="wp1059598"> </a><div>
+• Are DTCs stored?
+</div>
+</td>
+    <td>
+<a name="wp1059516"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059519"> </a><div>
+Go to the appropriate DTC inspection.
+</div>
+
+<a name="wp1059626"> </a><div>
+(See <a href="id040200875600.html#wp1058938">DTC Table</a>)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059531"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059534"> </a><div>
+Inspect the PCM connector for poor connection (such as damaged, pulled-out pins, and corrosion).
+</div>
+
+<a name="wp1059651"> </a><div>
+• If there is malfunction, repair or replace wiring harness for open. Then go to Step 9.
+</div>
+
+<a name="wp1059665"> </a><div>
+• If there is no malfunction, replace the PCM. Then go to Step 9.
+</div>
+
+<a name="wp1059675"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059687"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059690"> </a><b>
+VERIFY CURRENT INPUT SIGNAL STATUS-IS CONCERN INTERMITTENT OR CONSTANT
+</b>
+
+<a name="wp1059766"> </a><div>
+• Connect WDS or equivalent to DLC-2.
+</div>
+
+<a name="wp1059781"> </a><div>
+• Start engine.
+</div>
+
+<a name="wp1059791"> </a><div>
+• Access VSS PID using WDS or equivalent.
+</div>
+<dl>
+<a name="wp1059801"> </a><dd>
+-	Vehicle speed <b>20 km/h {12.4 mph}: 20km/h {12.4 mph}</b>
+</dd>
+
+<a name="wp1059832"> </a><dd>
+-	Vehicle speed <b>40 km/h {24.8 mph}: 40km/h {24.8 mph}</b>
+</dd>
+</dl>
+<a name="wp1059859"> </a><div>
+• Are PID readings within specification?
+</div>
+</td>
+    <td>
+<a name="wp1059693"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059696"> </a><div>
+Go to intermittent concern troubleshooting procedure.
+</div>
+
+<a name="wp1059879"> </a><div>
+(See <a href="id0103c0800400.html#wp1025486">INTERMITTENT CONCERN TROUBLESHOOTING [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059716"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059719"> </a><div>
+Go to next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059901"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059904"> </a><b>
+INSPECT POOR CONNECTION OF VSS CONNECTOR
+</b>
+
+<a name="wp1059995"> </a><div>
+• Verify that the VSS connector is connected securely.
+</div>
+
+<a name="wp1060009"> </a><div>
+• Is connector normal?
+</div>
+</td>
+    <td>
+<a name="wp1059907"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059910"> </a><div>
+Go to next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059934"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059937"> </a><div>
+Reconnect the connector, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060037"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060040"> </a><b>
+INSPECT VSS
+</b>
+
+<a name="wp1060131"> </a><div>
+• Perform the VSS inspection.
+</div>
+
+<a name="wp1060145"> </a><div>
+(See <a href="id0517a1801400.html#wp1025486">VEHICLE SPEED SENSOR (VSS) INSPECTION [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060159"> </a><div>
+• Is the VSS normal?
+</div>
+</td>
+    <td>
+<a name="wp1060043"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060046"> </a><div>
+Go to next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060070"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060073"> </a><div>
+Replace the VSS, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060187"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060190"> </a><b>
+INSPECT POOR CONNECTION OF PCM CONNECTOR
+</b>
+
+<a name="wp1060289"> </a><div>
+• Disconnect the PCM connector.
+</div>
+
+<a name="wp1060303"> </a><div>
+• Inspect for poor connection (such as damaged, pulled-out pins, and corrosion).
+</div>
+
+<a name="wp1060314"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1060193"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060196"> </a><div>
+Repair terminal, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060222"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060225"> </a><div>
+Go to next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060342"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060345"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0500 COMPLETED
+</b>
+
+<a name="wp1060444"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1060458"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1060468"> </a><div>
+• Repeat twice the following steps.
+</div>
+<dl>
+<a name="wp1060478"> </a><dd>
+1.	Start the engine and drive.
+</dd>
+
+<a name="wp1060492"> </a><dd>
+2.	Turn the ignition switch off.
+</dd>
+</dl>
+<a name="wp1060502"> </a><div>
+• Start the engine and drive again.
+</div>
+
+<a name="wp1060512"> </a><div>
+• Is the PENDING CODE for this DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1060348"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060351"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060532"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060377"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060380"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060554"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060557"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060664"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060682"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060696"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060560"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060563"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1060716"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060591"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060594"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060871"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3815200.html"><small>Previous</small>DTC P0481 [ZY]</a><a class="nx" href="id0102d3808500.html"><small>Next</small>DTC P0505 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

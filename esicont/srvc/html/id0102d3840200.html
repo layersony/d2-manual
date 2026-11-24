@@ -1,0 +1,439 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P2109 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P2109 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P2109 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060133"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P2109
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+TP sensor minimum stop range/performance problem
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058701"> </a><div>
+• The PCM monitors the minimum TP when the closed TP learning is completed. If the TP is <b>0.339 V or less</b> or <b>0.66V or more</b>, the PCM determines that there is a TP sensor minimum stop range/performance problem.
+</div>
+
+<a name="wp1058712"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058722"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058732"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in the first drive cycle.
+</div>
+
+<a name="wp1058742"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition.
+</div>
+
+<a name="wp1058752"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058762"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• Drive-by-wire control system malfunction
+</div>
+
+<a name="wp1058796"> </a><div>
+• Throttle actuator malfunction
+</div>
+
+<a name="wp1058806"> </a><div>
+• Throttle valve malfunction
+</div>
+
+<a name="wp1058816"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058832"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058946"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058948"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058952"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058840"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058842"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059054"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058898"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058901"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058981"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1058984"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058988"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058991"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059098"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059112"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1058994"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058997"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059132"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059007"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059010"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059014"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059017"> </a><b>
+INSPECT DRIVE-BY-WIRE CONTROL SYSTEM OPERATION
+</b>
+
+<a name="wp1059181"> </a><div>
+• Perform the "Drive-by-wire Control System Inspection".
+</div>
+
+<a name="wp1059201"> </a><div>
+(See <a href="id0103c0803700.html#wp1058781">Drive-by-wire Control System Inspection</a>.)
+</div>
+
+<a name="wp1059215"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059020"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059023"> </a><div>
+Repair or replace the malfunctioning part according to the inspection results.
+</div>
+
+<a name="wp1059243"> </a><div>
+Then go to the Step 6.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059160"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059163"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059257"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059260"> </a><b>
+INSPECT THROTTLE ACTUATOR
+</b>
+
+<a name="wp1059311"> </a><div>
+• Inspect the throttle actuator.
+</div>
+
+<a name="wp1059325"> </a><div>
+(See <a href="id0113008026c8.html#wp1058581">Resistance Inspection</a>.)
+</div>
+
+<a name="wp1059339"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059263"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059266"> </a><div>
+Replace the throttle body, then go to Step 6.
+</div>
+
+<a name="wp1059367"> </a><div>
+(See <a href="id0113008019c8.html#wp1025486">INTAKE-AIR SYSTEM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059280"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059283"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059389"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059392"> </a><b>
+INSPECT THROTTLE VALVE
+</b>
+
+<a name="wp1059467"> </a><div>
+• Inspect the throttle valve.
+</div>
+
+<a name="wp1059481"> </a><div>
+(See <a href="id0103c0803700.html#wp1058781">Drive-by-wire Control System Inspection</a>.)
+</div>
+
+<a name="wp1059495"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059395"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059398"> </a><div>
+Replace the throttle body, then go to the next step.
+</div>
+
+<a name="wp1059523"> </a><div>
+(See <a href="id0113008019c8.html#wp1025486">INTAKE-AIR SYSTEM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059418"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059421"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059545"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059548"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P2109 COMPLETED
+</b>
+
+<a name="wp1059647"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1059661"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059671"> </a><div>
+• Perform the KOER self test.
+</div>
+
+<a name="wp1059681"> </a><div>
+(See <a href="id0102d3801200.html#wp1025486">KOEO/KOER SELF TEST [ZY]</a>.)
+</div>
+
+<a name="wp1059695"> </a><div>
+• Is the PENDING CODE same as the DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059551"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059554"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1059715"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059580"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059583"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059737"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059740"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1059855"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1059873"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1059887"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059743"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059746"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1059907"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059776"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059779"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060057"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3811500.html"><small>Previous</small>DTC P2108 [ZY]</a><a class="nx" href="id0102d3840300.html"><small>Next</small>DTC P2112 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

@@ -1,0 +1,564 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P2088 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P2088 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P2088 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060272"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P2088
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+Variable valve timing control circuit low
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058699"> </a><div>
+• If the PCM detects that the OCV drive current is less than the specification<sup>*</sup> when the OCV control duty target is <b>approx. 99 %</b>, the PCM determines that the variable valve timing control circuit low.
+</div>
+
+<a name="wp1058709"> </a><div>
+*: Detected specification value depends on the battery voltage.
+</div>
+
+<a name="wp1058716"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058726"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058736"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in the first drive cycle.
+</div>
+
+<a name="wp1058746"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition.
+</div>
+
+<a name="wp1058756"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058766"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• OCV malfunction
+</div>
+
+<a name="wp1058798"> </a><div>
+• Connector or terminal malfunction
+</div>
+
+<a name="wp1058808"> </a><div>
+• Open circuit in wiring harness between OCV terminal A and PCM terminal 2I
+</div>
+
+<a name="wp1058818"> </a><div>
+• Short to ground in wiring harness between OCV terminal A and PCM terminal 2I
+</div>
+
+<a name="wp1058828"> </a><div>
+• Open circuit in wiring harness between OCV terminal B and PCM terminal 2W
+</div>
+
+<a name="wp1058838"> </a><div>
+• Short to ground in wiring harness between OCV terminal B and PCM terminal 2W
+</div>
+
+<a name="wp1058848"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058648"> </a><p>
+<img alt="" height="439" loading="lazy" src="images/DDA102ZW4028.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058876"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058990"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058992"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058996"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058884"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058886"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059098"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058942"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058945"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059025"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059028"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059032"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059035"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059142"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059156"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059038"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059041"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059176"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059051"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059054"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059058"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059061"> </a><b>
+INSPECT OCV CONNECTOR FOR POOR CONNECTION
+</b>
+
+<a name="wp1059223"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059237"> </a><div>
+• Disconnect the OCV connector.
+</div>
+
+<a name="wp1059247"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059260"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059064"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059067"> </a><div>
+Repair or replace the terminal, then go to Step 8.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059204"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059207"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059288"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059291"> </a><b>
+INSPECT OCV CIRCUIT FOR SHORT TO GROUND
+</b>
+
+<a name="wp1059326"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059340"> </a><div>
+• Inspect for continuity between the following circuits:
+</div>
+<dl>
+<a name="wp1059350"> </a><dd>
+-	OCV terminal A (wiring harness-side) and body ground
+</dd>
+
+<a name="wp1059365"> </a><dd>
+-	OCV terminal B (wiring harness-side) and body ground
+</dd>
+</dl>
+<a name="wp1059376"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059294"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059297"> </a><div>
+Repair or replace the wiring harness for a possible short to ground, then go to Step 8.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059307"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059310"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059404"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059407"> </a><b>
+INSPECT OCV
+</b>
+
+<a name="wp1059442"> </a><div>
+• Inspect the OCV.
+</div>
+
+<a name="wp1059456"> </a><div>
+(See <a href="id0110005061c0.html#wp1025486">OIL CONTROL VALVE (OCV) INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059470"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059410"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059413"> </a><div>
+Replace the OCV, then go to Step 8.
+</div>
+
+<a name="wp1059498"> </a><div>
+(See <a href="id0110008013c0.html">OIL CONTROL VALVE (OCV) REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059423"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059426"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059520"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059523"> </a><b>
+INSPECT PCM CONNECTOR FOR POOR CONNECTION
+</b>
+
+<a name="wp1059582"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059596"> </a><div>
+• Disconnect the PCM connector.
+</div>
+
+<a name="wp1059606"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059619"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059526"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059529"> </a><div>
+Repair or replace the terminal, then go to Step 8.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059545"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059548"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059647"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059650"> </a><b>
+INSPECT OCV CIRCUIT FOR OPEN CIRCUIT
+</b>
+
+<a name="wp1059709"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059723"> </a><div>
+• Inspect for continuity between the following circuits:
+</div>
+<dl>
+<a name="wp1059733"> </a><dd>
+-	OCV terminal A (wiring harness-side) and PCM terminal 2I (wiring harness-side)
+</dd>
+
+<a name="wp1059749"> </a><dd>
+-	OCV terminal B (wiring harness-side) and PCM terminal 2W (wiring harness-side)
+</dd>
+</dl>
+<a name="wp1059761"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059653"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059656"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059672"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059675"> </a><div>
+Repair or replace the wiring harness for a possible open circuit, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059789"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059792"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P2088 COMPLETED
+</b>
+
+<a name="wp1059851"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1059865"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059875"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059885"> </a><div>
+• Is the same DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059795"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059798"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1059905"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059814"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059817"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059927"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059930"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1059997"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060015"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060029"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059933"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059936"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1060049"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059954"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059957"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060194"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3991100.html"><small>Previous</small>DTC P2017 [ZY]</a><a class="nx" href="id0102d3810700.html"><small>Next</small>DTC P2089 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

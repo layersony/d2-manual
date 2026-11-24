@@ -1,0 +1,600 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0038 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P0038 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0038 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060399"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P0038
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+Rear HO2S heater control circuit low
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058568"> </a><div>
+• The PCM monitors the rear HO2S heater control voltage when the PCM turns the rear HO2S heater on. If the control voltage is <b>less than 57%</b> of the battery voltage, the PCM determines that the rear HO2S heater control circuit voltage is low.
+</div>
+
+<a name="wp1058699"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058709"> </a><div>
+• This is a continuous monitor (HO2S heater).
+</div>
+
+<a name="wp1058719"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058729"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058739"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058749"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• Open circuit in wiring harness between rear HO2S terminal C and PCM terminal 2I
+</div>
+
+<a name="wp1058781"> </a><div>
+• Short to ground in wiring harness between rear HO2S terminal C and PCM terminal 2I
+</div>
+
+<a name="wp1058791"> </a><div>
+• Open circuit in wiring harness between rear HO2S terminal D and PCM terminal 2AB
+</div>
+
+<a name="wp1058801"> </a><div>
+• Short to ground in wiring harness between rear HO2S terminal D and PCM terminal 2AB
+</div>
+
+<a name="wp1058811"> </a><div>
+• Rear HO2S heater malfunction
+</div>
+
+<a name="wp1058821"> </a><div>
+• Connector or terminal malfunction
+</div>
+
+<a name="wp1058831"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058648"> </a><p>
+<img alt="" height="407" loading="lazy" src="images/DDA102ZW4003.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058857"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058971"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058973"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058977"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058865"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058867"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059079"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058923"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058926"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059006"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059009"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059013"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059016"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059123"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059137"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059019"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059022"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059157"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059032"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059035"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059039"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059042"> </a><b>
+INSPECT REAR HO2S CONNECTOR FOR POOR CONNECTION
+</b>
+
+<a name="wp1059204"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059218"> </a><div>
+• Disconnect the rear HO2S connector.
+</div>
+
+<a name="wp1059228"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059241"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059045"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059048"> </a><div>
+Repair or replace the terminal, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059185"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059188"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059269"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059272"> </a><b>
+INSPECT REAR HO2S HEATER
+</b>
+
+<a name="wp1059307"> </a><div>
+• Inspect the rear HO2S heater.
+</div>
+
+<a name="wp1059321"> </a><div>
+(See <a href="id0140008049c0.html#wp1025486">REAR HEATED OXYGEN SENSOR (HO2S) INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059335"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059275"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059278"> </a><div>
+Replace the rear HO2S, then go to Step 9.
+</div>
+
+<a name="wp1059363"> </a><div>
+(See <a href="id0140008050c0.html#wp1025486">REAR HEATED OXYGEN SENSOR (HO2S) REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059288"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059291"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059385"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059388"> </a><b>
+INSPECT REAR HO2S HEATER POWER CIRCUIT FOR OPEN CIRCUIT
+</b>
+
+<a name="wp1059447"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059461"> </a><div>
+• Disconnect the PCM connector.
+</div>
+
+<a name="wp1059471"> </a><div>
+• Inspect for continuity between rear HO2S terminal C (wiring harness-side) and PCM terminal 2I (wiring harness-side).
+</div>
+
+<a name="wp1059483"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059391"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059394"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059410"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059413"> </a><div>
+Repair or replace the wiring harness for a possible open circuit, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059511"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059514"> </a><b>
+INSPECT PCM CONNECTOR FOR POOR CONNECTION
+</b>
+
+<a name="wp1059573"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059587"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059600"> </a><div>
+• Is there any malfunction?
+</div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059520"> </a><div>
+Repair or replace the terminal, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059536"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059539"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059628"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059631"> </a><b>
+INSPECT REAR HO2S CIRCUIT FOR SHORT TO GROUND
+</b>
+
+<a name="wp1059690"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059704"> </a><div>
+• Inspect for continuity between the following terminals:
+</div>
+<dl>
+<a name="wp1059714"> </a><dd>
+-	Rear HO2S terminal D (wiring harness-side) and body ground
+</dd>
+
+<a name="wp1059729"> </a><dd>
+-	Rear HO2S terminal C (wiring harness-side) and PCM terminal 2I (wiring harness-side)
+</dd>
+</dl>
+<a name="wp1059741"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059634"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059637"> </a><div>
+Repair or replace the wiring harness for a possible short to ground, then go to Step 9.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059653"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059656"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059769"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059772"> </a><b>
+INSPECT REAR HO2S CIRCUIT FOR OPEN CIRCUIT
+</b>
+
+<a name="wp1059831"> </a><div>
+• Turn the ignition switch off.
+</div>
+
+<a name="wp1059845"> </a><div>
+• Inspect for continuity between rear HO2S terminal D (wiring harness-side) and PCM terminal 2AB (wiring harness-side).
+</div>
+
+<a name="wp1059857"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059775"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059778"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059794"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059797"> </a><div>
+Repair or replace the wiring harness for a possible open circuit, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059885"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059888"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0038 COMPLETED
+</b>
+
+<a name="wp1059947"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1059961"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059971"> </a><div>
+• Perform the "KOEO self-test".
+</div>
+
+<a name="wp1059986"> </a><div>
+(See <a href="id0102d3801200.html#wp1025486">KOEO/KOER SELF TEST [ZY]</a>.)
+</div>
+
+<a name="wp1060000"> </a><div>
+• Is the DTC P0037 present?
+</div>
+</td>
+    <td>
+<a name="wp1059891"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059894"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060020"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059910"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059913"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060042"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060045"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060120"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060138"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060152"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060048"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060051"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1060172"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060071"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060074"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060319"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3802200.html"><small>Previous</small>DTC P0037 [ZY]</a><a class="nx" href="id0102d3803100.html"><small>Next</small>DTC P0101 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

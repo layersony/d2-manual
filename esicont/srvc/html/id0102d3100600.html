@@ -1,0 +1,675 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simulation test [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--engine.html">Engine</a></li><li><a href="../../../nav/technical-guide--engine--on-board-diagnostic-engine-control-system-zy.html">On-board diagnostic [Engine control system (ZY)]</a></li><li aria-current="page">Simulation test [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>Simulation test [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060064"> </a><div>
+• The simulation items are shown below.
+</div>
+
+<a name="wp1058577"> </a><p><b>
+Simulation item table
+</b></p>
+
+<a name="wp1058587"> </a><div>
+×: Applicable
+</div>
+
+<a name="wp1058594"> </a><div>
+-: Not applicable</div><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1058753"> </a><p></p><div align="center"><b>
+Item
+</b></div><p></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058755"> </a><p></p><div align="center"><b>
+Applicable component
+</b></div><p></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058757"> </a><p></p><div align="center"><b>
+Unit/condition
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058759"> </a><p></p><div align="center"><b>
+Test condition
+</b></div><p></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058763"> </a><p></p><div align="center"><b>
+PCM terminal
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1058917"> </a><p></p><div align="center"><b>
+KOEO
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058920"> </a><p></p><div align="center"><b>
+KOER
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058599"> </a><div>
+ACCS
+</div>
+</td>
+    <td>
+<a name="wp1058601"> </a><div>
+A/C relay
+</div>
+</td>
+    <td>
+<a name="wp1058657"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058660"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058663"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058666"> </a><div>
+1AN
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058794"> </a><div>
+ALTF
+</div>
+</td>
+    <td>
+<a name="wp1058797"> </a><div>
+Generator field coil control duty value
+</div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1058803"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1058806"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058809"> </a><div>
+2AF
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058813"> </a><div>
+ARPMDES
+</div>
+</td>
+    <td>
+<a name="wp1058816"> </a><div>
+Target engine speed
+</div>
+</td>
+    <td>
+<a name="wp1058819"> </a><div>
+RPM
+</div>
+</td>
+    <td>
+<a name="wp1058822"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058825"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058828"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058832"> </a><div>
+EVAPCP
+</div>
+</td>
+    <td>
+<a name="wp1058835"> </a><div>
+Purge solenoid valve duty value
+</div>
+</td>
+    <td>
+<a name="wp1058838"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1058841"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058844"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058847"> </a><div>
+2S
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058851"> </a><div>
+FAN1
+</div>
+</td>
+    <td>
+<a name="wp1058854"> </a><div>
+Cooling fan relay No.1 control signal
+</div>
+</td>
+    <td>
+<a name="wp1058857"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058860"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058863"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058866"> </a><div>
+1AV
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058870"> </a><div>
+FAN2
+</div>
+</td>
+    <td>
+<a name="wp1058873"> </a><div>
+Cooling fan relay No.2 control signal
+</div>
+</td>
+    <td>
+<a name="wp1058876"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058879"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058882"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058885"> </a><div>
+1AZ
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058889"> </a><div>
+FP
+</div>
+</td>
+    <td>
+<a name="wp1058892"> </a><div>
+Fuel pump relay
+</div>
+</td>
+    <td>
+<a name="wp1058895"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058898"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058901"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1058904"> </a><div>
+1AQ<sup>*1</sup>
+</div>
+
+<a name="wp1059193"> </a><div>
+1AR<sup>*2</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059204"> </a><div>
+FUELPW1
+</div>
+</td>
+    <td>
+<a name="wp1059207"> </a><div>
+Fuel injector duration
+</div>
+</td>
+    <td>
+<a name="wp1059210"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059213"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059216"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059219"> </a><div>
+2A, 2B, 2C, 2H
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059255"> </a><div>
+GENVDSD
+</div>
+</td>
+    <td>
+<a name="wp1059258"> </a><div>
+Target generator voltage
+</div>
+</td>
+    <td>
+<a name="wp1059261"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1059264"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059267"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059270"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059306"> </a><div>
+HTR11
+</div>
+</td>
+    <td>
+<a name="wp1059309"> </a><div>
+Front HO2S heater control
+</div>
+</td>
+    <td>
+<a name="wp1059312"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059315"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059318"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059321"> </a><div>
+2X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059359"> </a><div>
+HTR12
+</div>
+</td>
+    <td>
+<a name="wp1059362"> </a><div>
+Rear HO2S heater control
+</div>
+</td>
+    <td>
+<a name="wp1059365"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059368"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059371"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059374"> </a><div>
+2AB
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059412"> </a><div>
+IMRC
+</div>
+</td>
+    <td>
+<a name="wp1059415"> </a><div>
+Variable tumble control
+</div>
+</td>
+    <td>
+<a name="wp1059418"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059421"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059424"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059427"> </a><div>
+2AG, 2AK
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059465"> </a><div>
+IMTV
+</div>
+</td>
+    <td>
+<a name="wp1059468"> </a><div>
+Variable intake air control
+</div>
+</td>
+    <td>
+<a name="wp1059471"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059474"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059477"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059480"> </a><div>
+2AI, 2AJ
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059523"> </a><div>
+INJ_1
+</div>
+</td>
+    <td>
+<a name="wp1059526"> </a><div>
+Fuel injector No.1
+</div>
+</td>
+    <td>
+<a name="wp1059529"> </a><div>
+Off
+</div>
+</td>
+    <td>
+<a name="wp1059532"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059535"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059538"> </a><div>
+2A
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059577"> </a><div>
+INJ_2
+</div>
+</td>
+    <td>
+<a name="wp1059580"> </a><div>
+Fuel injector No.2
+</div>
+</td>
+    <td>
+<a name="wp1059583"> </a><div>
+Off
+</div>
+</td>
+    <td>
+<a name="wp1059586"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059589"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059592"> </a><div>
+2B
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059631"> </a><div>
+INJ_3
+</div>
+</td>
+    <td>
+<a name="wp1059634"> </a><div>
+Fuel injector No.3
+</div>
+</td>
+    <td>
+<a name="wp1059637"> </a><div>
+Off
+</div>
+</td>
+    <td>
+<a name="wp1059640"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059643"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059646"> </a><div>
+2C
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059685"> </a><div>
+INJ_4
+</div>
+</td>
+    <td>
+<a name="wp1059688"> </a><div>
+Fuel injector No.4
+</div>
+</td>
+    <td>
+<a name="wp1059691"> </a><div>
+Off
+</div>
+</td>
+    <td>
+<a name="wp1059694"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059697"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059700"> </a><div>
+2H
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059739"> </a><div>
+SEGRP
+</div>
+</td>
+    <td>
+<a name="wp1059742"> </a><div>
+EGR valve
+</div>
+</td>
+    <td>
+<a name="wp1059745"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059748"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059751"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059754"> </a><div>
+2K, 2O, 2P, 2T
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059791"> </a><div>
+VT DUTY1 Wt
+</div>
+</td>
+    <td>
+<a name="wp1059794"> </a><div>
+OCV
+</div>
+</td>
+    <td>
+<a name="wp1059797"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059800"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059803"> </a><div>
+×
+</div>
+</td>
+    <td>
+<a name="wp1059806"> </a><div>
+2W
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div>
+</div>
+<dl>
+<a name="wp1059848"> </a><dd>
+<sup>*1</sup>	:
+</dd>
+
+<a name="wp1059867"> </a>
+With immobilizer system
+
+
+<a name="wp1059873"> </a><dd>
+<sup>*2</sup>	:
+</dd>
+
+<a name="wp1059888"> </a>
+Without immobilizer system
+
+</dl>
+<a name="wp1059988"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3100500.html"><small>Previous</small>PID/data monitor and record [ZY]</a></nav><script src="../../../assets/app.js"></script></body></html>

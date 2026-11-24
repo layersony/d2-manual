@@ -1,0 +1,556 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0712 [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">DTC P0712 [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0712 [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1060411"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+DTC P0712
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058628"> </a><p></p><div align="center"><b>
+Transaxle fluid temperature (TFT) sensor circuit malfunction (short to ground)
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058568"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058570"> </a><div>
+• If the PCM detects either of the following conditions for <b>150 s or more</b>, the PCM determines that the TFT sensor circuit has a malfunction.
+</div>
+<dl>
+<a name="wp1058724"> </a><dd>
+-	TFT sensor voltage <b>0.06 V or less</b> and vehicle speed <b>20 km/h {12 mph} or more</b>
+</dd>
+</dl>
+<a name="wp1058736"> </a><b>
+Diagnostic support note: 
+</b>
+
+<a name="wp1058746"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058756"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction conditions during the first drive cycle.
+</div>
+
+<a name="wp1058766"> </a><div>
+• A PENDING CODE is not available.
+</div>
+
+<a name="wp1058776"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058786"> </a><div>
+• The AT warning light illuminates.
+</div>
+
+<a name="wp1058796"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058643"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• TFT sensor malfunction
+</div>
+
+<a name="wp1058828"> </a><div>
+• Short to ground in wiring harness between TFT sensor and ATX terminal E
+</div>
+
+<a name="wp1058838"> </a><div>
+• Short to ground in wiring harness between TFT sensor and ATX terminal H
+</div>
+
+<a name="wp1058848"> </a><div>
+• Short to ground in wiring harness between ATX terminal E and PCM terminal 1AH
+</div>
+
+<a name="wp1058858"> </a><div>
+• Damaged connectors between TFT sensor and PCM
+</div>
+
+<a name="wp1058868"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058650"> </a><p>
+<img alt="" height="405" loading="lazy" src="images/DDA502ZW4003.png" width="644"/>
+
+
+
+</p>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058898"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059012"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059014"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059018"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058906"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058908"> </a><p>
+<b>VERIFY FREEZE FRAME DATA HAS BEEN RECORDED</b>
+</p>
+
+<a name="wp1059124"> </a><div>
+• Has the FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058964"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058967"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059047"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059050"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059054"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059057"> </a><p>
+<b>VERIFY RELATED REPAIR INFORMATION AVAILABILITY</b>
+</p>
+
+<a name="wp1059172"> </a><div>
+• Verify related Service Bulletins and/or on-line repair information availability.
+</div>
+
+<a name="wp1059189"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059060"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059063"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059209"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059073"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059076"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059080"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059083"> </a><p>
+<b>VERIFY CURRENT INPUT SIGNAL STATUS</b>
+</p>
+
+<a name="wp1059260"> </a><div>
+• Turn the ignition switch to the ON position (engine off).
+</div>
+
+<a name="wp1059274"> </a><div>
+• Inspect the voltage at PCM terminal 1AH.
+</div>
+
+<a name="wp1059284"> </a><div>
+• Is the voltage <b>0.06 V or more</b>?
+</div>
+</td>
+    <td>
+<a name="wp1059086"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059089"> </a><div>
+Go to the intermittent concern troubleshooting procedure.
+</div>
+
+<a name="wp1059313"> </a><div>
+ (See <a href="id0103c0800400.html#wp1025486">INTERMITTENT CONCERN TROUBLESHOOTING [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059237"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059240"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059335"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059338"> </a><p>
+<b>INSPECT TERMINAL CONDITION</b>
+</p>
+
+<a name="wp1059393"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059407"> </a><div>
+• Disconnect the ATX connector.
+</div>
+
+<a name="wp1059417"> </a><div>
+• Inspect for poor connection (such as damaged/pulled-out pins, corrosion).
+</div>
+
+<a name="wp1059430"> </a><div>
+• Are the terminals bent?
+</div>
+</td>
+    <td>
+<a name="wp1059341"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059344"> </a><div>
+Repair or replace the terminals, then go to Step 8.
+</div>
+
+<a name="wp1059450"> </a><div>
+• If the terminals cannot be repaired, replace the wiring harness, then go to Step 8.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059358"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059361"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059472"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059475"> </a><p>
+<b>INSPECT TFT SENSOR CIRCUIT</b>
+</p>
+
+<a name="wp1059530"> </a><div>
+• Turn the ignition switch to the ON position (engine off).
+</div>
+
+<a name="wp1059544"> </a><div>
+• Verify that the voltage changes to <b>4.67 V or more</b> at PCM terminal 1AH when ATX connector is disconnected.
+</div>
+
+<a name="wp1059563"> </a><div>
+• Does the voltage change?
+</div>
+</td>
+    <td>
+<a name="wp1059478"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059481"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059495"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059498"> </a><div>
+Go to Step 8.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059591"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059594"> </a><p>
+<b>INSPECT TFT SENSOR CIRCUIT FOR SHORT TO GROUND</b>
+</p>
+
+<a name="wp1059657"> </a><div>
+• Inspect for continuity between ATX terminals (transaxle case side) and body ground.
+</div>
+<dl>
+<a name="wp1059671"> </a><dd>
+-	E and body ground
+</dd>
+
+<a name="wp1059685"> </a><dd>
+-	H and body ground
+</dd>
+</dl>
+<a name="wp1059695"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059597"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059600"> </a><div>
+Repair or replace the wiring harness, then go to Step 8.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059616"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059619"> </a><div>
+Replace the TFT sensor, then go to Step 8.
+</div>
+
+<a name="wp1059725"> </a><div>
+ (See <a href="id0517a1801100.html#wp1025486">TRANSAXLE FLUID TEMPERATURE (TFT) SENSOR REMOVAL/INSTALLATION [FN4A-EL]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059737"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059740"> </a><p>
+<b>INSPECT ATX CONNECTOR CIRCUIT FOR SHORT TO GROUND</b>
+</p>
+
+<a name="wp1059811"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059825"> </a><div>
+• Inspect for continuity between ATX terminal E (wiring harness-side) and body ground.
+</div>
+
+<a name="wp1059836"> </a><div>
+• Is there continuity?
+</div>
+</td>
+    <td>
+<a name="wp1059743"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059746"> </a><div>
+Repair or replace the wiring harness, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059764"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059767"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059864"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059867"> </a><p>
+<b>VERIFY TROUBLESHOOTING OF DTC P0712 COMPLETED</b>
+</p>
+
+<a name="wp1059938"> </a><div>
+• Make sure to reconnect all the disconnected connectors.
+</div>
+
+<a name="wp1059952"> </a><div>
+• Clear the DTC from the memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059962"> </a><div>
+• Drive the vehicle under the following condition for <b>150 s or more</b>.
+</div>
+<dl>
+<a name="wp1059981"> </a><dd>
+-	Vehicle speed (VSS PID) <b>20 km/h {12 mph} or more</b>.
+</dd>
+</dl>
+<a name="wp1060010"> </a><div>
+• Is the same DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059870"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059873"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1060030"> </a><div>
+ (See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059891"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059894"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060052"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060055"> </a><p>
+<b>VERIFY AFTER REPAIR PROCEDURE</b>
+</p>
+
+<a name="wp1060150"> </a><div>
+• Perform the "After Repair Procedure".
+</div>
+
+<a name="wp1060168"> </a><div>
+ (See <a href="id0502a1800400.html#wp1025486">AFTER REPAIR PROCEDURE [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1060182"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060058"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060061"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060085"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060088"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060334"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1801200.html"><small>Previous</small>DTC P0711 [FN4A-EL]</a><a class="nx" href="id0502a1801400.html"><small>Next</small>DTC P0713 [FN4A-EL]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--transmission-transaxle.html">Troubleshooting / Transmission/transaxle</a>.</p><script src="../../../assets/app.js"></script></body></html>

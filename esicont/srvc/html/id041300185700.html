@@ -1,0 +1,208 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EBD control operation · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--brakes.html">Brakes</a></li><li><a href="../../../nav/technical-guide--brakes--antilock-brake-system.html">Antilock brake system</a></li><li aria-current="page">EBD control operation</li></ol></nav><main class="wrap"><article class="doc"><h1>EBD control operation</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058560"> </a><p></p><p></p>
+
+<a name="wp1059831"> </a><div>
+• EBD control detects the slip ratio between the front and rear wheels from the ABS wheel-speed sensor signals. If the slip ratio of the rear wheels as compared to the front wheels is larger than the fixed limit, the ABS HU/CM reduces brake pressure being distributed to the rear wheels. Due to this, brake pressure distribution is constantly controlled in the proper proportion and in relation to vehicle load, road surface conditions and vehicle speed.
+</div>
+
+<a name="wp1058577"> </a><div>
+• Determination of the rear wheel slip ratio, based on a comparison of the lowest front wheel speed and the estimated vehicle speed with the rear wheel speeds, is divided into conditions 0-4 shown in the table below.
+</div>
+
+<a name="wp1058588"> </a><div>
+• The ABS HU outlet and inlet solenoid valves are operated and the brake fluid pressure controlled according to these conditions.
+</div>
+
+<a name="wp1058598"> </a><div>
+• If ABS control conditions are met during EBD control, EBD control is stopped and ABS control is given priority.
+</div>
+
+<a name="wp1058608"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058741"> </a><p></p><div align="center"><b>
+Status
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058743"> </a><p></p><div align="center"><b>
+Rear wheel slip ratio determination
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058745"> </a><p></p><div align="center"><b>
+EBD control
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058747"> </a><p></p><div align="center"><b>
+Solenoid valve
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058749"> </a><p></p><div align="center"><b>
+Comment
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058611"> </a><div>
+0
+</div>
+</td>
+    <td>
+<a name="wp1058613"> </a><div>
+No slip
+</div>
+</td>
+    <td>
+<a name="wp1058669"> </a><div>
+No control
+</div>
+</td>
+    <td>
+<a name="wp1058672"> </a><div>
+Pressure increase
+</div>
+</td>
+    <td>
+<a name="wp1058675"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058776"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1058779"> </a><div>
+a%-b%
+</div>
+</td>
+    <td>
+<a name="wp1058782"> </a><div>
+Control
+</div>
+</td>
+    <td>
+<a name="wp1058785"> </a><div>
+Pressure maintained
+</div>
+</td>
+    <td>
+<a name="wp1058788"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058792"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1058795"> </a><div>
+b% or more
+</div>
+</td>
+    <td>
+<a name="wp1058798"> </a><div>
+Control
+</div>
+</td>
+    <td>
+<a name="wp1058801"> </a><div>
+Reduction/maintained
+</div>
+</td>
+    <td>
+<a name="wp1058804"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058808"> </a><div>
+3
+</div>
+</td>
+    <td>
+<a name="wp1058811"> </a><div>
+After EBD control, slip ratio is g%
+</div>
+</td>
+    <td>
+<a name="wp1058814"> </a><div>
+Control
+</div>
+</td>
+    <td>
+<a name="wp1058817"> </a><div>
+Increase/maintain
+</div>
+</td>
+    <td>
+<a name="wp1058820"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058824"> </a><div>
+4
+</div>
+</td>
+    <td>
+<a name="wp1058827"> </a><div>
+Front wheel slip ratio is d% or more
+</div>
+</td>
+    <td>
+<a name="wp1058830"> </a><div>
+Control
+</div>
+</td>
+    <td>
+<a name="wp1058833"> </a><div>
+Pressure reduction/maintained/ increase
+</div>
+</td>
+    <td>
+<a name="wp1058836"> </a><div>
+ABS control operates
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+<dl>
+<a name="wp1059027"> </a><dd>
+a-d 	:
+</dd>
+
+<a name="wp1059042"> </a>
+ Specified value
+
+</dl>
+<a name="wp1059048"> </a><h2><b>
+Operating Condition Transition Diagram
+</b></h2>
+
+<a name="wp1059058"> </a><p>
+</p><p><img alt="" height="436" loading="lazy" src="images/C3U0413S012.png" width="644"/></p><p>
+
+
+
+</p>
+
+<a name="wp1059623"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id041300185800.html"><small>Previous</small>EBD control outline</a><a class="nx" href="id041300185500.html"><small>Next</small>ABS HU part function</a></nav><script src="../../../assets/app.js"></script></body></html>

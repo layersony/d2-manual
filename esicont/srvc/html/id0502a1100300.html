@@ -1,0 +1,1205 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Malfunction detection function [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/technical-guide--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">Malfunction detection function [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>Malfunction detection function [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1060878"> </a><h2><b>
+Malfunction Detection Function
+</b></h2>
+
+<a name="wp1058575"> </a><div>
+• In the malfunction detection function, the PCM detects malfunctions in the automatic transmission while driving.
+</div>
+
+<a name="wp1058589"> </a><div>
+• When vehicle driving conditions correspond with a preset malfunction detection condition, the PCM determines that the automatic transmission has a malfunction and stores the corresponding DTC.
+</div>
+
+<a name="wp1058599"> </a><div>
+• When a malfunction is detected, stored DTCs can be retrieved using the WDS or equivalent connected to the DLC-2.
+</div>
+
+<a name="wp1058610"> </a><h2><b>
+DTC Table
+</b></h2>
+
+<a name="wp1058620"> </a><div>
+	X: Applicable</div><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058806"> </a><p></p><div align="center"><b>
+DTC No.
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058808"> </a><p></p><div align="center"><b>
+Condition
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058810"> </a><p></p><div align="center"><b>
+MIL
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059041"> </a><p></p><div align="center"><b>
+Warning light<sup>*1</sup>/ Indicator light<sup>*2</sup>
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058814"> </a><p></p><div align="center"><b>
+DC
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058816"> </a><p></p><div align="center"><b>
+Monitor item
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058818"> </a><p></p><div align="center"><b>
+Memory function
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058628"> </a><div>
+P0706
+</div>
+</td>
+    <td>
+<a name="wp1058630"> </a><div>
+Transaxle range (TR) switch circuit range/performance
+</div>
+</td>
+    <td>
+<a name="wp1058686"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058689"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058692"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1058695"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058698"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058853"> </a><div>
+P0707
+</div>
+</td>
+    <td>
+<a name="wp1058856"> </a><div>
+Transaxle range (TR) switch circuit low input
+</div>
+</td>
+    <td>
+<a name="wp1058859"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058862"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058865"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1058868"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058871"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058875"> </a><div>
+P0708
+</div>
+</td>
+    <td>
+<a name="wp1058878"> </a><div>
+Transaxle range (TR) switch circuit high input
+</div>
+</td>
+    <td>
+<a name="wp1058881"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058884"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058887"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1058890"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058893"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058897"> </a><div>
+P0711
+</div>
+</td>
+    <td>
+<a name="wp1058900"> </a><div>
+Transaxle fluid temperature (TFT) sensor circuit range/performance (stuck)
+</div>
+</td>
+    <td>
+<a name="wp1058903"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058906"> </a><div>
+NO
+</div>
+</td>
+    <td>
+<a name="wp1058909"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1058912"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058915"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058919"> </a><div>
+P0712
+</div>
+</td>
+    <td>
+<a name="wp1058922"> </a><div>
+Transaxle fluid temperature (TFT) sensor circuit malfunction (short to ground)
+</div>
+</td>
+    <td>
+<a name="wp1058925"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058928"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058931"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1058934"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058937"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058941"> </a><div>
+P0713
+</div>
+</td>
+    <td>
+<a name="wp1058944"> </a><div>
+Transaxle fluid temperature (TFT) sensor circuit malfunction (open circuit)
+</div>
+</td>
+    <td>
+<a name="wp1058947"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058950"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058953"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1058956"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058959"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058963"> </a><div>
+P0715
+</div>
+</td>
+    <td>
+<a name="wp1058966"> </a><div>
+Input/turbine speed sensor circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1058969"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058972"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058975"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1058978"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1058981"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058985"> </a><div>
+P0720
+</div>
+</td>
+    <td>
+<a name="wp1058988"> </a><div>
+Vehicle speed sensor (VSS) circuit malfunction
+</div>
+</td>
+    <td>
+<a name="wp1058991"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1058994"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1058997"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1059000"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059003"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059347"> </a><div>
+P0731
+</div>
+</td>
+    <td>
+<a name="wp1059350"> </a><div>
+Gear 1 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059353"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059356"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059359"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059362"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059365"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059404"> </a><div>
+P0732
+</div>
+</td>
+    <td>
+<a name="wp1059407"> </a><div>
+Gear 2 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059410"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059413"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059416"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059419"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059422"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059461"> </a><div>
+P0733
+</div>
+</td>
+    <td>
+<a name="wp1059464"> </a><div>
+Gear 3 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059467"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059470"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059473"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059476"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059479"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059518"> </a><div>
+P0734
+</div>
+</td>
+    <td>
+<a name="wp1059521"> </a><div>
+Gear 4 incorrect (incorrect gear ratio detected)
+</div>
+</td>
+    <td>
+<a name="wp1059524"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059527"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059530"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059533"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059536"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059575"> </a><div>
+P0741
+</div>
+</td>
+    <td>
+<a name="wp1059578"> </a><div>
+Torque converter clutch (TCC) (stuck off) 
+</div>
+</td>
+    <td>
+<a name="wp1059581"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059584"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059587"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059590"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059593"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059632"> </a><div>
+P0742
+</div>
+</td>
+    <td>
+<a name="wp1059635"> </a><div>
+Torque converter clutch (TCC) (stuck on)
+</div>
+</td>
+    <td>
+<a name="wp1059638"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059641"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059644"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059647"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059650"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059689"> </a><div>
+P0745
+</div>
+</td>
+    <td>
+<a name="wp1059692"> </a><div>
+Pressure control solenoid malfunction
+</div>
+</td>
+    <td>
+<a name="wp1059695"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1059698"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059701"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059704"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059707"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059746"> </a><div>
+P0751
+</div>
+</td>
+    <td>
+<a name="wp1059749"> </a><div>
+Shift solenoid A stuck off
+</div>
+</td>
+    <td>
+<a name="wp1059752"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1059755"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059758"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1059761"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059764"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059803"> </a><div>
+P0752
+</div>
+</td>
+    <td>
+<a name="wp1059806"> </a><div>
+Shift solenoid A stuck on
+</div>
+</td>
+    <td>
+<a name="wp1059809"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1059812"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059815"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1059818"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059821"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059860"> </a><div>
+P0753
+</div>
+</td>
+    <td>
+<a name="wp1059863"> </a><div>
+Shift solenoid A malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1059866"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1059869"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059872"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1059875"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059878"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059917"> </a><div>
+P0756
+</div>
+</td>
+    <td>
+<a name="wp1059920"> </a><div>
+Shift solenoid B stuck off
+</div>
+</td>
+    <td>
+<a name="wp1059923"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1059926"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059929"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1059932"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059935"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059974"> </a><div>
+P0757
+</div>
+</td>
+    <td>
+<a name="wp1059977"> </a><div>
+Shift solenoid B stuck on
+</div>
+</td>
+    <td>
+<a name="wp1059980"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1059983"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1059986"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1059989"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1059992"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060031"> </a><div>
+P0758
+</div>
+</td>
+    <td>
+<a name="wp1060034"> </a><div>
+Shift solenoid B malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1060037"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060040"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060043"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1060046"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060049"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060088"> </a><div>
+P0761
+</div>
+</td>
+    <td>
+<a name="wp1060091"> </a><div>
+Shift solenoid C stuck off
+</div>
+</td>
+    <td>
+<a name="wp1060094"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060097"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060100"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1060103"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060106"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060145"> </a><div>
+P0762
+</div>
+</td>
+    <td>
+<a name="wp1060148"> </a><div>
+Shift solenoid C stuck on
+</div>
+</td>
+    <td>
+<a name="wp1060151"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060154"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060157"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1060160"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060163"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060202"> </a><div>
+P0763
+</div>
+</td>
+    <td>
+<a name="wp1060205"> </a><div>
+Shift solenoid C malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1060208"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060211"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060214"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1060217"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060220"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060259"> </a><div>
+P0766
+</div>
+</td>
+    <td>
+<a name="wp1060262"> </a><div>
+Shift solenoid D stuck off
+</div>
+</td>
+    <td>
+<a name="wp1060265"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060268"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060271"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1060274"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060277"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060316"> </a><div>
+P0767
+</div>
+</td>
+    <td>
+<a name="wp1060319"> </a><div>
+Shift solenoid D stuck on
+</div>
+</td>
+    <td>
+<a name="wp1060322"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1060325"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060328"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1060331"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060334"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060373"> </a><div>
+P0768
+</div>
+</td>
+    <td>
+<a name="wp1060376"> </a><div>
+Shift solenoid D malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1060379"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060382"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060385"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1060388"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060391"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060430"> </a><div>
+P0771
+</div>
+</td>
+    <td>
+<a name="wp1060433"> </a><div>
+Shift solenoid E stuck off
+</div>
+</td>
+    <td>
+<a name="wp1060436"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060439"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060442"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1060445"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060448"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060487"> </a><div>
+P0772
+</div>
+</td>
+    <td>
+<a name="wp1060490"> </a><div>
+Shift solenoid E stuck on
+</div>
+</td>
+    <td>
+<a name="wp1060493"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060496"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060499"> </a><div>
+2
+</div>
+</td>
+    <td>
+<a name="wp1060502"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060505"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060544"> </a><div>
+P0773
+</div>
+</td>
+    <td>
+<a name="wp1060547"> </a><div>
+Shift solenoid E malfunction (electrical)
+</div>
+</td>
+    <td>
+<a name="wp1060550"> </a><div>
+ON
+</div>
+</td>
+    <td>
+<a name="wp1060553"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060556"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1060559"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060562"> </a><div>
+X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060601"> </a><div>
+P0894
+</div>
+</td>
+    <td>
+<a name="wp1060604"> </a><div>
+Forward clutch torque transmission
+</div>
+</td>
+    <td>
+<a name="wp1060607"> </a><div>
+OFF
+</div>
+</td>
+    <td>
+<a name="wp1060610"> </a><div>
+YES
+</div>
+</td>
+    <td>
+<a name="wp1060613"> </a><div>
+1
+</div>
+</td>
+    <td>
+<a name="wp1060616"> </a><div>
+CCM
+</div>
+</td>
+    <td>
+<a name="wp1060619"> </a><div>
+X
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div>
+</div>
+<dl>
+<a name="wp1060662"> </a><dd>
+<sup>*1</sup>	:
+</dd>
+
+<a name="wp1060681"> </a>
+AT warning light illuminates (Sport AT)
+
+
+<a name="wp1060687"> </a><dd>
+<sup>*2</sup>	:
+</dd>
+
+<a name="wp1060702"> </a>
+HOLD indicator light flashes (4AT)
+
+</dl>
+<a name="wp1060802"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1100200.html"><small>Previous</small>On-board diagnostic (OBD) system block diagram [FN4A-EL]</a><a class="nx" href="id0502a1100400.html"><small>Next</small>Memory function [FN4A-EL]</a></nav><script src="../../../assets/app.js"></script></body></html>

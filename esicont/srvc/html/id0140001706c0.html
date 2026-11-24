@@ -1,0 +1,290 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Drive-by-wire control operation [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--engine.html">Engine</a></li><li><a href="../../../nav/technical-guide--engine--control-system.html">Control system</a></li><li aria-current="page">Drive-by-wire control operation [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>Drive-by-wire control operation [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1059469"> </a><h2><b>
+Idle Speed Control
+</b></h2>
+
+<a name="wp1058575"> </a><div>
+• Controls the throttle valve opening angle so that it is close to the target idle speed calculated by the PCM.
+</div>
+
+<a name="wp1058589"> </a><div>
+• The PCM calculates the target throttle opening angle by adding each type of correction to the basic duty value which is the basis of the throttle valve opening angle, and then sends a duty signal to the throttle valve actuator. The basic duty value is determined by the target engine speed.
+</div>
+
+<a name="wp1058599"> </a><div>
+• Each type of correction is as follows.
+</div>
+
+<a name="wp1058609"> </a><p><b>
+Correction</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058723"> </a><p></p><div align="center"><b>
+Correction
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058725"> </a><p></p><div align="center"><b>
+Purpose
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058727"> </a><p></p><div align="center"><b>
+Condition
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058729"> </a><p></p><div align="center"><b>
+Amount of Correction
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058617"> </a><div>
+Water temperature correction
+</div>
+</td>
+    <td>
+<a name="wp1058619"> </a><div>
+Corrects changes in engine friction resistance based on changes in engine temperature.
+</div>
+</td>
+    <td>
+<a name="wp1058675"> </a><div>
+Determines correction amount based on ECT.
+</div>
+</td>
+    <td>
+<a name="wp1058678"> </a><div>
+Correction amount decreases as ECT increases.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058752"> </a><div>
+Correction at engine start
+</div>
+</td>
+    <td>
+<a name="wp1058755"> </a><div>
+Prevents idle speed dropping off after engine start.
+</div>
+</td>
+    <td>
+<a name="wp1058758"> </a><div>
+Directly after cranking and engine-start.
+</div>
+</td>
+    <td>
+<a name="wp1058761"> </a><div>
+Correction amount increases as ECT decreases.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058765"> </a><div>
+Feedback correction
+</div>
+</td>
+    <td>
+<a name="wp1058768"> </a><div>
+Performs feedback control so that idle speed is close to the target idle speed.
+</div>
+</td>
+    <td>
+<a name="wp1058771"> </a><div>
+• Executes feedback conditions when all of the following conditions are met:
+</div>
+<dl>
+<a name="wp1058890"> </a><dd>
+-	Vehicle stopped
+</dd>
+
+<a name="wp1058904"> </a><dd>
+-	AP fully closed
+</dd>
+</dl></td>
+    <td>
+<a name="wp1058774"> </a><div>
+• Correction amount decreases when the idle speed is higher than the target idle speed.
+</div>
+
+<a name="wp1058927"> </a><div>
+• Correction amount increases when the idle speed is lower than the target idle speed.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058778"> </a><div>
+Learning correction
+</div>
+</td>
+    <td>
+<a name="wp1058781"> </a><div>
+Corrects air flow amount changes from changes in the engine due to aged deterioration such as engine friction resistance and air leakage from the throttle valve.
+</div>
+</td>
+    <td>
+<a name="wp1058784"> </a><div>
+Determined by the amount of feedback correction when external load correction and purge control stop.
+</div>
+</td>
+    <td>
+<a name="wp1058787"> </a><div>
+Learning correction executed when upper or lower limit of feedback correction exceeds the fixed value.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058791"> </a><div>
+Purge correction
+</div>
+</td>
+    <td>
+<a name="wp1058794"> </a><div>
+Increase in air from purge control is subtracted from the target throttle opening angle. Increases throttle valve opening angle to prevent rotation fluctuation from changes in air/fuel ratio when purge concentration is high.
+</div>
+</td>
+    <td>
+<a name="wp1058797"> </a><div>
+Determined by the purge flow amount and purge concentration when purge control is executed.
+</div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div>
+• Correction amount decreases as purge flow amount increases.
+</div>
+
+<a name="wp1058987"> </a><div>
+• Correction amount increases as purge flow concentration increases.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058999"> </a><div>
+Load correction when vehicle accelerates from idle (MT)
+</div>
+</td>
+    <td>
+<a name="wp1059002"> </a><div>
+Prevents engine speed drop after vehicle accelerates from idle.
+</div>
+</td>
+    <td>
+<a name="wp1059005"> </a><div>
+At acceleration from idle
+</div>
+</td>
+    <td>
+<a name="wp1059008"> </a><div>
+The amount of correction increases as the idle speed depression amount increases.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059032"> </a><div>
+External load correction
+</div>
+</td>
+    <td>
+<a name="wp1059035"> </a><div>
+• Prevents engine speed drop when the A/C and electrical load are operating.
+</div>
+
+<a name="wp1059067"> </a><div>
+• Prevents engine speed revving when the A/C and electrical load are off.
+</div>
+</td>
+    <td>
+<a name="wp1059038"> </a><div>
+• When any of the following signals are input:
+</div>
+<dl>
+<a name="wp1059092"> </a><dd>
+-	A/C amplifier (A/C switch)
+</dd>
+
+<a name="wp1059110"> </a><dd>
+-	Refrigerant pressure switch (medium-pressure switch)
+</dd>
+
+<a name="wp1059121"> </a><dd>
+-	Generator current value
+</dd>
+</dl></td>
+    <td>
+<a name="wp1059041"> </a><div>
+Correction amount increases as external load increases.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059134"> </a><div>
+Fast idle up correction
+</div>
+</td>
+    <td>
+<a name="wp1059137"> </a><div>
+Rapidly activates the catalytic converter after cold-engine start.
+</div>
+</td>
+    <td>
+<a name="wp1059140"> </a><div>
+Synchronizes warm-up promotion spark retard correction for electric spark control. (See <a href="id0140001795c0.html#wp1025486">ELECTRONIC SPARK ADVANCE (ESA) CONTROL OPERATION [ZY]</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059143"> </a><div>
+Correction amount increases as the ignition timing retard for the warm-up promotion spark retard correction of the ignition timing control advances.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1059182"> </a><h2><b>
+Accelerator Control
+</b></h2>
+
+<a name="wp1059192"> </a><div>
+• Controls the throttle valve opening angle through control of the throttle valve actuator, according to the amount of AP depression.
+</div>
+
+<a name="wp1059206"> </a><div>
+• The PCM controls the throttle valve actuator so that the actual throttle valve opening angle is close to the target throttle valve opening angle.
+</div>
+
+<a name="wp1059216"> </a><div>
+• The final throttle valve opening angle is determined by the sum of the target throttle opening angle during idling and the target throttle valve opening angle during regular driving.
+</div>
+
+<a name="wp1059226"> </a><div>
+• The target throttle valve opening angle during regular driving is determined based on the transmission gear position, the amount of AP depression and the engine speed. If the target throttle opening angle is at the fixed value or less during regular driving, the PCM switches to idle speed control.
+</div>
+
+<a name="wp1059236"> </a><div>
+• The PCM sets the throttle valve to the fully-closed position when the ignition switch is on or off and executes the idle position learning function to learn the throttle valve position. Due to this, changes in the throttle valve opening angle due to age deterioration are corrected.
+</div>
+
+<a name="wp1059247"> </a><div>
+• When the ignition switch is off, a main relay on request is output and the fully-closed learning function is executed. (See <a href="id0140001120c0.html#wp1025486">MAIN RELAY CONTROL OPERATION [ZY]</a>.)
+</div>
+
+<a name="wp1059266"> </a><h2><b>
+Traction Control
+</b></h2>
+
+<a name="wp1059276"> </a><div>
+• The PCM calculates the target throttle valve opening angle by the torque down request signal from the TCM and the engine speed.
+</div>
+
+<a name="wp1059391"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0140001705c0.html"><small>Previous</small>Drive-by-wire control block diagram [ZY]</a><a class="nx" href="id0140001707c0.html"><small>Next</small>Drive-by-wire relay control outline [ZY]</a></nav><script src="../../../assets/app.js"></script></body></html>

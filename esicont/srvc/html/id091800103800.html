@@ -1,0 +1,238 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Auto leveling control module construction/operation · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--body-accessories.html">Body &amp; accessories</a></li><li><a href="../../../nav/technical-guide--body-accessories--lighting-systems.html">Lighting systems</a></li><li aria-current="page">Auto leveling control module construction/operation</li></ol></nav><main class="wrap"><article class="doc"><h1>Auto leveling control module construction/operation</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058562"> </a><p></p><p></p>
+
+<a name="wp1060336"> </a><div>
+• Installed in the dashboard on the front passenger side.
+</div>
+
+<a name="wp1058576"> </a><div>
+• Adjusts the optical axis according to the input signal from the PCM, instrument cluster, and the auto leveling sensor.
+</div>
+
+<a name="wp1058586"> </a><div>
+• When a malfunction in the auto leveling system is detected, the auto leveling system warning light illuminates to advice the driver.
+</div>
+
+<a name="wp1058596"> </a><h2><b>
+Optical Axis Adjusting Function
+</b></h2>
+
+<a name="wp1058606"> </a><div>
+• Identifies the vehicle speed and attitude variations according to the signal input from the PCM, instrument cluster, and the auto level sensor, and calculates the optimum amount for optical axis adjustment.
+</div>
+
+<a name="wp1058620"> </a><div>
+• Controls the headlight leveling actuator according to the optical axis adjustment amount.
+</div>
+
+<a name="wp1058630"> </a><h2><b>
+Initial Setting Function
+</b></h2>
+
+<a name="wp1058640"> </a><div>
+• Records the vehicle height while there are no occupants based on the signal voltage input from the auto leveling sensor when the vehicle is unoccupied.
+</div>
+
+<a name="wp1058654"> </a><div>
+• Initial setting must be performed after performing any of the following procedures.
+</div>
+<dl>
+<a name="wp1058664"> </a><dd>
+-	Front combination light replacement
+</dd>
+
+<a name="wp1058678"> </a><dd>
+-	Replacement of the auto leveling control module
+</dd>
+
+<a name="wp1058688"> </a><dd>
+-	Auto leveling sensor removal/installation
+</dd>
+
+<a name="wp1058700"> </a><dd>
+-	Suspension replacement or work that effects vehicle height
+</dd>
+</dl>
+<a name="wp1058710"> </a><h2><b>
+Fail-safe Function
+</b></h2>
+
+<a name="wp1058721"> </a><div>
+• When a malfunction shown in the fail-safe function table is detected, the fail-safe function operates. At this time, the auto leveling system warning light illuminates to inform the driver.
+</div>
+
+<a name="wp1058737"> </a><div>
+• Each part is controlled as shown in the fail-safe function table.
+</div>
+
+<a name="wp1058748"> </a><h3><b>
+Fail-safe function table
+</b></h3>
+
+<a name="wp1058759"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058916"> </a><p></p><div align="center"><b>
+MALFUNCTION DETERMINATION PART
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058918"> </a><p></p><div align="center"><b>
+MALFUNCTION DETECTION CONDITION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058922"> </a><p></p><div align="center"><b>
+FAIL-SAFE FUNCTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058924"> </a><p></p><div align="center"><b>
+WARNING LIGHT
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058926"> </a><p></p><div align="center"><b>
+RECOVERY CONDITION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058762"> </a><div>
+Auto leveling sensor
+</div>
+</td>
+    <td>
+<a name="wp1058764"> </a><div>
+Signal error
+</div>
+</td>
+    <td>
+<a name="wp1059132"> </a><div>
+When signal voltage of auto leveling sensor is<b> 0.49 V or less or 4.43 V  or more</b><b>, three or more times,</b> for <b>approx. 0.04 s</b> is detected.
+</div>
+</td>
+    <td>
+<a name="wp1058823"> </a><div>
+Returns to initial position if optical axis position is higher than initial position. Stops optical axis position when malfunction is detected if optical axis position is lower than initial position.
+</div>
+</td>
+    <td>
+<a name="wp1058826"> </a><div>
+Illuminated *1
+</div>
+</td>
+    <td>
+<a name="wp1058829"> </a><div>
+When normal status continues for<b> 1 s </b>or more, or ignition switch is turned off and then to ON position again.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058957"> </a><div>
+Auto leveling control module
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058960"> </a><div>
+When malfunction in auto leveling control module is detected.
+</div>
+</td>
+    <td>
+<a name="wp1058966"> </a><div>
+Reset microcomputer in auto leveling control module.
+</div>
+</td>
+    <td>
+<a name="wp1058969"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058972"> </a><div>
+When ignition switch is turned off and then to ON position again.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058976"> </a><div>
+Headlight leveling actuator
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058979"> </a><div>
+When there is short to power supply or ground in harness between auto leveling control module and headlight leveling actuator
+</div>
+</td>
+    <td>
+<a name="wp1058985"> </a><div>
+Stops at optical axis position when malfunction is detected.
+</div>
+</td>
+    <td>
+<a name="wp1058988"> </a><div>
+Illuminated
+</div>
+</td>
+    <td>
+<a name="wp1058991"> </a><div>
+When normal status continues for<b> 1 s </b>or more.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058995"> </a><div>
+Battery voltage
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058998"> </a><div>
+When battery voltage of<b> 10 V or less or 16 V or more</b> is detected
+</div>
+</td>
+    <td>
+<a name="wp1059004"> </a><div>
+Stops at optical axis position when malfunction is detected.
+</div>
+</td>
+    <td>
+<a name="wp1059007"> </a><div>
+Not illuminated
+</div>
+</td>
+    <td>
+<a name="wp1059010"> </a><div>
+When battery voltage between<b> 10-16 V </b>is detected, or the ignition switch is turned off and then to the ON position again.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+<dl>
+<a name="wp1059331"> </a><dd>
+*1 	:
+</dd>
+
+<a name="wp1059345"> </a>
+Illuminates when malfunction for 10 s or more is detected.
+</dl>
+<dl>
+<a name="wp1059351"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl><dl>
+<a name="wp1060088"> </a><dd>
+• When the ignition switch is turned to the ON position, the auto leveling control module performs the bulb check of the auto leveling system warning light and illuminates the warning light for<b> approx. 3 s</b> if there is no malfunction.<br clear="all"/>
+<img alt="" height="408" loading="lazy" src="images/DDA918ZT4018.png" width="644"/><br clear="all"/>
+
+</dd>
+</dl>
+<a name="wp1060089"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id091800104200.html"><small>Previous</small>Headlight auto leveling system operation</a><a class="nx" href="id091800105900.html"><small>Next</small>Front fog light construction</a></nav><script src="../../../assets/app.js"></script></body></html>

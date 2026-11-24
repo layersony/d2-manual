@@ -1,0 +1,971 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P2178 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P2178 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P2178 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1061804"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P2178
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+System too rich off idle
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058568"> </a><div>
+• The PCM monitors short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during closed loop fuel control at off-idle. If the LONGFT or the sum total of these fuel trims exceed preprogrammed criteria, PCM determines that fuel system is too rich at off-idle.
+</div>
+
+<a name="wp1058691"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058701"> </a><div>
+• This is a continuous monitor. (Fuel system)
+</div>
+
+<a name="wp1058711"> </a><div>
+• MIL illuminates if PCM detects the above malfunctioning condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058721"> </a><div>
+• PENDING CODE is available if PCM detects the above malfunction conditions during first drive cycle.
+</div>
+
+<a name="wp1058731"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058741"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• Front HO2S deterioration
+</div>
+
+<a name="wp1058773"> </a><div>
+• Front HO2S heater malfunction
+</div>
+
+<a name="wp1058783"> </a><div>
+• MAF sensor malfunction
+</div>
+
+<a name="wp1058793"> </a><div>
+• Pressure regulator (built-in fuel pump unit) malfunction
+</div>
+
+<a name="wp1058804"> </a><div>
+• Fuel pump malfunction
+</div>
+
+<a name="wp1058814"> </a><div>
+• EGR valve improper operation
+</div>
+
+<a name="wp1058824"> </a><div>
+• Variable tumble shutter valve actuator improper operation
+</div>
+
+<a name="wp1058834"> </a><div>
+• Purge solenoid valve improper operation
+</div>
+
+<a name="wp1058844"> </a><div>
+• Purge solenoid valve malfunction (stuck open)
+</div>
+
+<a name="wp1058854"> </a><div>
+• Purge solenoid hoses improper connection
+</div>
+
+<a name="wp1058864"> </a><div>
+• Variable valve timing control system improper operation
+</div>
+
+<a name="wp1058874"> </a><div>
+• PCV valve malfunction
+</div>
+
+<a name="wp1058884"> </a><div>
+• Ignition system malfunction
+</div>
+
+<a name="wp1058894"> </a><div>
+• Fuel injector malfunction
+</div>
+
+<a name="wp1058904"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058914"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059028"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059030"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059034"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058922"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058924"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059136"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058980"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058983"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059063"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059066"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059070"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059073"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059180"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059194"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059076"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059079"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059214"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059089"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059092"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059096"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059099"> </a><b>
+VERIFY RELATED PENDING CODE OR STORED DTC
+</b>
+
+<a name="wp1059261"> </a><div>
+• Turn the ignition switch off, then to the ON position (Engine off).
+</div>
+
+<a name="wp1059275"> </a><div>
+• Verify the related PENDING CODE or stored DTCs.
+</div>
+
+<a name="wp1059285"> </a><div>
+• Are other DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059102"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059105"> </a><div>
+• If misfire DTC is present, go to Step 8.
+</div>
+
+<a name="wp1059313"> </a><div>
+• If other DTC is present, go to the appropriate DTC inspection.
+</div>
+
+<a name="wp1059323"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059242"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059245"> </a><div>
+• If drive ability concern is present, go to Step 8.
+</div>
+
+<a name="wp1059355"> </a><div>
+• If other, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059363"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059366"> </a><b>
+IDENTIFY TRIGGER DTC FOR FREEZE FRAME DATA
+</b>
+
+<a name="wp1059409"> </a><div>
+• Is DTC P2178 on FREEZE FRAME DATA?
+</div>
+</td>
+    <td>
+<a name="wp1059369"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059372"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059384"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059387"> </a><div>
+Go to the FREEZE FRAME DATA DTC inspection.
+</div>
+
+<a name="wp1059443"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059455"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059458"> </a><b>
+VERIFY CURRENT INPUT SIGNAL STATUS (IGNITION SWITCH TO ON/IDLE)
+</b>
+
+<a name="wp1059511"> </a><div>
+• Access ECT, MAF, APP, TP and VSS PIDs using WDS or equivalent.
+</div>
+
+<a name="wp1059525"> </a><div>
+• Is there any signal that is far out of specification when KOER?
+</div>
+</td>
+    <td>
+<a name="wp1059461"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059464"> </a><div>
+Inspect suspected sensor and excessive resistance in related wiring harnesses.
+</div>
+
+<a name="wp1059545"> </a><div>
+Repair or if necessary.
+</div>
+
+<a name="wp1059551"> </a><div>
+Then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059478"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059481"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059565"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059568"> </a><b>
+VERIFY CURRENT INPUT SIGNAL STATUS UNDER TROUBLE CONDITION
+</b>
+
+<a name="wp1059619"> </a><div>
+• Inspect same PIDs as Step 5 while simulating FREEZE FRAME DATA condition.
+</div>
+
+<a name="wp1059633"> </a><div>
+• Is there any signal which causes drastic changes?
+</div>
+</td>
+    <td>
+<a name="wp1059571"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059574"> </a><div>
+Inspect suspected sensor and related wiring harnesses repair or replace it.
+</div>
+
+<a name="wp1059653"> </a><div>
+Then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059588"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059591"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059667"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059670"> </a><b>
+VERIFY CURRENT INPUT SIGNAL STATUS OF FRONT HO2S
+</b>
+
+<a name="wp1059721"> </a><div>
+• Access O2S11 for P2178 PID using WDS or equivalent.
+</div>
+
+<a name="wp1059735"> </a><div>
+• Verify PID under following accelerator pedal condition (in PARK (ATX) or NEUTRAL (MTX)).
+</div>
+
+<a name="wp1059745"> </a><div>
+• Is PID normal?
+</div>
+
+<a name="wp1059755"> </a><p>
+-	<b>Less than 1 mA</b> when suddenly depressing accelerator pedal (rich condition)
+</p>
+
+<a name="wp1059776"> </a><p>
+-	<b>More than 1 mA</b> just after releasing accelerator pedal (lean condition)
+</p>
+</td>
+    <td>
+<a name="wp1059673"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059676"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059690"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059693"> </a><div>
+Visually inspect for any gas leakage between exhaust manifold and front HO2S.
+</div>
+
+<a name="wp1059813"> </a><div>
+Then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059817"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059820"> </a><b>
+INSPECT MAF PID
+</b>
+
+<a name="wp1059879"> </a><div>
+• Start engine.
+</div>
+
+<a name="wp1059893"> </a><div>
+• Access MAF PID using WDS or equivalent.
+</div>
+
+<a name="wp1059903"> </a><div>
+• Verify that MAF PID changes quickly according to race engine RPM.
+</div>
+
+<a name="wp1059913"> </a><div>
+• Is MAF PID response normal?
+</div>
+</td>
+    <td>
+<a name="wp1059823"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059826"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059842"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059845"> </a><div>
+Replace the MAF/IAT sensor, then go to Step 16.
+</div>
+
+<a name="wp1059945"> </a><div>
+(See <a href="id0140008055c0.html#wp1025486">MASS AIR FLOW (MAF)/INTAKE AIR TEMPERATURE (IAT) SENSOR REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059957"> </a><div>
+9
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059960"> </a><b>
+INSPECT PURGE SOLENOID OPERATION
+</b>
+
+<a name="wp1060027"> </a><div>
+• Perform the "Purge Control System Inspection".
+</div>
+
+<a name="wp1060045"> </a><div>
+(See <a href="id0103c0803700.html">Purge Control System Inspection</a>.)
+</div>
+
+<a name="wp1060059"> </a><div>
+• Does purge control system work properly?
+</div>
+</td>
+    <td>
+<a name="wp1059963"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059966"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059984"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059987"> </a><div>
+Repair or replace malfunctioning part according to inspection result, then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060087"> </a><div>
+10
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060090"> </a><b>
+INSPECT PCV VALVE OPERATION
+</b>
+
+<a name="wp1060165"> </a><div>
+• Inspect the PCV valve operation.
+</div>
+
+<a name="wp1060179"> </a><div>
+(See <a href="id0116008004c0.html#wp1025486">POSITIVE CRANKCASE VENTILATION (PCV) VALVE INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1060193"> </a><div>
+• Is the PCV valve normal?
+</div>
+</td>
+    <td>
+<a name="wp1060093"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060096"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060116"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060119"> </a><div>
+Replace the PCV valve, then go to Step 16.
+</div>
+
+<a name="wp1060223"> </a><div>
+(See <a href="id0113008041c8.html#wp1025486">VACUUM HOSE ROUTING DIAGRAM [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060235"> </a><div>
+11
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060238"> </a><b>
+INSPECT EGR VALVE OPERATION
+</b>
+
+<a name="wp1060329"> </a><div>
+• Perform the "EGR Control System Inspection".
+</div>
+
+<a name="wp1060347"> </a><div>
+(See <a href="id0103c0803700.html">EGR Control System Inspection</a>.)
+</div>
+
+<a name="wp1060361"> </a><div>
+• Does the EGR control system work properly?
+</div>
+</td>
+    <td>
+<a name="wp1060241"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060244"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060268"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060271"> </a><div>
+Repair or replace malfunctioning part according to inspection result, then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060389"> </a><div>
+12
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060392"> </a><b>
+INSPECT VARIABLE TUMBLE SHUTTER VALVE ACTUATOR OPERATION
+</b>
+
+<a name="wp1060491"> </a><div>
+• Perform the "Variable Tumble Control Operation Inspection".
+</div>
+
+<a name="wp1060509"> </a><div>
+(See <a href="id0103c0803700.html#wp1059990">Variable Tumble Control Operation Inspection</a>.)
+</div>
+
+<a name="wp1060523"> </a><div>
+• Does the variable tumble control work properly?
+</div>
+</td>
+    <td>
+<a name="wp1060395"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060398"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060424"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060427"> </a><div>
+Repair or replace malfunctioning part according to inspection results, then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060551"> </a><div>
+13
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060554"> </a><b>
+INSPECT FUEL LINE PRESSURE
+</b>
+
+<a name="wp1060661"> </a><div>
+• Turn the ignition switch off.
+</div>
+<dl>
+<a name="wp1060675"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl><dl>
+<a name="wp1061726"> </a><dd>
+• If the engine will not start, inspect the fuel line pressure with the ignition switch to the ON position.
+</dd>
+</dl>
+<a name="wp1060693"> </a><div>
+• Inspect the fuel line pressure while the engine running.
+</div>
+
+<a name="wp1060703"> </a><div>
+(See <a href="id0114008005c7.html#wp1025486">FUEL LINE PRESSURE INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1060717"> </a><div>
+• Is the fuel line pressure normal?
+</div>
+</td>
+    <td>
+<a name="wp1060557"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060560"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060588"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060591"> </a><div>
+If the fuel pressure is too high, replace the fuel pump unit, then go to Step 16.
+</div>
+
+<a name="wp1060747"> </a><div>
+(See <a href="id0114008009c7.html#wp1025486">FUEL PUMP UNIT REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+
+<a name="wp1060761"> </a><div>
+If the fuel line pressure is low, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060765"> </a><div>
+14
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060768"> </a><b>
+INSPECT FUEL LINE FOR FUEL LEAKAGE
+</b>
+
+<a name="wp1060891"> </a><div>
+• Visually inspect fuel line for leakage.
+</div>
+
+<a name="wp1060905"> </a><div>
+• Is any fuel leakage found?
+</div>
+</td>
+    <td>
+<a name="wp1060771"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060774"> </a><div>
+Replace suspected fuel line, then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060806"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060809"> </a><div>
+Inspect inside fuel filter (low pressure) for foreign materials or stain.
+</div>
+
+<a name="wp1060935"> </a><div>
+If there is foreign materials or stain inside fuel filter (low pressure), clean the fuel tank and filter.
+</div>
+
+<a name="wp1060941"> </a><div>
+Then go to Step 16.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060945"> </a><div>
+15
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060948"> </a><b>
+INSPECT VARIABLE VALVE TIMING CONTROL SYSTEM OPERATION
+</b>
+
+<a name="wp1061071"> </a><div>
+• Inspect the variable valve timing control system operation.
+</div>
+
+<a name="wp1061085"> </a><div>
+(See <a href="id0103c0803700.html">Variable Valve Timing Control System Operation Inspection</a>.)
+</div>
+
+<a name="wp1061099"> </a><div>
+• Does the variable valve timing control system work properly?
+</div>
+</td>
+    <td>
+<a name="wp1060951"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060954"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060986"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060989"> </a><div>
+Repair or replace malfunctioning part according to inspection results, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061127"> </a><div>
+16
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061130"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P2178 COMPLETED
+</b>
+
+<a name="wp1061261"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1061275"> </a><div>
+• Clear the DTC from the PCM memory using the WDS or equivalent.
+</div>
+
+<a name="wp1061285"> </a><div>
+• Perform the "KOER self-test".
+</div>
+
+<a name="wp1061300"> </a><div>
+(See <a href="id0102d3801200.html#wp1025486">KOEO/KOER SELF TEST [ZY]</a>.)
+</div>
+
+<a name="wp1061314"> </a><div>
+• Is the DTC P2178 present?
+</div>
+</td>
+    <td>
+<a name="wp1061133"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1061136"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1061334"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061170"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1061173"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061356"> </a><div>
+17
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061359"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1061506"> </a><div>
+• Perform the "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1061524"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1061538"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1061362"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1061365"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+
+<a name="wp1061558"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061403"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1061406"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1061727"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3812300.html"><small>Previous</small>DTC P2177 [ZY]</a><a class="nx" href="id0102d3812500.html"><small>Next</small>DTC P2187 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

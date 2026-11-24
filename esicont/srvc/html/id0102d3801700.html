@@ -1,0 +1,571 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0012 [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--engine.html">Engine</a></li><li><a href="../../../nav/workshop-manual--engine--on-board-diagnostic-engine-control-system.html">On-board diagnostic [Engine control system]</a></li><li aria-current="page">DTC P0012 [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0012 [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058563"> </a><p></p><p></p>
+
+<a name="wp1060401"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058624"> </a><p></p><div align="center"><b>
+DTC P0012
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+CMP-timing over-retarded
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058566"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058568"> </a><div>
+• The actual valve timing is over-retarded from the target valve timing when the OCV system control is within feed-back range.
+</div>
+
+<a name="wp1058693"> </a><b>
+Diagnostic support note
+</b>
+
+<a name="wp1058703"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058713"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058723"> </a><div>
+• PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058733"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058743"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058641"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058644"> </a><div>
+• Low engine oil pressure
+</div>
+
+<a name="wp1058775"> </a><div>
+• OCV malfunction
+</div>
+
+<a name="wp1058785"> </a><div>
+• Spool valve in OCV is stuck in retard position.
+</div>
+
+<a name="wp1058795"> </a><div>
+• Variable valve timing actuator is stuck in retard position.
+</div>
+
+<a name="wp1058805"> </a><div>
+• Following oil runners are clogged or have leakage.
+</div>
+
+<a name="wp1058815"> </a><b>
+Oil runners
+</b>
+<dl>
+<a name="wp1058825"> </a><dd>
+• Between oil pressure switch and OCV 
+</dd>
+
+<a name="wp1058835"> </a><dd>
+• Between OCV and variable valve timing actuator
+</dd>
+
+<a name="wp1058845"> </a><dd>
+• In variable valve timing actuator
+</dd>
+</dl>
+<a name="wp1058855"> </a><div>
+• Loose timing chain or improper valve timing due to timing chain slippage
+</div>
+
+<a name="wp1058865"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058875"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058989"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058991"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058995"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058883"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058885"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059097"> </a><div>
+• Has FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058941"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058944"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059024"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059027"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059031"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059034"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059141"> </a><div>
+• Verify related service repair information availability.
+</div>
+
+<a name="wp1059155"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059037"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059040"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059175"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059050"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059053"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059057"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059060"> </a><b>
+VERIFY ENGINE OIL PRESSURE
+</b>
+
+<a name="wp1059222"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059236"> </a><div>
+• Does the oil pressure warning light illuminate?
+</div>
+</td>
+    <td>
+<a name="wp1059063"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059066"> </a><div>
+Inspect engine oil pressure, then go to Step 7.
+</div>
+
+<a name="wp1059256"> </a><div>
+(See <a href="id0111008003c0.html#wp1025486">OIL PRESSURE INSPECTION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059203"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059206"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059278"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059281"> </a><b>
+VERIFY TIMING CHAIN INSTALLATION
+</b>
+
+<a name="wp1059324"> </a><div>
+• Is camshaft timing mark at correct point?
+</div>
+
+<a name="wp1059338"> </a><div>
+(See <a href="id0110008010c0.html">Timing Chain Installation Note</a>.)
+</div>
+</td>
+    <td>
+<a name="wp1059284"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059287"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059299"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059302"> </a><div>
+Reinstall the timing chain, then go to Step 7.
+</div>
+
+<a name="wp1059372"> </a><div>
+(See <a href="id0110008010c0.html">TIMING CHAIN REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059384"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059387"> </a><b>
+INSPECT OCV FOR MALFUNCTION
+</b>
+
+<a name="wp1059446"> </a><div>
+• Stop the engine.
+</div>
+
+<a name="wp1059460"> </a><div>
+• Remove the OCV.
+</div>
+
+<a name="wp1059470"> </a><div>
+(See <a href="id0110008013c0.html">OIL CONTROL VALVE (OCV) REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+
+<a name="wp1059484"> </a><div>
+• Inspect position of the spool valve in the OCV.
+</div>
+
+<a name="wp1059494"> </a><div>
+(See <a href="id0110005061c0.html#wp1025486">OIL CONTROL VALVE (OCV) INSPECTION [ZY]</a>.)
+</div>
+
+<a name="wp1059508"> </a><div>
+• Is the spool valve located at valve retard position?
+</div>
+</td>
+    <td>
+<a name="wp1059390"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059393"> </a><b>
+VARIABLE VALVE TIMING MECHANISM IS NORMAL
+</b>
+<dl>
+<a name="wp1059528"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl><dl>
+<a name="wp1060322"> </a><dd>
+• This DTC is detected by intermittent concern.
+</dd>
+
+<a name="wp1059546"> </a><dd>
+• Intermittent concern might be removed by cleaning mode of variable valve timing control function.
+</dd>
+
+<a name="wp1059556"> </a><div>
+Go to the next step.
+</div>
+</dl></td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059409"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059412"> </a><div>
+Replace the OCV, then go to Step 7.
+</div>
+
+<a name="wp1059572"> </a><div>
+(See <a href="id0110008013c0.html">OIL CONTROL VALVE (OCV) REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059584"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059587"> </a><b>
+INSPECT ENGINE OIL RUNNER
+</b>
+
+<a name="wp1059670"> </a><div>
+• Inspect following engine oil runners for clogging or leakage.
+</div>
+<dl>
+<a name="wp1059684"> </a><dd>
+-	Between the oil pressure switch and the OCV 
+</dd>
+
+<a name="wp1059698"> </a><dd>
+-	Between the OCV and the variable valve timing actuator
+</dd>
+
+<a name="wp1059708"> </a><dd>
+-	In the variable valve timing actuator
+</dd>
+</dl>
+<a name="wp1059718"> </a><div>
+• Is there any clogging or leakage?
+</div>
+</td>
+    <td>
+<a name="wp1059590"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059593"> </a><div>
+Repair or replace suspected runner, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059615"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059618"> </a><b>
+VARIABLE VALVE TIMING MECHANISM IS NORMAL
+</b>
+<dl>
+<a name="wp1059748"> </a><dd><b>
+<b>Note</b>
+</b></dd>
+</dl><dl>
+<a name="wp1060323"> </a><dd>
+• This DTC is detected by intermittent concern.
+</dd>
+
+<a name="wp1059766"> </a><dd>
+• Intermittent concern might be removed by cleaning mode of variable valve timing control function.
+</dd>
+
+<a name="wp1059776"> </a><div>
+Go to the next step.
+</div>
+</dl></td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059780"> </a><div>
+7
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059783"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0012 COMPLETED
+</b>
+
+<a name="wp1059866"> </a><div>
+• Make sure to reconnect all disconnected connectors.
+</div>
+
+<a name="wp1059880"> </a><div>
+• Turn the ignition switch to the ON position (Engine off).
+</div>
+
+<a name="wp1059890"> </a><div>
+• Clear the DTC from the PCM memory using WDS or equivalent.
+</div>
+
+<a name="wp1059900"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059910"> </a><div>
+• Access RPM PID using the WDS or equivalent.
+</div>
+
+<a name="wp1059920"> </a><div>
+• Warm up the engine completely.
+</div>
+
+<a name="wp1059930"> </a><div>
+• Turn off all electrical roads.
+</div>
+
+<a name="wp1059960"> </a><div>
+• Increase and keep the engine speed <b>2,500 rpm or more</b> for <b>10 s</b>.
+</div>
+
+<a name="wp1059969"> </a><div>
+• Is the PENDING CODE for this DTC present?
+</div>
+</td>
+    <td>
+<a name="wp1059786"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059789"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1059989"> </a><div>
+(See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059811"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059814"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060011"> </a><div>
+8
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060014"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1060117"> </a><div>
+• Perform "AFTER REPAIR PROCEDURE".
+</div>
+
+<a name="wp1060135"> </a><div>
+(See <a href="id0102d3801100.html#wp1025486">AFTER REPAIR PROCEDURE [ZY]</a>.)
+</div>
+
+<a name="wp1060149"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1060017"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1060020"> </a><div>
+Go to the applicable DTC troubleshooting.
+</div>
+
+<a name="wp1060169"> </a><div>
+(See <a href="id0102d3801500.html#wp1025486">DTC TABLE [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060047"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1060050"> </a><div>
+Troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060324"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3801600.html"><small>Previous</small>DTC P0011 [ZY]</a><a class="nx" href="id0102d3801900.html"><small>Next</small>DTC P0030 [ZY]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--engine.html">Troubleshooting / Engine</a>.</p><script src="../../../assets/app.js"></script></body></html>

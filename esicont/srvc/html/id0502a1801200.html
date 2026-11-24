@@ -1,0 +1,419 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DTC P0711 [FN4A-EL] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/workshop-manual.html">Workshop Manual</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle.html">Transmission/transaxle</a></li><li><a href="../../../nav/workshop-manual--transmission-transaxle--on-board-diagnostic-fn4a-el.html">On-board diagnostic [FN4A-EL]</a></li><li aria-current="page">DTC P0711 [FN4A-EL]</li></ol></nav><main class="wrap"><article class="doc"><h1>DTC P0711 [FN4A-EL]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1060131"> </a><p>
+</p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058626"> </a><p></p><div align="center"><b>
+DTC P0711
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058628"> </a><p></p><div align="center"><b>
+Transaxle fluid temperature (TFT) sensor circuit range/performance (stuck)
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058568"> </a><p>
+<b>DETECTION CONDITION</b>
+</p>
+</td>
+    <td>
+<a name="wp1058570"> </a><div>
+• When all conditions below are satisfied.
+</div>
+<dl>
+<a name="wp1058762"> </a><dd>
+-	When <b>180 s</b> have passed after the engine is started, vehicle is driven for <b>90 s or more</b> at vehicle speed <b>between 25-59 km/h {15-36 mph}</b>, then <b>60 km/h {37 mph} or more</b> for <b>60 s or more</b>.
+</dd>
+
+<a name="wp1058771"> </a><dd>
+-	P0712, P0713 not output
+</dd>
+
+<a name="wp1058781"> </a><dd>
+-	Variation in ATF voltage <b>0.03 V or less</b>
+</dd>
+</dl>
+<a name="wp1058797"> </a><b>
+Diagnostic support note: 
+</b>
+
+<a name="wp1058807"> </a><div>
+• This is a continuous monitor (CCM).
+</div>
+
+<a name="wp1058817"> </a><div>
+• The MIL illuminates if the PCM detects the above malfunction condition in two consecutive drive cycles or in one drive cycle while the DTC for the same malfunction has been stored in the PCM.
+</div>
+
+<a name="wp1058827"> </a><div>
+• The PENDING CODE is available if the PCM detects the above malfunction condition during the first drive cycle.
+</div>
+
+<a name="wp1058837"> </a><div>
+• FREEZE FRAME DATA is available.
+</div>
+
+<a name="wp1058847"> </a><div>
+• AT warning light does not illuminates.
+</div>
+
+<a name="wp1058857"> </a><div>
+• The DTC is stored in the PCM memory.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058643"> </a><p>
+<b>POSSIBLE CAUSE</b>
+</p>
+</td>
+    <td>
+<a name="wp1058646"> </a><div>
+• TFT sensor malfunction
+</div>
+
+<a name="wp1058889"> </a><div>
+• Connector corrosion
+</div>
+
+<a name="wp1058899"> </a><div>
+• PCM malfunction
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p>
+</p>
+
+<a name="wp1058923"> </a><p><b>
+Diagnostic procedure</b></p><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1059037"> </a><p></p><div align="center"><b>
+STEP
+</b></div><p></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059039"> </a><p></p><div align="center"><b>
+INSPECTION
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1059043"> </a><p></p><div align="center"><b>
+ACTION
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058931"> </a><div>
+1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058933"> </a><b>
+VERIFY FREEZE FRAME DATA HAS BEEN RECORDED
+</b>
+
+<a name="wp1059145"> </a><div>
+• Has the FREEZE FRAME DATA been recorded?
+</div>
+</td>
+    <td>
+<a name="wp1058989"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1058992"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059072"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059075"> </a><div>
+Record the FREEZE FRAME DATA on the repair order, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059079"> </a><div>
+2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059082"> </a><b>
+VERIFY RELATED REPAIR INFORMATION AVAILABILITY
+</b>
+
+<a name="wp1059189"> </a><div>
+• Verify related Service Bulletins and/or on-line repair information availability.
+</div>
+
+<a name="wp1059206"> </a><div>
+• Is any related repair information available?
+</div>
+</td>
+    <td>
+<a name="wp1059085"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059088"> </a><div>
+Perform repair or diagnosis according to the available repair information.
+</div>
+
+<a name="wp1059226"> </a><div>
+• If the vehicle is not repaired, go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059098"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059101"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059105"> </a><div>
+3
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059108"> </a><b>
+INSPECT TFT SENSOR VOLTAGE
+</b>
+
+<a name="wp1059273"> </a><div>
+• Turn the ignition switch to the ON position (engine off).
+</div>
+
+<a name="wp1059287"> </a><div>
+• Measure the voltage at PCM terminal 1AH.
+</div>
+
+<a name="wp1059297"> </a><div>
+• Record terminal 1AH voltage.
+</div>
+
+<a name="wp1059307"> </a><div>
+• Start the engine.
+</div>
+
+<a name="wp1059343"> </a><div>
+• Drive the vehicle at <b>60 km/h {37 mph} or more</b> for <b>330 s or more</b>.
+</div>
+
+<a name="wp1059352"> </a><div>
+• Record terminal 1AH voltage again.
+</div>
+
+<a name="wp1059362"> </a><div>
+• Is the variation in voltage <b>0.03 V or more</b>?
+</div>
+</td>
+    <td>
+<a name="wp1059111"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059114"> </a><div>
+Go to Step 5.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059254"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059257"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059399"> </a><div>
+4
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059402"> </a><b>
+INSPECT TERMINAL CONDITION
+</b>
+
+<a name="wp1059457"> </a><div>
+• Turn the ignition switch to the LOCK position.
+</div>
+
+<a name="wp1059471"> </a><div>
+• Disconnect the ATX connector.
+</div>
+
+<a name="wp1059481"> </a><div>
+• Inspect terminals for corrosion.
+</div>
+
+<a name="wp1059491"> </a><div>
+• Are terminals normal?
+</div>
+</td>
+    <td>
+<a name="wp1059405"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059408"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059423"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059426"> </a><div>
+Repair or replace the terminals, then go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059519"> </a><div>
+5
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059522"> </a><b>
+VERIFY TROUBLESHOOTING OF DTC P0711 COMPLETED
+</b>
+
+<a name="wp1059577"> </a><div>
+• Make sure to reconnect all the disconnected connectors.
+</div>
+
+<a name="wp1059591"> </a><div>
+• Clear the DTC from the memory using the WDS or equivalent.
+</div>
+
+<a name="wp1059601"> </a><div>
+• Decrease ATF temperature to <b>20 </b>°<b>C {68 </b>°<b>F} or less</b>.
+</div>
+
+<a name="wp1059628"> </a><div>
+• Start the engine and wait for <b>180 s or more</b>.
+</div>
+
+<a name="wp1059676"> </a><div>
+• Drive the vehicle at a vehicle speed <b>between 25-59 km/h {15-36 mph}</b> for <b>90 s or more</b>.
+</div>
+
+<a name="wp1059711"> </a><div>
+• Drive the vehicle at a vehicle speed <b>60 km/h {37 mph} or more</b> for <b>60 s or more</b>.
+</div>
+
+<a name="wp1059720"> </a><div>
+• Is the PENDING CODE present?
+</div>
+</td>
+    <td>
+<a name="wp1059525"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059528"> </a><div>
+Replace the PCM, then go to the next step.
+</div>
+
+<a name="wp1059740"> </a><div>
+ (See <a href="id0140008024c0.html#wp1025486">PCM REMOVAL/INSTALLATION [ZY]</a>.)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059543"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059546"> </a><div>
+Go to the next step.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059762"> </a><div>
+6
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059765"> </a><b>
+VERIFY AFTER REPAIR PROCEDURE
+</b>
+
+<a name="wp1059868"> </a><div>
+• Perform the "After Repair Procedure".
+</div>
+
+<a name="wp1059886"> </a><div>
+ (See <a href="id0502a1800400.html#wp1025486">AFTER REPAIR PROCEDURE [FN4A-EL]</a>.)
+</div>
+
+<a name="wp1059900"> </a><div>
+• Are any DTCs present?
+</div>
+</td>
+    <td>
+<a name="wp1059768"> </a><div>
+Yes
+</div>
+</td>
+    <td>
+<a name="wp1059771"> </a><div>
+Go to the applicable DTC inspection.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059798"> </a><div>
+No
+</div>
+</td>
+    <td>
+<a name="wp1059801"> </a><div>
+DTC troubleshooting completed.
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<p><b>
+</b></p>
+
+<a name="wp1060055"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0502a1801100.html"><small>Previous</small>DTC P0708 [FN4A-EL]</a><a class="nx" href="id0502a1801300.html"><small>Next</small>DTC P0712 [FN4A-EL]</a></nav><p class="also wrap">Also listed under: <a href="../../../nav/troubleshooting--transmission-transaxle.html">Troubleshooting / Transmission/transaxle</a>.</p><script src="../../../assets/app.js"></script></body></html>

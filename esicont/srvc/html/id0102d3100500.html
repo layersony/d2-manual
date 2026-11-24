@@ -1,0 +1,1699 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PID/data monitor and record [ZY] · Mazda2 service manual</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../../../assets/site.css"></head><body data-root="../../../"><header class="top"><div class="wrap"><a class="brand" href="../../../index.html">Mazda2<small>service manual</small></a><form action="../../../search.html" role="search"><label class="sr" for="hq">Search the manual</label><input id="hq" type="search" name="q" data-search autocomplete="off" placeholder="Search procedures, parts, fault codes"></form></div></header><nav class="crumbs wrap" aria-label="Breadcrumb"><ol><li><a href="../../../index.html">Home</a></li><li><a href="../../../nav/technical-guide.html">Technical Guide</a></li><li><a href="../../../nav/technical-guide--engine.html">Engine</a></li><li><a href="../../../nav/technical-guide--engine--on-board-diagnostic-engine-control-system-zy.html">On-board diagnostic [Engine control system (ZY)]</a></li><li aria-current="page">PID/data monitor and record [ZY]</li></ol></nav><main class="wrap"><article class="doc"><h1>PID/data monitor and record [ZY]</h1><div class="cx"><a name="wp1025486"> </a>
+
+
+<a name="wp1058565"> </a><p></p><p></p>
+
+<a name="wp1063723"> </a><div>
+• The PID/DATA monitor items are shown below.
+</div>
+
+<a name="wp1058581"> </a><p><b>
+PID/DATA monitor item table
+</b></p>
+
+<a name="wp1058593"> </a><div>
+-: Not applicable</div><div align="left">
+<div class="tw"><table border="1">
+  <caption></caption>
+  <tbody><tr align="center">    <th>
+<a name="wp1058776"> </a><p></p><div align="center"><b>
+Item
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058778"> </a><p></p><div align="center"><b>
+Definition
+</b></div><p></p>
+</th>
+    <th colspan="4" rowspan="1">
+<a name="wp1058780"> </a><p></p><div align="center"><b>
+Unit/Condition
+</b></div><p></p>
+</th>
+    <th>
+<a name="wp1058788"> </a><p></p><div align="center"><b>
+PCM terminal
+</b></div><p></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058598"> </a><div>
+A/CL V
+</div>
+</td>
+    <td>
+<a name="wp1058600"> </a><div>
+A/C load signal voltage
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1058656"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1058668"> </a><div>
+1AC
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058823"> </a><div>
+A/CT
+</div>
+</td>
+    <td>
+<a name="wp1058826"> </a><div>
+Evaporator temperature
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058829"> </a><div>
+°C
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058835"> </a><div>
+°F
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058841"> </a><div>
+1AW
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058845"> </a><div>
+A/CT V
+</div>
+</td>
+    <td>
+<a name="wp1058848"> </a><div>
+Evaporator temperature signal voltage
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1058851"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058867"> </a><div>
+AC_REQ
+</div>
+</td>
+    <td>
+<a name="wp1058870"> </a><div>
+Refrigerant pressure switch (high, low)
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1058873"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058885"> </a><div>
+1AO
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058889"> </a><div>
+ACCS
+</div>
+</td>
+    <td>
+<a name="wp1058892"> </a><div>
+A/C relay
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1058895"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1058907"> </a><div>
+1AN
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058911"> </a><div>
+ALT_CUR_S
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058914"> </a><div>
+Current sensor
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1058917"> </a><div>
+A
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1058929"> </a><div>
+1AL
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1058939"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058955"> </a><div>
+ALTF
+</div>
+</td>
+    <td>
+<a name="wp1058958"> </a><div>
+Generator field coil control duty value
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1058961"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1058973"> </a><div>
+2AF
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059166"> </a><div>
+ALTT V
+</div>
+</td>
+    <td>
+<a name="wp1059169"> </a><div>
+Generator output voltage
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059172"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1059184"> </a><div>
+2AE
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059208"> </a><div>
+APP
+</div>
+</td>
+    <td>
+<a name="wp1059211"> </a><div>
+Accelerator pedal position
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059214"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1059226"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059250"> </a><div>
+APP1
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059253"> </a><div>
+APP sensor No.1
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059256"> </a><div>
+%
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059268"> </a><div>
+1Z
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1059278"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059319"> </a><div>
+APP2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059322"> </a><div>
+APP sensor No.2
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059325"> </a><div>
+%
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059337"> </a><div>
+1AD
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1059347"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059388"> </a><div>
+ARPMDES
+</div>
+</td>
+    <td>
+<a name="wp1059391"> </a><div>
+Target engine speed
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059394"> </a><div>
+RPM
+</div>
+</td>
+    <td>
+<a name="wp1059406"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059430"> </a><div>
+BOO
+</div>
+</td>
+    <td>
+<a name="wp1059433"> </a><div>
+Brake switch
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059436"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059448"> </a><div>
+1G
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059474"> </a><div>
+CHRGLP
+</div>
+</td>
+    <td>
+<a name="wp1059477"> </a><div>
+Generator warning light
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059480"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059492"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059518"> </a><div>
+COLP
+</div>
+</td>
+    <td>
+<a name="wp1059521"> </a><div>
+Refrigerant pressure switch (middle)
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059524"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059536"> </a><div>
+1AC
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059562"> </a><div>
+CPP<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059565"> </a><div>
+Clutch pedal position
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059568"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1059580"> </a><div>
+1M
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059614"> </a><div>
+CPP/PNP<sup>*1</sup>
+</div>
+</td>
+    <td>
+<a name="wp1059617"> </a><div>
+Shift lever position
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059620"> </a><div>
+Drive/Neutral
+</div>
+</td>
+    <td>
+<a name="wp1059632"> </a><div>
+1J
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059670"> </a><div>
+DTCCNT
+</div>
+</td>
+    <td>
+<a name="wp1059673"> </a><div>
+Number of DTC detected
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059676"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059688"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059716"> </a><div>
+ECT
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059719"> </a><div>
+Engine coolant temperature
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059722"> </a><div>
+°C
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059728"> </a><div>
+°F
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059734"> </a><div>
+2AC
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1059746"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059808"> </a><div>
+EQ_RAT11
+</div>
+</td>
+    <td>
+<a name="wp1059811"> </a><div>
+Actual lambda signal
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059814"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059826"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059856"> </a><div>
+EQ_RAT11_DSD
+</div>
+</td>
+    <td>
+<a name="wp1059859"> </a><div>
+Target lambda
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059862"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1059874"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059906"> </a><div>
+ETC_ACT
+</div>
+</td>
+    <td>
+<a name="wp1059909"> </a><div>
+Throttle control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059912"> </a><div>
+°
+</div>
+</td>
+    <td>
+<a name="wp1059924"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059954"> </a><div>
+ETC_DSD
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059957"> </a><div>
+Throttle control desired
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059960"> </a><div>
+%
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059972"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1059984"> </a><div>
+°
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060039"> </a><div>
+EVAPCP
+</div>
+</td>
+    <td>
+<a name="wp1060042"> </a><div>
+Purge solenoid valve duty value
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060045"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1060057"> </a><div>
+2S
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060085"> </a><div>
+FAN1
+</div>
+</td>
+    <td>
+<a name="wp1060088"> </a><div>
+Cooling fan relay No.1 control signal
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060091"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060103"> </a><div>
+1AV
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060133"> </a><div>
+FAN2
+</div>
+</td>
+    <td>
+<a name="wp1060136"> </a><div>
+Cooling fan relay No.2 control signal
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060139"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060151"> </a><div>
+1AZ
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060181"> </a><div>
+FP
+</div>
+</td>
+    <td>
+<a name="wp1060184"> </a><div>
+Fuel pump relay
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060187"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060199"> </a><div>
+1AQ<sup>*3</sup>
+</div>
+
+<a name="wp1060238"> </a><div>
+1AR<sup>*4</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060249"> </a><div>
+FUELPW
+</div>
+</td>
+    <td>
+<a name="wp1060252"> </a><div>
+Fuel injector duration
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060255"> </a><div>
+ms
+</div>
+</td>
+    <td>
+<a name="wp1060267"> </a><div>
+2A, 2B, 2C, 2H
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060299"> </a><div>
+FUELSYS
+</div>
+</td>
+    <td>
+<a name="wp1060302"> </a><div>
+Fuel system status
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060305"> </a><div>
+OL/CL/
+</div>
+
+<a name="wp1060349"> </a><div>
+OL_Drive/
+</div>
+
+<a name="wp1060358"> </a><div>
+ OL_Fault/ 
+</div>
+
+<a name="wp1060368"> </a><div>
+CL_Fault
+</div>
+</td>
+    <td>
+<a name="wp1060317"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060379"> </a><div>
+GENVDSD
+</div>
+</td>
+    <td>
+<a name="wp1060382"> </a><div>
+Target generator voltage
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060385"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1060397"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060429"> </a><div>
+HTR11
+</div>
+</td>
+    <td>
+<a name="wp1060432"> </a><div>
+Front HO2S heater control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060435"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060447"> </a><div>
+2X
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060487"> </a><div>
+HTR12
+</div>
+</td>
+    <td>
+<a name="wp1060490"> </a><div>
+Rear HO2S heater control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060493"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060505"> </a><div>
+2AB
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060541"> </a><div>
+IAT
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060544"> </a><div>
+Intake air temperature
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060547"> </a><div>
+°C
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060553"> </a><div>
+°F
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060559"> </a><div>
+2R
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1060574"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060657"> </a><div>
+IMRC
+</div>
+</td>
+    <td>
+<a name="wp1060660"> </a><div>
+Variable tumble control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060663"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060675"> </a><div>
+2AG, 2AK
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060711"> </a><div>
+IMRC_POS
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060714"> </a><div>
+Variable tumble control position
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060717"> </a><div>
+%
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060729"> </a><div>
+2AL
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1060744"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060817"> </a><div>
+IMTV
+</div>
+</td>
+    <td>
+<a name="wp1060820"> </a><div>
+Variable intake air control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060823"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060835"> </a><div>
+2AI, 2AJ
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060877"> </a><div>
+INGEAR
+</div>
+</td>
+    <td>
+<a name="wp1060880"> </a><div>
+Gears are engaged
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060883"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1060946"> </a><div>
+1J<sup>*1</sup>, 1M<sup>*1</sup>
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060951"> </a><div>
+IVS
+</div>
+</td>
+    <td>
+<a name="wp1060954"> </a><div>
+CTP condition
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1060957"> </a><div>
+Idle/Off_Idle
+</div>
+</td>
+    <td>
+<a name="wp1060969"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061013"> </a><div>
+KNOCKR
+</div>
+</td>
+    <td>
+<a name="wp1061016"> </a><div>
+Knocking retard
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061019"> </a><div>
+°
+</div>
+</td>
+    <td>
+<a name="wp1061031"> </a><div>
+2AN
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061071"> </a><div>
+LOAD
+</div>
+</td>
+    <td>
+<a name="wp1061074"> </a><div>
+Engine load
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061077"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1061089"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061129"> </a><div>
+LONGFT1
+</div>
+</td>
+    <td>
+<a name="wp1061132"> </a><div>
+Long term fuel trim
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061135"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1061147"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061187"> </a><div>
+MAF
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061190"> </a><div>
+Mass air flow
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061193"> </a><div>
+g/s
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061205"> </a><div>
+2V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1061223"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061314"> </a><div>
+MAP
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061317"> </a><div>
+Manifold absolute pressure
+</div>
+</td>
+    <td>
+<a name="wp1061320"> </a><div>
+kPa
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061323"> </a><div>
+psi
+</div>
+</td>
+    <td>
+<a name="wp1061329"> </a><div>
+Bar
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061332"> </a><div>
+2AP
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1061350"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061449"> </a><div>
+MIL
+</div>
+</td>
+    <td>
+<a name="wp1061452"> </a><div>
+Malfunction indicator lamp
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061455"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1061467"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061509"> </a><div>
+MIL_DIS
+</div>
+</td>
+    <td>
+<a name="wp1061512"> </a><div>
+Travelled distance since MIL illuminated
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061515"> </a><div>
+km
+</div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061521"> </a><div>
+mile
+</div>
+</td>
+    <td>
+<a name="wp1061527"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061582"> </a><div>
+NUMKEYS
+</div>
+</td>
+    <td>
+<a name="wp1061585"> </a><div>
+Number of keys stored in module
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061588"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061600"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061640"> </a><div>
+O2S11
+</div>
+</td>
+    <td>
+<a name="wp1061643"> </a><div>
+Front HO2S
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061646"> </a><div>
+mA
+</div>
+</td>
+    <td>
+<a name="wp1061658"> </a><div>
+2Z
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061704"> </a><div>
+O2S12
+</div>
+</td>
+    <td>
+<a name="wp1061707"> </a><div>
+Rear HO2S
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061710"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1061722"> </a><div>
+2AH
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061764"> </a><div>
+PCM_T
+</div>
+</td>
+    <td>
+<a name="wp1061767"> </a><div>
+PCM temperature sensor
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061770"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1061782"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061826"> </a><div>
+PCM_T_Max
+</div>
+</td>
+    <td>
+<a name="wp1061829"> </a><div>
+Maximum PCM temperature
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061832"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1061844"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061890"> </a><div>
+RFCFLAG
+</div>
+</td>
+    <td>
+<a name="wp1061893"> </a><div>
+PCM adaptive memory produce verification
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061896"> </a><div>
+Learnt/
+</div>
+
+<a name="wp1061948"> </a><div>
+Not Learnt
+</div>
+</td>
+    <td>
+<a name="wp1061908"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061957"> </a><div>
+RO2FT1
+</div>
+</td>
+    <td>
+<a name="wp1061960"> </a><div>
+Rear oxygen sensor fuel trim
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1061963"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1061975"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062017"> </a><div>
+RPM
+</div>
+</td>
+    <td>
+<a name="wp1062020"> </a><div>
+Engine speed
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062023"> </a><div>
+RPM
+</div>
+</td>
+    <td>
+<a name="wp1062035"> </a><div>
+2Y
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062077"> </a><div>
+SEGRP
+</div>
+</td>
+    <td>
+<a name="wp1062080"> </a><div>
+EGR control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062083"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062095"> </a><div>
+2K, 2O, 2P, 2T
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062137"> </a><div>
+SEGRP DSD
+</div>
+</td>
+    <td>
+<a name="wp1062140"> </a><div>
+EGR valve position desired
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062143"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1062155"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062197"> </a><div>
+SELTESTDTC
+</div>
+</td>
+    <td>
+<a name="wp1062200"> </a><div>
+Display the stored DTC by performing KOEO/KOER self-test
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062203"> </a><div>
+-
+</div>
+</td>
+    <td>
+<a name="wp1062215"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062260"> </a><div>
+SHRTFT1
+</div>
+</td>
+    <td>
+<a name="wp1062263"> </a><div>
+Short term fuel trim (front)
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062266"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1062278"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062320"> </a><div>
+SHRTFT12
+</div>
+</td>
+    <td>
+<a name="wp1062323"> </a><div>
+Short term fuel trim (rear)
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062326"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1062338"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062380"> </a><div>
+SPARKADV
+</div>
+</td>
+    <td>
+<a name="wp1062383"> </a><div>
+Ignition timing
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062386"> </a><div>
+°
+</div>
+</td>
+    <td>
+<a name="wp1062398"> </a><div>
+2N
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062440"> </a><div>
+test
+</div>
+</td>
+    <td>
+<a name="wp1062443"> </a><div>
+Test mode
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062446"> </a><div>
+On/Off
+</div>
+</td>
+    <td>
+<a name="wp1062458"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062502"> </a><div>
+TIRESIZE
+</div>
+</td>
+    <td>
+<a name="wp1062505"> </a><div>
+Tire revolution per mile
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062508"> </a><div>
+rev/mile
+</div>
+</td>
+    <td>
+<a name="wp1062520"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062564"> </a><div>
+TP
+</div>
+</td>
+    <td>
+<a name="wp1062567"> </a><div>
+Throttle position
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062570"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1062582"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062624"> </a><div>
+TP REL
+</div>
+</td>
+    <td>
+<a name="wp1062627"> </a><div>
+Throttle position signal (relative value))
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062630"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1062642"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062684"> </a><div>
+TP1
+</div>
+</td>
+    <td>
+<a name="wp1062687"> </a><div>
+TP sensor No.1
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062690"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1062702"> </a><div>
+2AX
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1062744"> </a><div>
+TP2
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062747"> </a><div>
+TP sensor No.2
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062750"> </a><div>
+%
+</div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062762"> </a><div>
+2AT
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="4" rowspan="1">
+<a name="wp1062781"> </a><div>
+V
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062876"> </a><div>
+TPCT
+</div>
+</td>
+    <td>
+<a name="wp1062879"> </a><div>
+TP sensor voltage at CTP
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062882"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1062894"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062936"> </a><div>
+VPWR
+</div>
+</td>
+    <td>
+<a name="wp1062939"> </a><div>
+Battery positive voltage
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1062942"> </a><div>
+V
+</div>
+</td>
+    <td>
+<a name="wp1062954"> </a><div>
+1BB, 1BC, 1BF, <sup>*2</sup>1BG
+</div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="3">
+<a name="wp1063006"> </a><div>
+VSS
+</div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1063009"> </a><div>
+Vehicle speed
+</div>
+</td>
+    <td colspan="2" rowspan="3">
+<a name="wp1063012"> </a><div>
+Km/h
+</div>
+</td>
+    <td colspan="2" rowspan="3">
+<a name="wp1063018"> </a><div>
+mph
+</div>
+</td>
+    <td>
+<a name="wp1063024"> </a><p>
+<sup>*1</sup>1AP
+</p>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063079"> </a><p>
+<sup>*2</sup>1AX
+</p>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063057"> </a><p>
+<sup>*5</sup>-
+</p>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063199"> </a><div>
+VT ACT1
+</div>
+</td>
+    <td>
+<a name="wp1063202"> </a><div>
+Actual valve timing
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1063205"> </a><div>
+°
+</div>
+</td>
+    <td>
+<a name="wp1063217"> </a><div>
+2W
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063269"> </a><div>
+VT DIFF1
+</div>
+</td>
+    <td>
+<a name="wp1063272"> </a><div>
+Difference between target valve timing and actual valve timing
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1063275"> </a><div>
+°
+</div>
+</td>
+    <td>
+<a name="wp1063287"> </a><div>
+-
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063339"> </a><div>
+VT DUTY1
+</div>
+</td>
+    <td>
+<a name="wp1063342"> </a><div>
+OCV control
+</div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1063345"> </a><div>
+%
+</div>
+</td>
+    <td>
+<a name="wp1063357"> </a><div>
+2W
+</div>
+</td>
+</tr>
+</tbody></table></div>
+</div>
+<div>
+</div>
+<dl>
+<a name="wp1063425"> </a><dd>
+<sup>*1</sup>	:
+</dd>
+
+<a name="wp1063444"> </a>
+MTX
+
+
+<a name="wp1063450"> </a><dd>
+<sup>*2</sup>	:
+</dd>
+
+<a name="wp1063465"> </a>
+ATX
+
+
+<a name="wp1063471"> </a><dd>
+<sup>*3</sup>	:
+</dd>
+
+<a name="wp1063486"> </a>
+With immobilizer system
+
+
+<a name="wp1063492"> </a><dd>
+<sup>*4</sup>	:
+</dd>
+
+<a name="wp1063507"> </a>
+Without immobilizer system
+
+
+<a name="wp1063513"> </a><dd>
+<sup>*5</sup>	:
+</dd>
+
+<a name="wp1063528"> </a>
+With ABS
+
+</dl>
+<a name="wp1063642"> </a><p>
+ 
+</p></div></article></main><nav class="pn wrap" aria-label="Previous and next page"><a class="pv" href="id0102d3100400.html"><small>Previous</small>KOEO/KOER self-test [ZY]</a><a class="nx" href="id0102d3100600.html"><small>Next</small>Simulation test [ZY]</a></nav><script src="../../../assets/app.js"></script></body></html>
