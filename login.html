@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign in · Service Manual</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/auth.js" data-login-page></script>
+</head>
+
+<body data-root="">
+    <header class="top">
+        <div class="wrap"><span class="brand">DY3<small>Service Manual</small></span></div>
+    </header>
+    <main class="wrap">
+        <form class="login" id="login" novalidate>
+            <h1>Sign in</h1>
+            <label for="user">Username</label>
+            <input id="user" name="user" autocomplete="username" required autofocus>
+            <label for="pass">Password</label>
+            <input id="pass" name="pass" type="password" autocomplete="current-password" required>
+            <label class="remember"><input id="remember" type="checkbox"> Keep me signed in on this device</label>
+            <p class="err" id="err" role="alert" hidden></p>
+            <button type="submit">Sign in</button>
+        </form>
+    </main>
+    <script>
+        (function () {
+            var form = document.getElementById('login'), err = document.getElementById('err');
+            var next = new URLSearchParams(location.search).get('next') || 'index.html';
+            
+            if (!/^[A-Za-z0-9_][A-Za-z0-9_\-./]*(\?[^#]*)?(#.*)?$/.test(next) || next.indexOf('..') >= 0) next = 'index.html';
+
+            if (MZAuth.signedIn()) { location.replace(next); return; }
+
+            function hex(buf) {
+                return Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
+            }
+            function fail(msg) { err.textContent = msg; err.hidden = false; }
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                err.hidden = true;
+                var u = form.user.value.trim(), p = form.pass.value;
+                if (!u || !p) return fail('Enter both a username and a password.');
+                if (!window.crypto || !crypto.subtle) return fail('This browser cannot verify the password. Open the site over https.');
+                crypto.subtle.digest('SHA-256', new TextEncoder().encode(u + ':' + p)).then(function (buf) {
+                    if (hex(buf) !== MZAuth.hash) { form.pass.value = ''; form.pass.focus(); return fail('That username or password is not right.'); }
+                    MZAuth.signIn(document.getElementById('remember').checked);
+                    location.replace(next);
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

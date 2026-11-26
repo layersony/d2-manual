@@ -175,3 +175,19 @@ a{color:var(--link)} a:hover{color:var(--link-d)}
   .cx img{max-width:100%}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* ---------- login ---------- */
+.signout{margin-left:auto;padding:7px 12px;font:600 15px var(--body);color:#fff;background:transparent;border:1px solid #4a5a6e;border-radius:3px;cursor:pointer;white-space:nowrap}
+.signout:hover{background:#2a3748}
+.top form + .signout{margin-left:0}
+.login{max-width:420px;margin:48px auto;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:4px}
+.login h1{font:700 40px/1 var(--head);margin:0 0 8px}
+.login .sub{margin:0 0 22px;color:var(--muted);font-size:16px}
+.login label{display:block;font-weight:600;margin:0 0 6px}
+.login input:not([type=checkbox]){display:block;width:100%;height:48px;padding:0 12px;margin:0 0 16px;font:inherit;border:2px solid var(--line);border-radius:3px;background:#fff;color:var(--ink)}
+.login input:focus{border-color:var(--ink)}
+.login .remember{display:flex;align-items:center;gap:8px;font-weight:400;font-size:16px;margin:0 0 18px}
+.login .err{margin:0 0 16px;padding:10px 12px;color:var(--warn);background:var(--warn-bg);border-radius:3px;font-size:16px}
+.login button{width:100%;height:50px;font:600 18px var(--body);color:#fff;background:var(--ink);border:0;border-radius:3px;cursor:pointer}
+.login button:hover{background:#2c3b4d}
+@media (max-width:480px){.login{margin:24px auto;padding:20px}}
